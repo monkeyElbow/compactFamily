@@ -1,0 +1,40 @@
+
+/* svg colors */
+.svgwhite{fill:white;}
+.svggrey{fill:#ACACAC;}
+.svggreylight{fill:#dbdbdb;}
+.svggreystroke{stroke:#ACACAC;}
+.svgblue{fill:#2D81C4;}
+.clickable .svgblue:hover{fill:#1C4D73;transition: 1s;}
+.svgred{fill: #C80000;}
+.clickable .svgred:hover{fill: #970000; transition:1s;}
+.svgredstroke{stroke: #C80000;}
+.svgblue{fill: #2D81C4;}
+.svgroyalblue{fill: #1222b1;}
+.svgroyalbluestroke{stroke: #1222b1;}
+.svgpurple{fill: #684e9d;}
+.svgpurplestroke{stroke: #684e9d;}
+.clickable .svgpurple:hover{fill: #433264;transition:1s;}
+.svgpink{fill: #EC2079;}
+.clickable .svgpink:hover{fill: #C71965;transition:1s;}
+.svgyellow{fill:#FBAE17;}
+.clickable .svgyellow:hover{fill:#d8870d;transition:1s;}
+.svggreen{fill: #00B473;}
+.clickable .svggreen:hover{fill: #008F5B;transition:1s;}
+.svgorange{fill: #F26322;}
+.clickable .svgorange:hover{fill: #B33C06;transition:1s;}
+
+.ctext{fill:white; font-family:'raleway'; font-weight: bold; font-size:17.5px;}
+.ctitle{fill:black; font-family:'raleway'; font-weight: bold; font-size:31px;}
+.cstroke{fill:none;stroke:#969696;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.cstrokegreen{fill:none;stroke:#00B473;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+
+/* removes mouse pointer over prevention to permanency chart */
+.ctext{
+  pointer-events: none;
+}
+
+svg a,
+svg a:hover {
+ text-decoration: none;
+}

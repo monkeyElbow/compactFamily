@@ -1,0 +1,20 @@
+// import { Link } from "react-router-dom";
+import { Container } from "react-bootstrap";
+
+import BannerCompaCareTraining from "./components/BannerCompaCareTraining";
+
+import CompaCareCourseRegisterForm from './components/compaCareTrainingRegisterForm'
+
+const compaCareRegister = () => {
+    return(
+        <>
+<BannerCompaCareTraining />
+
+<Container>
+          <CompaCareCourseRegisterForm />
+        </Container>
+        </>
+    )
+}
+
+export default compaCareRegister;
