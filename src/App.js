@@ -79,7 +79,7 @@ import MenuMain from "./components/MenuMain";
 import Banner from "./components/Banner";
 import PlannedGiving from "./pages/PlannedGivingPage";
 
-import gc21 from "./pages/gc21";
+import gc21 from "./pages/gc21/gc21";
 import isaiah58offering from "./pages/isaiah58offering";
 import isaiah58Sermon from "./pages/isaiah58Sermon";
 import hostFamilies from "./pages/host-families";
