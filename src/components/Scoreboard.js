@@ -1,6 +1,15 @@
 import { Row, Col, Container } from "react-bootstrap";
 // import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
+
 
 import CompactLogo from "../graphics/CompactLogo";
 
@@ -46,6 +55,21 @@ const Scoreboard = () => {
   
      return(
          <>
+
+{/* <CarouselProvider
+        naturalSlideWidth={100}
+        naturalSlideHeight={30}
+        totalSlides={5}
+        interval={4000}
+        isPlaying={false}
+        touchEnabled={true}
+        >
+        <Slider>
+        <Slide index={0}>
+        slide content
+        </Slide>
+      </Slider> */}
+      {/* </CarouselProvider> */}
           <Container
             fluid
             className="p-5 d-flex justify-content-center bg-green text-white"
@@ -53,25 +77,25 @@ const Scoreboard = () => {
 
 
               <div className="text-center">
-              <h1 
-              className="display-4 mb-3" 
+              <h2 
+              className="mb-3" 
               style={{lineHeight: "1em"}}>
                 <strong>
 
                 Hillcrest Children's Home
                 </strong>
-                </h1>
+                </h2>
 
               <h5 className="my-4">Hillcrest Children’s Home rests on a 52-acre campus with 8 cottages and a 24-apartment center for foster youth preparing for adult living.</h5>
              
              {scores && (<div>
-              <h2>
+              <h4>
               <strong>
                 <span>{scores.page.scores.hillcrest} </span> 
                  kids served in residential
                 programs since January!
               </strong>
-              </h2>
+              </h4>
 
  </div>)}
 
@@ -83,6 +107,7 @@ const Scoreboard = () => {
             </div>
 
           </Container>
+
 
 
             {/* {scores.post.scores.highlandsScore} */}

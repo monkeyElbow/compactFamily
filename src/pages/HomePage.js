@@ -21,7 +21,7 @@ const HomePage = () => {
   return (
     <>
 {/* <HomeBrandBanner /> */}
-      <HomeCarousel />
+      {/* <HomeCarousel /> */}
       <Scoreboard />
 <YouTubeEmbed embedId="K7X6xwBmEDY" />
 

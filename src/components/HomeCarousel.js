@@ -6,8 +6,8 @@ import {
   ButtonNext,
 } from "pure-react-carousel";
 import { Container} from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+// import { Link } from "react-router-dom";
+// import { useState } from "react";
 
 import "pure-react-carousel/dist/react-carousel.es.css";
 
@@ -59,7 +59,6 @@ import {
         return(
           
           <>
-          {scores.page.scores.hillcrest}
             
                    {scores.page.scores.hillcrest} kids served in residential
                    {scores.page.scores.compacare} compacare               
@@ -89,7 +88,11 @@ import {
               className="bg-green h-100 text-center text-white d-flex align-items-center justify-content-center"
             >
               <div>
-                <h1>Hillcrest Children's Home</h1>
+                <h1>
+                  <strong>
+                  Hillcrest Children's Home
+                  </strong>
+                  </h1>
                 <h5>
                   Care for vulnerable children and youth hillcrest since 1944
                   safe home for maltreated and orphaned children
