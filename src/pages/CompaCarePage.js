@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Container, Col, Row, Image } from "react-bootstrap";
 import CompaCarePhilosophy from "../components/CompaCarePhilosophy";
 import CompaCarePractice from "../components/CompaCarePractice";

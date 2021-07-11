@@ -2,8 +2,8 @@ import {
   CarouselProvider,
   Slider,
   Slide,
-  ButtonBack,
-  ButtonNext,
+  // ButtonBack,
+  // ButtonNext,
 } from "pure-react-carousel";
 import { Container} from "react-bootstrap";
 // import { Link } from "react-router-dom";

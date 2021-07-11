@@ -156,8 +156,8 @@ const highlandsLeader = () => {
             </p>
 
             <p className="text-center">
-              <Link to="/highlands-training">
-                <a className="btn btn-primary">Back to the lessons</a>
+              <Link to="/highlands-training" className="btn btn-primary">
+                Back to the lessons
               </Link>
             </p>
           </div>

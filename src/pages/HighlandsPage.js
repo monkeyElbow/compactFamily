@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card, Image } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const HighlandsPage = () => {

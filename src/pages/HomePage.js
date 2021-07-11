@@ -4,7 +4,6 @@ import "./home.css";
 // import { useState, useEffect } from 'react';
 
 import Scoreboard from "../components/Scoreboard";
-import HomeCarousel from "../components/HomeCarousel";
 // import { Link } from "react-router-dom";
 
 import HomeFeature from "../components/HomeFeature";

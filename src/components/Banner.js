@@ -1,6 +1,6 @@
 // import BG1 from '../images/bg1.jpg';
 import FindLogo from '../graphics/FindLogo';
-import { Row, Col, Container, Image } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';
 import HillcrestLogo from '../graphics/HillcrestLogo';
 import HighlandsLogo from '../graphics/HighlandsLogo'
@@ -11,23 +11,6 @@ import CompactLogo from '../graphics/CompactLogo';
 export function Banner () {
   
 
-// const Styles = {
-//     flex:{
-//         display: 'd-flex',
-//         alignContent: 'center',
-//         justifyDirection: 'column',
-//         justifyContent: 'center',
-
-//     },
-
-//    banner: { backgroundImage: `url(${BG1})`,
-//     backgroundRepeat: 'no-repeat',
-//     backgroundSize: 'cover',
-//     minHeight: '100px',
-//     color:'white',}
-// }
-
-// to access location. 
     let location = useLocation();
     
     return(
@@ -179,19 +162,6 @@ export function Banner () {
 
 
 
-
-
-
-
-    {/* ternary with ? needs ():() */}
-{/* { location.pathname === '/compacare' ? (
-    <div>compacare!!!</div>
-) 
-:
-    (
-        <div>NOT compacare!!</div>
-    )
-} */}
 
 
 </>

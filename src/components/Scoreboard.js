@@ -1,15 +1,5 @@
 import { Row, Col, Container } from "react-bootstrap";
-// import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-} from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.es.css";
-
 
 import CompactLogo from "../graphics/CompactLogo";
 
@@ -56,32 +46,18 @@ const Scoreboard = () => {
      return(
          <>
 
-{/* <CarouselProvider
-        naturalSlideWidth={100}
-        naturalSlideHeight={30}
-        totalSlides={5}
-        interval={4000}
-        isPlaying={false}
-        touchEnabled={true}
-        >
-        <Slider>
-        <Slide index={0}>
-        slide content
-        </Slide>
-      </Slider> */}
-      {/* </CarouselProvider> */}
+
           <Container
             fluid
-            className="p-5 d-flex justify-content-center bg-green text-white"
           >
 
-
-              <div className="text-center">
+<Row>
+  <Col lg={4} md={6} className="p-5 d-flex flex-column justify-content-center bg-green text-white text-center">
+    
               <h2 
               className="mb-3" 
               style={{lineHeight: "1em"}}>
                 <strong>
-
                 Hillcrest Children's Home
                 </strong>
                 </h2>
@@ -96,7 +72,6 @@ const Scoreboard = () => {
                 programs since January!
               </strong>
               </h4>
-
  </div>)}
 
               <Link to="hillcrest" className="btn btn-dark m-3"  role="button">
@@ -104,7 +79,12 @@ const Scoreboard = () => {
                 
               </Link>
        
-            </div>
+
+  </Col>
+  <Col md={6}></Col>
+</Row>
+
+
 
           </Container>
 

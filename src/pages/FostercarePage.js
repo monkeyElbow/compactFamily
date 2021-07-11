@@ -366,14 +366,10 @@ const FostercarePage = () => {
               you need. Fill out the contact form below and a member of our
               Foster Care Department will contact you with more information.{" "}
             </p>
-            <Link              to="/fosterform"
->
-            <a
+            <Link to="/fosterform"
               className="btn btn-dark btn-lg"
-              role="button"
-              >
-              Go to form
-            </a>
+              role="button">
+               Go to form
               </Link>
           </div>
 

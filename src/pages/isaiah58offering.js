@@ -72,11 +72,9 @@ const isaiah58offering = () => {
         </p>
 
         <div className="d-flex justify-content-center">
-          <Link to="/isaiah58sermon">
-            <a className="btn btn-primary">
-              Check out the ISAIAH 58 OFFERING SERMON TEMPLATE
-            </a>
-          </Link>
+          <Link to="/isaiah58sermon" className="btn btn-primary">
+                        Check out the ISAIAH 58 OFFERING SERMON TEMPLATE
+                     </Link>
         </div>
       </Container>
       <Container className="mt-5">

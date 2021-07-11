@@ -52,12 +52,12 @@ const ServePage = () => {
                 full-time employment.
               </p>
               <Link
-                  className="btn btn-dark mt-auto stretched-link" to="/employment">
-                <a
+                  className="btn btn-dark mt-auto stretched-link" to="/employment"
                   role="button"
-                >
+                  >
+                               
                   Go to Employment
-                </a>
+                
               </Link>
             </div>
           </div>
@@ -73,13 +73,9 @@ const ServePage = () => {
                 for box and remove this text from page.
               </p>
               <Link
-                  className="btn btn-dark mt-auto stretched-link" to="/teams">
-                <a
-                  role="button"
-                >
-                  Go to Mission Teams
-                </a>
-              </Link>
+                  className="btn btn-dark mt-auto stretched-link" to="/teams" role="button">
+                                  Go to Mission Teams
+                              </Link>
             </div>
           </div>
 
@@ -93,13 +89,9 @@ const ServePage = () => {
                 create a lasting memory for one of our residents.
               </p>
               <Link
-                  className="btn btn-dark mt-auto stretched-link" to="/host-families">
-                <a
-                  role="button"
-                >
-                  Go to Host Families
-                </a>
-              </Link>
+                  className="btn btn-dark mt-auto stretched-link" to="/host-families"     role="button">
+                                 Go to Host Families
+                            </Link>
             </div>
           </div>
 
@@ -115,12 +107,8 @@ const ServePage = () => {
               </p>
               <Link
                   className="btn btn-dark mt-auto stretched-link" 
-                  to="/volunteer">
-                <a
-                  role="button"
-                >
+                  to="/volunteer" role="button">
                   Go to Volunteer
-                </a>
               </Link>
             </div>
           </div>

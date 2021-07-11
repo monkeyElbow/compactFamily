@@ -1,4 +1,4 @@
-import { Container, Row, Card, Image } from "react-bootstrap";
+import { Container, Row, Card } from "react-bootstrap";
 import BrandPalette from "../components/BrandPalette";
 import CompactLogo from "../graphics/CompactLogo";
 
