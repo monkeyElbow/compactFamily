@@ -230,3 +230,15 @@ color: #919191;
 
 /* compacare rep */
 .compacarerep{fill:#000000;font-size:40px;letter-spacing:-1;font-weight: bold;}
+
+
+.compactHome{
+	background-color: #2D81C4;
+		background: url("https://compact.family/images/compactHome.jpg") no-repeat center center;
+		color: white;
+     -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+        -webkit-background-size: cover;
+
+}

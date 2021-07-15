@@ -19,7 +19,7 @@ const HomeAnnouncements = () => {
 
   const QUERY_ANNOUNCEMENTS = gql`
   query AllAnnouncements {
-    posts(where: {orderby: {field: DATE, order: DESC}, categoryName: "announcements"}) {
+    posts(first:4, where: {orderby: {field: DATE, order: DESC}, categoryName: "announcements"}) {
       edges {
         node {
           featuredImage {
@@ -30,8 +30,6 @@ const HomeAnnouncements = () => {
           }
           slug
           title
-          excerpt
-          content
           databaseId
           date
           id
@@ -39,6 +37,7 @@ const HomeAnnouncements = () => {
       }
     }
   }
+  
   `;
 
 const AnnouncementList = () => {

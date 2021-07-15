@@ -8,7 +8,7 @@ import Scoreboard from "../components/Scoreboard";
 
 import HomeFeature from "../components/HomeFeature";
 
-// import HomeBrandBanner from "../components/HomeBrandBanner";
+import HomeBrandBanner from "../components/HomeBrandBanner";
 
 import YouTubeEmbed from "../components/youTubeEmbed";
 
@@ -19,7 +19,7 @@ const HomePage = () => {
 
   return (
     <>
-{/* <HomeBrandBanner /> */}
+<HomeBrandBanner />
       {/* <HomeCarousel /> */}
       <Scoreboard />
 <YouTubeEmbed embedId="K7X6xwBmEDY" />
