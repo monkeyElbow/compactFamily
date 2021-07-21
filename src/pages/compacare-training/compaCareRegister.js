@@ -6,6 +6,8 @@ import BannerCompaCareTraining from "./components/BannerCompaCareTraining";
 import CompaCareCourseRegisterForm from './components/compaCareTrainingRegisterForm'
 
 const compaCareRegister = () => {
+    document.title = "CompaCare Training Register"
+
     return(
         <>
 <BannerCompaCareTraining />

@@ -5,6 +5,8 @@ import FosterCareLogo from "../graphics/FosterCareLogo";
 import {Link} from 'react-router-dom';
 
 const FostercarePage = () => {
+  document.title = "COMPACT Foster Care"
+
   return (
     <>
     

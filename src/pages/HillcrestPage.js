@@ -2,6 +2,8 @@ import ResponsiveEmbed from "react-responsive-embed";
 import { Container, Col, Row, Image } from "react-bootstrap";
 
 const HillcrestPage = () => {
+  document.title = "Hillcrest"
+
   return (
     <>
           <Container fluid className="photoblue py-0 my-0 text-center rounded-0">

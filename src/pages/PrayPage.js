@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import { Col, Row, Container, Image } from "react-bootstrap";
 
 const PrayPage = () => {
+  document.title = "COMPACT Pray"
+
   return (
     <>
       <Container fluid className="photoblue m-0">

@@ -1,6 +1,8 @@
 import {Container, Image} from 'react-bootstrap'
 
 const GiveGifts = () => {
+  document.title = "COMPACT Gifts"
+
     return(
         <>
  <Container fluid className="photoblue">

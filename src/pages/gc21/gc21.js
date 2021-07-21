@@ -5,12 +5,14 @@ import Putt from './Putt'
 import RingToss from './RingToss'
 
 export const gc21 = () => {
-    // document.title = "hi bingo"
+    document.title = "GC21"
+
+
     return (
         <>
            <Container fluid className="p-5 bg-blue text-white text-center">
 <h1>
-    We are on Mis21on and invite you to partner with us.
+    We are on MIS21ON and invite you to partner with us.
 </h1>
 
 <p className="lead">
@@ -37,8 +39,7 @@ Stop by booth #961, as we have GOLF, GOALS AND GOODIES for the entire family.
 Swing by for a chance to putt your way into the history books! Well sort of… Stop by our par
 one hole for a chance to win a $100 gift card or Brooklyn Nets basketball Jersey. Simply make a
 hole-in-one to be entered for a chance to win a jersey. Every contestant receives a regulation
-size COMP<strong>ACT</strong>
-golf ball, slap on the back and a “Great Putt” by one of our team members,
+size COMP<strong>ACT</strong> golf ball, slap on the back and a “Great Putt” by one of our team members,
 (even if you miss).
 </p>
 
@@ -57,8 +58,11 @@ claimed at our booth, between 1-3pm on Friday.
 
 <Container className="my-5">
 <h2>
-Youth (Middle and High School)
+Youth 
 </h2>
+<p className="lead">
+(Middle and High School)
+</p>
 </Container>
 
 
@@ -82,11 +86,21 @@ Youth (Middle and High School)
 </Container>
 
 <Container className="my-5">
+    <h5>
 Winners notified via Instagram, so make sure you…
-Follow us on Instagram @CompactFamilyServices
-Post a picture with your officially licensed miniature COMP<strong>ACT</strong> basketball
-Tag us
+    </h5>
+    <p>
+Follow us on Instagram @CompactFamilyServices.
+    </p>
+    <p>
+Post a picture with your officially licensed miniature COMP<strong>ACT</strong> basketball.
+    </p>
+    <h4>
+Tag us.
+    </h4>
+    <p>
 Prizes must be picked up at our booth, between 1-3pm on Friday.
+    </p>
 </Container>
 
 
@@ -152,9 +166,10 @@ Participant Workbook - $20.
     addition to the CompaCare manual. Compacare equips a church for reaching the most
     vulnerable in their community. A certificate of completion is awarded upon completion.
 </p>
-    
+    <p>
+
     Conference Rate for the complete training system - $35.
-“How COMP<strong>ACT</strong> Is Making A Difference?”
+    </p>
 </Container>
 
 

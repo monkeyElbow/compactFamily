@@ -3,6 +3,8 @@
 // import { Container, Row, Col } from "react-bootstrap";
 
 const ArticlePage = () => {
+  document.title = "COMPACT"
+
   // const { id, title, body } = useParams();
   // const {
   //   data: training,

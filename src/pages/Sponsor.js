@@ -1,6 +1,8 @@
 import { Container, Image } from "react-bootstrap";
 
 const Sponsor = () => {
+  document.title = "COMPACT Sponsor"
+
   return (
     <>
       <div className="jumbotron-fluid photoblue">

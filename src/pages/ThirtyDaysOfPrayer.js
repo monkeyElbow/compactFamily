@@ -1,6 +1,8 @@
 import { Container } from "react-bootstrap";
 
 const ThirtyDaysPrayer = () => {
+  document.title = "30 Days of Prayer"
+
   return (
     <Container className="p-3">
       <h2>30 DAYS OF PRAYER FOR COMPACT</h2>

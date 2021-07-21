@@ -5,6 +5,8 @@ import BannerCompaCareTraining from "./components/BannerCompaCareTraining";
 
 
 const compaCareTrainingSessions = () => {
+  document.title = "CompaCare Session 5"
+
     return(
         <>
 <BannerCompaCareTraining />

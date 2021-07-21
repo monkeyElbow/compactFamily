@@ -6,6 +6,8 @@ Image
 } from "react-bootstrap";
 
 const LeadershipPage = () => {
+  document.title = "COMPACT Leadership"
+
   return (
     <>
      <Container className="my-4 blue">

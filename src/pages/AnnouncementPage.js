@@ -12,6 +12,8 @@ import { node } from "prop-types";
 
 
 const AnnouncementPage = ({match: { params: { id } } }) => {
+  document.title = "COMPACT Announcements"
+
 
   const client = new ApolloClient({
     uri: 'https://www.compact.family/wpapi/graphql/',

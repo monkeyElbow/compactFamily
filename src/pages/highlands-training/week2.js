@@ -9,6 +9,8 @@ import HighlandsTrainingLink from "./components/HighlandsTrainingLink";
 import HighlandsWorkBookBlock from "./components/HighlandsWorkbookBlock";
 
 const week2 = () => {
+  document.title = "Highlands Training 2"
+
     return(
         <>
 

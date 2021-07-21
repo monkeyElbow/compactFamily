@@ -3,7 +3,13 @@
 // import articleContent from './article-content';
 import ArticleTrainingList from '../components/ArticleTrainingList'
 
-const ArticleListPage = () => (
+const ArticleListPage = () => {
+  document.title = "COMPACT Articles"
+
+
+return (
+
+    
     <>
 
 
@@ -25,6 +31,7 @@ const ArticleListPage = () => (
 
 
     </>
-);
+    )
+};
 
 export default ArticleListPage;

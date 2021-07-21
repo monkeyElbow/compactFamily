@@ -10,6 +10,8 @@ import ContactToSheet from "../components/ContactToSheet";
 import ContactAddress from "../components/ContactAddress"
 
 const ContactUs = () => {
+  document.title = "COMPACT Contact Us"
+
   return (
     <>
       <Container fluid className="photoblue px-2 mt-0 pt-4">

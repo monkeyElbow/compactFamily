@@ -7,7 +7,6 @@ function HillcrestLogo({color}) {
       width="100%"
       height="100%"
       viewBox="0 0 1515 1080"
-      className="svgwhite"
     >
       <g fill={color}>
 

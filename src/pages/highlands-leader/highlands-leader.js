@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { Container, Image, Col, Row } from "react-bootstrap";
 
 const highlandsLeader = () => {
+  document.title = "Highlands Leader"
+
     return(
         <>
 <BannerHighlandsLeader />

@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
 import { Container, Col, Row, Image } from 'react-bootstrap';
 
-const NotFoundPage = () => (
+const NotFoundPage = () => {
+  document.title = "Page Not Found"
+
+  return (
+
 <>
 <Container fluid className="photoblue">
           <Row>
@@ -77,6 +81,8 @@ const NotFoundPage = () => (
           </div>
         </Container>
 </>
-)
+  )
+}
+
 
 export default NotFoundPage

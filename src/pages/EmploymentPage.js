@@ -10,6 +10,8 @@ import {
 } from "@apollo/client";
 
 const EmploymentPage = () => {
+  document.title = "COMPACT Employment"
+
 
 
   const client = new ApolloClient({

@@ -13,6 +13,8 @@ import JobApplyButton from "../components/JobApplyButton";
 import JobHomeButton from "../components/JobHomeButton";
 
 const JobPage = (props) => {
+  document.title = "COMPACT Employment"
+
 
   const client = new ApolloClient({
     uri: 'https://www.compact.family/wpapi/graphql/',
@@ -32,6 +34,7 @@ const JobPage = (props) => {
   `;
 
   const ShowJob = () => {
+    
     const { loading, error, data: job } = useQuery(QUERY_JOB);
     if (loading) return "Loading...";
     if (error) return `Error! ${error.message}`;

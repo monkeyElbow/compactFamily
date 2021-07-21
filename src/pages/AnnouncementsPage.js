@@ -10,6 +10,8 @@ import {
 import Moment from 'react-moment';
 
 const AnnouncementsPage = () => {
+  document.title = "COMPACT Announcements"
+
 
 
   const client = new ApolloClient({

@@ -6,6 +6,8 @@ import {Link} from "react-router-dom";
 import BannerHighlandsTraining from "./components/bannerHighlandsTraining";
 
 export default function highandsConnect() {
+  document.title = "Highlands Training"
+
   return (
     <>
     <BannerHighlandsTraining />

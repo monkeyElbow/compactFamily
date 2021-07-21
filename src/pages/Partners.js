@@ -1,6 +1,8 @@
 import { Container } from "react-bootstrap";
 
 const Partners = () => {
+  document.title = "COMPACT Partners"
+
   return (
     <>
       <Container fluid className="text-center my-0 bg-light py-3">

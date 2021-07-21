@@ -1,17 +1,26 @@
-import { useRef, useEffect } from 'react'
+import { useEffect } from 'react'
 
-function PageTitle(title, prevailOnUnmount = false) {
-    const defaultTitle = useRef(document.title);
 
-    useEffect(() => {
-        document.title = title;
-    }, [title])
+export default function PageTitle(title) {
+    document.title = title;
 
-    useEffect(() => {
-        if (!prevailOnUnmount) {
-            document.title = defaultTitle.current;
-        }
-    }, [])
+    // useEffect(() => {
+    //     document.title = title;
+    // }, [title])
 }
 
-export default PageTitle
+
+// function PageTitle(title, prevailOnUnmount = false) {
+//     const defaultTitle = useRef(document.title);
+
+//     useEffect(() => {
+//         document.title = title;
+//     }, [title])
+
+//     useEffect(() => {
+//         if (!prevailOnUnmount) {
+//             document.title = defaultTitle.current;
+//         }
+//     }, [])
+// }
+

@@ -5,6 +5,8 @@ import { Container, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const ServePage = () => {
+  document.title = "COMPACT Serve"
+
   return (
     <>
       <Container fluid className="photoblue">

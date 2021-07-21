@@ -1,6 +1,8 @@
 import {Link} from "react-router-dom";
 
 export default function fosterform() {
+  document.title = "COMPACT Foster Form"
+
   return (
       <>
       <div className="text-center my-3">

@@ -1,31 +1,24 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 
 export default function NewsletterSignUp() {
+
     
-    
-    const [loaded, setLoaded] = useState(false);
-    
-    const useScript = url => {
         useEffect(() => {
             const script = document.createElement('script');
-            var
-    _ctct_m="37e4abe786bb2cc6f898f95304186ae0"
+            script._ctct_m="37e4abe786bb2cc6f898f95304186ae0"
             script.src = "//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js"
             script.id="signupScript"
             script.async = true;
             script.defer = true;
-        script.addEventListener('load', ()=>setLoaded(true));
     
             document.body.appendChild(script);
             return () => {
                 document.body.removeChild(script);
             };
-        }, [url])
-    }
+        }, [])
+    
 
-
-
-const signUpCode = `
+const SignUpCode = `
 
 <div
     className="ctct-inline-form"
@@ -35,9 +28,8 @@ const signUpCode = `
 
     return (
         <>
-             {loaded ? 'Script loaded' : 'script not loaded'}
 
-<div dangerouslySetInnerHTML={{__html: signUpCode}} />
+<div dangerouslySetInnerHTML={{__html: SignUpCode}} />
 
         </>
     )

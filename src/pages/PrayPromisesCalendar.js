@@ -1,6 +1,8 @@
 import { Container } from "react-bootstrap";
 
 const PrayPromises = () => {
+  document.title = "COMPACT Pray the Promises"
+
   return (
     <Container className="py-5">
       <h4>Pray the Promises Calendar</h4>

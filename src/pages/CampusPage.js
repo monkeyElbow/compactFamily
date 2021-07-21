@@ -1,6 +1,8 @@
 import { Container, Image } from "react-bootstrap";
 
 const CampusPage = () => {
+  document.title = "COMPACT Campus"
+
     return(
         <>
 

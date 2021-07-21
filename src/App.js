@@ -65,7 +65,6 @@ import newsletter from "./pages/newsletter";
 
 import Brand from "./pages/Brand";
 
-import AboutPage from "./pages/AboutPage";
 import ArticlePage from "./pages/ArticlePage";
 import ArticleListPage from "./pages/ArticlesListPage";
 
@@ -85,6 +84,7 @@ import isaiah58Sermon from "./pages/isaiah58Sermon";
 import hostFamilies from "./pages/host-families";
 
 function App() {
+
   return (
     <Router>
       <ScrollToTop />
@@ -267,8 +267,6 @@ function App() {
             />
 
             <Route exact path="/brand" component={Brand} />
-
-            <Route path="/about" component={AboutPage} />
 
 {/* seasonal or temporary pages */}
             <Route path="/gc21" component={gc21} />

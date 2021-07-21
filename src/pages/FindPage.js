@@ -1,6 +1,8 @@
 import { Container, Image } from "react-bootstrap";
 
 const FindPage = () => {
+  document.title = "COMPACT FIND"
+
   return (
     <>
       <Container

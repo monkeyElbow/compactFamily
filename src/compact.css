@@ -85,9 +85,9 @@ strong{font-weight: 800}
 /*Background brand colors */
 .bg-red{background-color:  var(--red);}
 
-/* brand bg links to white */
+/* brand bg links */
 .bg-red a, .bg-blue a, .bg-green a, .bg-pink a, .bg-orange a, .bg-purple a
-{color:white;text-decoration: none;}
+{text-decoration: none;}
 
 /* clickable brand colors animate on hover */
 .clickable:hover{

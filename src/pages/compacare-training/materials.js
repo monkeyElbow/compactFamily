@@ -4,6 +4,8 @@ import { Container } from "react-bootstrap";
 import BannerCompaCareTraining from "./components/BannerCompaCareTraining";
 
 const CompaCareTrainingMaterials = () => {
+  document.title = "CompaCare Materials"
+
     return(
         <>
 <BannerCompaCareTraining />

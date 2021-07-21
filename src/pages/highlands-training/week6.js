@@ -8,6 +8,8 @@ import HighlandsTrainingLink from "./components/HighlandsTrainingLink";
 import HighlandsWorkBookBlock from "./components/HighlandsWorkbookBlock";
 
 const week6 = () => {
+  document.title = "Highlands Training Week 6"
+
     return(
         <>
 <BannerHighlandsTraining />

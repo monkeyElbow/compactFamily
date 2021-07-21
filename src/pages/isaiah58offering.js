@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 
 
 const isaiah58offering = () => {
+  document.title = "COMPACT Isaiah 58 Offering"
+
   return (
     <>
       <Container>
@@ -53,6 +55,8 @@ const isaiah58offering = () => {
 
 
       <Container fluid className="bg-blue text-white p-5">
+        <Container>
+
         <p className="h2">WHAT IS AN ISAIAH 58 OFFERING?</p>
         <p className="lead">
           The ISAIAH 58 OFFERING is based on the teaching and call of the LORD
@@ -62,7 +66,21 @@ const isaiah58offering = () => {
           and His business and on dependent others rather than our
           own pleasure or business.
         </p>
+        </Container>
       </Container>
+
+
+<Container>
+
+<YoutubeEmbed embedId="JHzS2jcYAzE" />
+<p>
+Pastor Mark English of Christian Life Center, Bensalem, PA shares a testimonial message for fellow pastors.
+</p>
+
+</Container>
+
+
+
       <Container className="my-5">
         <p className="h5">WHY AN ISAIAH 58 OFFERING?</p>
         <p>
@@ -132,7 +150,7 @@ const isaiah58offering = () => {
         <h5 class="mt-5"><strong>
     4. Preach Isaiah 58 Sermon
   </strong></h5>
-        <p className="mt-5">
+        <p>
           Preach an ISAIAH 58 OFFERING sermon and hand out prayer cards the
           week prior to the fast. Let your people know that the staff, board and
           leaders will be praying for all the needs listed on the response
@@ -257,8 +275,10 @@ const isaiah58offering = () => {
         />
       </Container>
 
-      <Container className="text-center">
-        <Isaiah58Logo />
+      <Container className="d-flex justify-content-center">
+        <div className="w-50">
+        <Isaiah58Logo color="var(--blue)" />
+        </div>
       </Container>
       <Container>
         <p className="lead">

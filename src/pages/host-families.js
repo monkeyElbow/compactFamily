@@ -1,6 +1,8 @@
 import {Image} from "react-bootstrap";
 
 export default function hostFamilies() {
+  document.title = "COMPACT Host Families"
+
   return (
     <>
       <div className="container">

@@ -4,6 +4,8 @@ import { SocialLineup } from "../components/SocialLineup";
 import { Link } from "react-router-dom";
 
 const PlannedGiving = () => {
+  document.title = "COMPACT Planned Giving"
+
   return (
     <>
       <Container fluid className="photoblue m-0">

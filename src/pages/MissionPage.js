@@ -5,6 +5,8 @@ import { useSpring } from "react-spring";
 import "../svg.css";
 
 const MissionPage = () => {
+  document.title = "COMPACT Mission"
+
   const props = useSpring({ opacity: 1, from: { opacity: 0 } });
 
   return (

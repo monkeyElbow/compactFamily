@@ -1,12 +1,8 @@
-// import {Form, Text, TextArea} from 'informed'
 import {useState} from 'react'
-
-
-
 
 export default function CompaCareInterestForm() {
 
-    const [postDate, setPostDate] = useState(new Date());
+    const [postDate] = useState(new Date());
 
 const [formData, setFormData] = useState({});
     const [message, setMessage] = useState("");

@@ -1,4 +1,5 @@
 // import { Link } from "react-router-dom";
+// import { useEffect } from 'react'
 import { Container, Col, Row, Image } from "react-bootstrap";
 import CompaCarePhilosophy from "../components/CompaCarePhilosophy";
 import CompaCarePractice from "../components/CompaCarePractice";
@@ -6,6 +7,8 @@ import CompaCarePlan from "../components/CompaCarePlan";
 import CompaCareInterestForm from "../components/CompaCareInterestForm";
 
 const CompaCarePage = () => {
+    document.title = "CompaCare by COMPACT"
+
   return (
     <>
       {/* <a href="compacare-training">compacare training</a> */}

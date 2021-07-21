@@ -4,6 +4,8 @@ import HillcrestLogo from "../graphics/HillcrestLogo";
 import BoldBeginning from "../components/BoldBeginning";
 
 const HistoryPage = () => {
+  document.title = "COMPACT History"
+
     return(
 
         <>

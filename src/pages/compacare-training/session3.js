@@ -7,6 +7,8 @@ import YoutubeEmbed from "../../components/youTubeEmbed";
 
 
 const compaCareTrainingSession3 = () => {
+  document.title = "CompaCare Session 3"
+
     return(
         <>
 <BannerCompaCareTraining />

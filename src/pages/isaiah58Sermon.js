@@ -2,6 +2,8 @@ import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const isaiah58Sermon = () => {
+  document.title = "COMPACT Isaiah 58 Offering"
+
   return (
     <>
       <Container>

@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import { Container, Row, Col, Image } from "react-bootstrap";
 
 const GivePage = () => {
+  document.title = "COMPACT Give"
+
   return (
     <>
       <Container fluid className="photoblue m-0">

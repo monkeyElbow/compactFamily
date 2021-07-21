@@ -1,6 +1,8 @@
 import { Container, Image } from "react-bootstrap";
 
 const SafecarePage = () => {
+  document.title = "COMPACT SafeCare"
+
   return (
     <>
       <Container fluid className="text-center mb-0 photoblue py-0 purple">

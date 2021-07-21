@@ -30,6 +30,8 @@ const SpecialProjects = () => {
    `;
 
   const Projects = () => {
+  document.title = "COMPACT Special Projects"
+
     const { loading, error, data: projects } = useQuery(GET_PROJECTS);
   
     if (loading) return "Loading...";

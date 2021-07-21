@@ -15,6 +15,7 @@ import YouTubeEmbed from "../components/youTubeEmbed";
 
 
 const HomePage = () => {
+  document.title = "COMPACT Family"
 
 
   return (

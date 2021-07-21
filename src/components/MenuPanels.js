@@ -34,7 +34,7 @@ const MenuThree = () => {
 <Link to="/announcements">Announcements</Link>
 <Link to="/partners">Partners</Link>
 <Link to="/products">Products</Link>
-<Link to="/newsletter">Newsletter</Link>
+{/* <Link to="/newsletter">Newsletter</Link> */}
 <Link to="/brand">Brand</Link>
         </>
     )

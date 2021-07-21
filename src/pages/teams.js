@@ -1,6 +1,8 @@
 import {Image} from "react-bootstrap";
 
 export default function teams() {
+  document.title = "COMPACT Teams"
+
   return (
       <>
       <div className="jumbotron m-0">

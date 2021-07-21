@@ -1,6 +1,8 @@
 import {Image} from "react-bootstrap";
 
 export default function volunteer() {
+  document.title = "COMPACT Volunteer"
+
   return (
     <>
       <div className="container">

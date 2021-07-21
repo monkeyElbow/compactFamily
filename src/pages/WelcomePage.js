@@ -4,6 +4,8 @@ import Continuum from "../components/Continuum";
 
 
 const WelcomePage = () => {
+  document.title = "Welcome to COMPACT"
+
   let monthNumber = new Date().getMonth();
   let monthNames = [
     "January",

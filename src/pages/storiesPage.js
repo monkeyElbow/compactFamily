@@ -1,6 +1,8 @@
 import { Container, Image } from "react-bootstrap";
 
 const storiesPage = () => {
+  document.title = "COMPACT Stories"
+
   return (
     <>
       <Container className="jumbotron-fluid text-center blue my-0">

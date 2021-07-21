@@ -2,6 +2,8 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const HighlandsPage = () => {
+  document.title = "Highlands"
+
   return (
     <>
       <Container fluid className="my-0 photoblue">
