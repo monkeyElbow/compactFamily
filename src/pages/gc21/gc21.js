@@ -37,8 +37,8 @@ Stop by booth #961, as we have GOLF, GOALS AND GOODIES for the entire family.
 <Col md={8} className="col-md-8 d-flex align-items-center justify-content-center text-center">
 <p>
 Swing by for a chance to putt your way into the history books! Well sort of… Stop by our par
-one hole for a chance to win a $100 gift card or Brooklyn Nets basketball Jersey. Simply make a
-hole-in-one to be entered for a chance to win a jersey. Every contestant receives a regulation
+one hole for a chance to win a $100 gift card. Simply make a
+hole-in-one to be entered for a chance to win. Every contestant receives a regulation
 size COMP<strong>ACT</strong> golf ball, slap on the back and a “Great Putt” by one of our team members,
 (even if you miss).
 </p>
@@ -49,8 +49,8 @@ size COMP<strong>ACT</strong> golf ball, slap on the back and a “Great Putt”
 
 <Container className="my-5">
 <p>
-Drawing for prize to be held on Friday at 1pm. Winners notified by email and text. Prize must be
-claimed at our booth, between 1-3pm on Friday.
+Drawing for prize to be held on Friday at 10am. Winners notified by email and text. Prize must be
+claimed at our booth, between 10am - Noon on Friday.
 </p>
 </Container>
 
@@ -99,7 +99,7 @@ Post a picture with your officially licensed miniature COMP<strong>ACT</strong> 
 Tag us.
     </h4>
     <p>
-Prizes must be picked up at our booth, between 1-3pm on Friday.
+Prizes must be picked up at our booth, between 10am - Noon on Friday.
     </p>
 </Container>
 

@@ -1,8 +1,11 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import {Container, Alert} from 'react-bootstrap';
 
 export default function CompaCareCourseRegisterForm() {
   const [formData, setFormData] = useState({});
   const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState(false);
 
   const handleInput = (e) => {
     const copyFormData = { ...formData };
@@ -49,8 +52,10 @@ export default function CompaCareCourseRegisterForm() {
       const json = await response.json();
     //   console.log("Success:", JSON.stringify(json));
       setMessage("Success! Thanks for your registering.");
+        setSuccess(true)
+
     } catch (error) {
-      console.error("Error:", error);
+      // console.error("Error:", error);
       setMessage("Error");
     }
   };
@@ -162,7 +167,24 @@ onChange={handleInput}
         >
           Register
         </button>
-        {message}
+
+        {success && 
+        <div>
+        <Container>
+<Alert variant="success">
+<p>
+          {message}
+</p>
+        <Link to="/compacare-training-sessions">
+          <strong>
+          Go to training sessions
+          </strong>
+          </Link>
+</Alert>
+        </Container>
+
+        </div>
+        }
       </form>
     </div>
   );

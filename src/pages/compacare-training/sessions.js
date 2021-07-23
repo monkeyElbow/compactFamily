@@ -5,18 +5,12 @@ import BannerCompaCareTraining from "./components/BannerCompaCareTraining";
 
 
 const compaCareTrainingSessions = () => {
-  document.title = "CompaCare Session 5"
+  document.title = "CompaCare Sessions"
 
     return(
         <>
 <BannerCompaCareTraining />
 
-<Container
-          fluid
-          className="text-white p-5 d-flex align-items-center justify-content-center bg-red"
-        >
-          <h4>CHURCH LEADERS' COMPACARE TRAINING</h4>
-        </Container>
         <Container id="videos" className="d-flex flex-column my-5">
           <Link href="/#" to="/compacare-training-session-1" className="btn btn-secondary m-2">
               Video 1: Introduction to CompaCare (49:30)

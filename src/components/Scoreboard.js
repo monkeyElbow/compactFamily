@@ -250,6 +250,11 @@ const Scoreboard = () => {
                 dangerouslySetInnerHTML={{ __html: scores.page.content }}
               ></p>
 
+<small>
+  The COMP<strong>ACT</strong> Scoreboard is a measurement of
+  its redeeming compassionate action for vulnerable children and
+  families.
+</small>
             </Col>
 
 
@@ -258,13 +263,7 @@ const Scoreboard = () => {
 
 <Container className="text-center py-3">
 
-<small>
-  The COMP<strong>ACT</strong> Scoreboard is a measurement of
-  its redeeming compassionate action for vulnerable children and
-  families.
-</small>
 
-<br />
 
 <small>
 <em>

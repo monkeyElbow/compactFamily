@@ -22,12 +22,7 @@ const HomeAnnouncements = () => {
     posts(first:4, where: {orderby: {field: DATE, order: DESC}, categoryName: "announcements"}) {
       edges {
         node {
-          featuredImage {
-            node {
-              srcSet
-              sourceUrl(size: THUMBNAIL)
-            }
-          }
+          
           slug
           title
           databaseId
@@ -53,9 +48,12 @@ const AnnouncementList = () => {
              {/* <p>id: {node.id}</p>
              <p>databaseId:{node.databaseId}</p> */}
                   
-           <Moment format="MM/DD/YYYY">
+           
+              <p>{node.date}</p>
+           <Moment format="MM-DD-YYYY">
               <p>{node.date}</p>
            </Moment>
+         
               <h5>{node.title}</h5>
             {/* <div dangerouslySetInnerHTML={{ __html: node.excerpt }}></div> */}
               </Link>

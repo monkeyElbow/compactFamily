@@ -1,13 +1,11 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
 // import NumberFormat from "react-number-format";
-import { useSpring } from "react-spring";
 // import { Link } from "react-router-dom";
 import "../svg.css";
 
 const MissionPage = () => {
   document.title = "COMPACT Mission"
 
-  const props = useSpring({ opacity: 1, from: { opacity: 0 } });
 
   return (
     <>
@@ -107,7 +105,6 @@ const MissionPage = () => {
             id="prefix__usmap"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1685.11 1080"
-            {...props}
           >
             <style>
               {".prefix__st1{fill:#fff}.prefix__st3{font-size:68.307px}"}

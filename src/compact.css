@@ -7,15 +7,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
 
 :root {
-    --red: #C80000;
-    --blue: #2D81C4;
-    --green: #00B473;
-    --pink:#EC2079;
-    --orange: #F26322;
-    --purple: #684e9d;
-    --yellow: #FBAE17;
-    --body-fonts: 'Inter', 'Poppins',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --red: #C80000;
+  --blue: #2D81C4;
+  --green: #00B473;
+  --pink:#EC2079;
+  --orange: #F26322;
+  --purple: #684e9d;
+  --yellow: #FBAE17;
+  --body-fonts: 'Inter', 'Poppins',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -39,7 +43,7 @@ strong{font-weight: 800}
       color: var(--blue);
     }
 
-    /* social icons in navigation */
+    /* links */
 
     a {
       color: inherit;
@@ -47,26 +51,14 @@ strong{font-weight: 800}
     }
     
     a:hover {
-      color: grey;
-      transition: 2s;
+      color: #999;
+      transition: 1s;
     }
 
     .social{
       display: flex;
     }
 
-  a.SocialStyle{
-    color:white
-  }
-
-  .SocialStyle:hover{
-    color:grey;
-    transition: .5s;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
 
   /*change global colors to brand */
 .blue{color: var(--blue);}
@@ -83,7 +75,6 @@ strong{font-weight: 800}
 
 
 /*Background brand colors */
-.bg-red{background-color:  var(--red);}
 
 /* brand bg links */
 .bg-red a, .bg-blue a, .bg-green a, .bg-pink a, .bg-orange a, .bg-purple a
@@ -96,6 +87,7 @@ strong{font-weight: 800}
   transition:.5s;
 }
 
+.bg-red{background-color:  var(--red);}
 .clickable.bg-red:hover{background-color: #970000; fill:#970000;}
 
 .bg-green{background-color: var(--green);}
@@ -117,18 +109,20 @@ strong{font-weight: 800}
 .bg-yellow a{color:white;text-decoration: none;}
 .clickable.bg-yellow:hover{background-color:#d8870d;}
 
-#footer a{
-  text-decoration: none;
+
+#reverse a{
+  /* text-decoration: none; */
 }
-#footer{
+#reverse{
   color: white;
 }
 
-#footer a:hover{
-color: #919191;
+#reverse a:hover{
+color: #999;
   transition: .5s;
 }
 
+/* for svg reverse fill */
 .svgwhite {
   fill:white;
 }

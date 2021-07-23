@@ -14,7 +14,7 @@ const Footer = () => {
 <Container fluid className="bg-dark p-0 mt-0">
       </Container>
 
-      <Container fluid id="footer" className="bg-dark py-2">
+      <Container fluid id="reverse" className="bg-dark py-2">
 <div className="d-flex justify-content-center">
 
         <SocialLineup />

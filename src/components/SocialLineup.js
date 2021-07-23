@@ -6,13 +6,7 @@ import { FaYoutube } from "react-icons/fa";
 import "../compact.css";
 
 export const SocialLineup = () => {
-  // const styles = {
-  //   SocialStyle:{
-  //     padding:"0px",
-  //   '& a':{color:'white'},
-  //   '& a:hover':{color:'black'},
-  // },
-  // }
+
   return (
     <div className="p-1">
       <a

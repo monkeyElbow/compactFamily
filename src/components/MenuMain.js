@@ -37,7 +37,7 @@ const MenuMain = () => {
               </div>
             </div> */}
 
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar id="reverse" bg="dark" variant="dark" expand="lg">
       <Navbar.Brand as={Link} to="/">
         COMP<strong>ACT</strong>
       </Navbar.Brand>
@@ -107,9 +107,9 @@ const MenuMain = () => {
             <NavDropdown.Item as={Link} to="/announcements">
               Announcements
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="/newsletter">
+            {/* <NavDropdown.Item as={Link} to="/newsletter">
               Newsletter
-            </NavDropdown.Item>
+            </NavDropdown.Item> */}
             <NavDropdown.Item as={Link} to="/products">
               Products
             </NavDropdown.Item>

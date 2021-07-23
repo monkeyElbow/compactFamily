@@ -5,7 +5,7 @@ export default function PageTitle(title) {
     document.title = title;
 
     // useEffect(() => {
-    //     document.title = title;
+    //     document.title = {title};
     // }, [title])
 }
 
