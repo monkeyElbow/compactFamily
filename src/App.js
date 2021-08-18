@@ -1,3 +1,5 @@
+
+
 import HomePage from "./pages/HomePage";
 import ContactUs from "./pages/ContactPage";
 import WelcomePage from "./pages/WelcomePage";
@@ -70,8 +72,6 @@ import ArticleListPage from "./pages/ArticlesListPage";
 
 import NotFoundPage from "./pages/NotFoundPage";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
 
 import MenuMain from "./components/MenuMain";
 
@@ -83,10 +83,38 @@ import isaiah58offering from "./pages/isaiah58offering";
 import isaiah58Sermon from "./pages/isaiah58Sermon";
 import hostFamilies from "./pages/host-families";
 
+import ScrollToTop from "./components/ScrollToTop";
+
+import ReactGA from 'react-ga'
+import {createBrowserHistory} from 'history'
+import { useEffect } from "react";
+
+
+// am trying to delete browserrouter as, for GA to work
+// remove this double once proven
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+// import { Router, Route, Switch } from "react-router-dom";
+
+
 function App() {
 
+ReactGA.initialize('UA-145080690-2')
+
+  const history = createBrowserHistory()
+  history.listen(location => {
+    ReactGA.set({page: location.pathname});
+    ReactGA.pageview(location.pathname);
+  });
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+   
+  }, [history])
+
   return (
-    <Router>
+    <Router history={history}>
       <ScrollToTop />
       <div className="App">
         <MenuMain />

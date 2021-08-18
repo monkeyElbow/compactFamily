@@ -9,7 +9,9 @@ const CompaCarePhilosophy = () => {
         <h2>The CompaCare Philosophy</h2>
 <Container className="col-lg-6 col-mg-12 my-5">
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720">
+
+
+        <svg viewBox="0 0 720 720">
           <g id="outercircle">
             <path
               className="svgblue"
@@ -136,34 +138,34 @@ const CompaCarePhilosophy = () => {
                 <path
                   d="M44.3,360.1c0-174.5,141.4-315.9,315.9-315.9S676,185.6,676,360.1S534.6,676,360.1,676
                   S44.3,534.5,44.3,360.1z"
-                  id="compassionpath"
+                  id="compath"
                   transform="rotate(0 100 100)"
                   />
               </defs>
 
-              <Text
+              <text
                 x="70%"
                 text-anchor="middle"
                 className="planphase"
-                dy="0"
-                textLength="600"
+                // dy="0"
+                // textLength="600"
                 >
-                {/* <textPath xlink:href="#compassionpath">COMPASSION
+                <textPath href="#compath">COMPASSION
 
-</textPath> */}
-              </Text>
+</textPath>
+              </text>
 
-              <Text
+              <text
                 x="140%"
                 text-anchor="middle"
                 className="planphase"
-                dy="0"
-                textLength="600"
+                // dy="0"
+                // textLength="600"
                 >
-                {/* <textPath xlink:href="#compassionpath">COMMUNITY
+                <textPath href="#compath">COMMUNITY
 
-</textPath> */}
-              </Text>
+</textPath>
+              </text>
             </g>
 
             <g id="textpathcircle2">
@@ -175,17 +177,17 @@ const CompaCarePhilosophy = () => {
                   />
               </defs>
 
-              <Text
+              <text
                 x="70%"
                 text-anchor="middle"
                 className="planphase"
                 dy="22"
-                textLength="600"
+                // textLength="600"
                 >
-                {/* <textPath xlink:href="#communitypath">COMPETENCE
+                <textPath href="#communitypath">COMPETENCE
 
-</textPath> */}
-              </Text>
+</textPath>
+              </text>
             </g>
 
             <g id="textpathcircle3">
@@ -197,30 +199,34 @@ const CompaCarePhilosophy = () => {
                   />
               </defs>
 
-              <Text
+              <text
                 transform="rotate(0 0 0)"
                 x="42%"
                 text-anchor="middle"
                 className="planphase"
                 dx="180"
-                textLength="600"
+                // textLength="600"
                 >
-                {/* <textPath xlink:href="#continuumpath">CONTINUUM
+                <textPath href="#continuumpath">CONTINUUM
   
-</textPath> */}
-              </Text>
+</textPath>
+              </text>
             </g>
           </g>
         </svg>
 
 </Container>
+      </Container>
 
-        <p className="lead text-center">
+      <Container>
+      <p className="text-center">
+          CompaCare<sup>&reg;</sup> Philosophy CompaCare is a local-church based, evidence-informed program that is driven by Biblical values. When you deploy CompaCare you raise foster care quality by increasing the capacity and stability of foster parents.
+        </p>
+        {/* <p className="lead text-center">
           CompaCare<sup>&reg;</sup> mobilizes the church to improve the
           capacity, stability and quality of foster families and other social
           needs.
-        </p>
-
+        </p> */}
       </Container>
     </>
   );

@@ -1,17 +1,15 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import HomeAnnouncements from "./HomeAnnouncements";
-import JobList from "./JobList";
 
 const HomeFeature = () => {
     return(
         <>
 
-<Container fluid>
+<Container fluid className="py-3 bg-dark">
 <Row>
-    <Col lg={6} md={6} className="bg-blue clickable text-center text-white p-5 d-flex justify-content-center align-items-center">
-       <div>
+    <Col lg={6} md={6}>
+       <Card className="bg-blue clickable text-center text-white p-5 d-flex justify-content-center align-items-center" style={{minHeight:"230px"}}>
 
         <h4>
         Your giving is vital to COMP<strong>ACT</strong>'s mission.
@@ -19,11 +17,13 @@ const HomeFeature = () => {
     <Link to="/give">
         <button className="btn btn-dark stretched-link">Find out ways you can give.</button>
     </Link>
-       </div>
+       </Card>
         </Col>
 
 
-    <Col lg={6} md={6} className="bg-pink clickable text-center p-5 px-md-3 px-lg-5 d-flex justify-content-center align-items-center text-white">
+    <Col lg={6} md={6}>
+        <Card className="bg-pink clickable text-center p-5 px-md-3 px-lg-5 d-flex justify-content-center align-items-center text-white" style={{minHeight:"230px"}}>
+
     <div className="newtagwrap">
     <p className="newtag">NEW!</p>
 
@@ -35,43 +35,13 @@ const HomeFeature = () => {
             <button className="btn btn-dark stretched-link">Check it out</button>
 </Link>
     </div>
+        </Card>
     </Col>
 
 
 
 
     
-
-
-
-    <Col lg={6} md={6} className="bg-secondary text-white clickable p-5 text-center">
-
-        <h4>Announcements</h4>
-
-<HomeAnnouncements />
-
-
-<Link to="/announcements">
-<button className="btn btn-dark">Announcements Page</button>
-        </Link>
-
-        </Col>
-
-
-
-{/* <Link to="/employment"> */}
-
-<Col lg={6} md={6} className="bg-blue text-white p-5 text-center">
-
-<h4>Employment Oppurtunities</h4>
-<JobList />
-<br />
-<Link to="/employment">
-<button className="btn btn-light">More careers</button>
-</Link>
-
-</Col>
-{/* </Link> */}
 
 </Row>
 

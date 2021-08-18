@@ -97,6 +97,11 @@ const MenuMain = () => {
             <NavDropdown.Item as={Link} to="serve">
               Serve
             </NavDropdown.Item>
+            <NavDropdown.Item href="https://agfostercare.network"
+             rel="noopener noreferrer"
+             target="_blank">
+              AG Foster Care Network
+            </NavDropdown.Item>
           </NavDropdown>
 
           <NavDropdown title="Resources" id="basic-nav-dropdown">

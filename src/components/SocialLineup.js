@@ -10,8 +10,8 @@ export const SocialLineup = () => {
   return (
     <div className="p-1">
       <a
-        rel="noopener noreferrer"
         className="SocialStyle"
+        rel="noopener noreferrer"
         target="_blank"
         href="https://www.facebook.com/COMPACTFamilyServices/"
       >

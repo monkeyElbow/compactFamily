@@ -27,7 +27,7 @@ const HistoryPage = () => {
         </div>
 
         <div className="w-25">
-          <HillcrestLogo />
+          <HillcrestLogo color="#fff" />
         </div>
 
         <div className="col-sm-10 col-md-8 text-center py-5">

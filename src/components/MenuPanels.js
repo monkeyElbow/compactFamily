@@ -8,7 +8,7 @@ const MenuOne = () => {
 <Link to="/mission">Mission</Link>
 <Link to="/leadership">Leadership</Link>
 <Link to="/campus">The Campus</Link>
-<Link to="/history">History and Future</Link>
+<Link to="/history-and-future">History and Future</Link>
 <Link to="/employment">Employment</Link>
 
 </>
@@ -35,7 +35,7 @@ const MenuThree = () => {
 <Link to="/partners">Partners</Link>
 <Link to="/products">Products</Link>
 {/* <Link to="/newsletter">Newsletter</Link> */}
-<Link to="/brand">Brand</Link>
+{/* <Link to="/brand">Brand</Link> */}
         </>
     )
 }
@@ -44,10 +44,10 @@ const MenuThree = () => {
 const MenuFour = () => {
     return(
         <>
-<Link to="/gifts">Gifts</Link>
+<Link to="/give-gifts">Gifts</Link>
 <Link to="/sponsor">Sponsor</Link>
 <Link to="/special-projects">Special Projects</Link>
-<Link to="/giving">Planned Giving</Link>
+<Link to="/planned-giving">Planned Giving</Link>
 <Link to="/teams">Mission Teams</Link>
 <Link to="/host-families">Host Families</Link>
 <Link to="/volunteer">Volunteer</Link>

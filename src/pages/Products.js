@@ -189,8 +189,8 @@ const Products = () => {
 
 
 
-      <Container fluid className="bg-blue my-0 p-5 vision rounded-0">
-          <h2 className="display-4 text-white">Downloadable Brochures</h2>
+      <Container fluid className="bg-dark my-0 p-5 vision rounded-0">
+          <h2 className="text-white">Downloadable Brochures</h2>
           <p className="text-white">
             Downloadable brochures may be used for individual or group purposes.
             These resources provide additional information regarding each of the
@@ -308,7 +308,7 @@ const Products = () => {
             </Col>
 
 
-            <Col className="p-2">
+            {/* <Col className="p-2">
               <Card>
                 <Card.Img 
                 src="https://compact.family/images/compact_brandmag2020.jpg" />
@@ -327,30 +327,10 @@ const Products = () => {
               </p>
                 </Card.Body>
               </Card>
-            </Col>
+            </Col> */}
 
 
-            <Col className="p-2">
-              <Card>
-
-              <Card.Img
-              src="https://compact.family/images/prayCal.jpg" />
-              <Card.Body>
-              <p>
-                <a
-                  className="lead stretched-link"
-                  href="https://compact.family/download/CompactPrayThePromisesCalendar.pdf"
-                  target="_new"
-                  rel="noopener noreferrer"
-
-                >
-                  Pray the Promises (PDF)
-                </a>
-              </p>
-
-              </Card.Body>
-              </Card>
-            </Col>
+           
 
           </Row>
       </Container>

@@ -74,8 +74,7 @@ Youth
     <Col md={8}>
 
         <p>
-            Make it your goal to try our basketball shot! Line up for a chance to win a Brooklyn Nets
-            Basketball Jersey. Most points (top boy and top girl) at the end of the week wins. Entry limited
+        Make it your goal to try out basketball shot! Line up for a chance to win a basketball signed by #10, Tyler Johnson, guard for the Brooklyn Nets. Most points (top boy and top girl) at the end of the week wins. Entry limited
             to once per day (unless there’s not a long line and you smile big for us). Every participant
             receives an officially licensed miniature COMP<strong>ACT</strong>
             basketball, one per student. (Autographs

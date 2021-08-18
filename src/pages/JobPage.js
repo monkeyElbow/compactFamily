@@ -12,7 +12,7 @@ import {
 import JobApplyButton from "../components/JobApplyButton";
 import JobHomeButton from "../components/JobHomeButton";
 
-const JobPage = (props) => {
+const JobPage = ({match: { params: { id } } }) => {
   document.title = "COMPACT Employment"
 
 
@@ -23,7 +23,7 @@ const JobPage = (props) => {
   
   const QUERY_JOB = gql`
   query SinglePost {
-    post(id: 69, idType: DATABASE_ID) {
+    post(id: ${id}, idType: DATABASE_ID) {
       date
       title
       id

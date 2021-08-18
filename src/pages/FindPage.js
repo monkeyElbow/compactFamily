@@ -24,7 +24,7 @@ const FindPage = () => {
             <div className="col-md-12 col-lg-5">
             <Image
             fluid
-                src="https:compact.family/images/0622.jpg"
+                src="https://compact.family/images/0622.jpg"
                 width="560"
                 height="553"
                 Layout="intrinsic"

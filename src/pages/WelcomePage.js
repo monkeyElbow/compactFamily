@@ -6,22 +6,25 @@ import Continuum from "../components/Continuum";
 const WelcomePage = () => {
   document.title = "Welcome to COMPACT"
 
-  let monthNumber = new Date().getMonth();
-  let monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-  let monthName = monthNames[monthNumber];
+  
+  // month names no longer used. First sentence
+
+  // let monthNumber = new Date().getMonth();
+  // let monthNames = [
+  //   "January",
+  //   "February",
+  //   "March",
+  //   "April",
+  //   "May",
+  //   "June",
+  //   "July",
+  //   "August",
+  //   "September",
+  //   "October",
+  //   "November",
+  //   "December",
+  // ];
+  // let monthName = monthNames[monthNumber];
 
   return (
     <>
@@ -32,8 +35,9 @@ const WelcomePage = () => {
         </p>
 
         <p className="lead">
-          {monthName} {""}
-          {new Date().getDate()}
+          {/* {monthName} {""} */}
+          {/* {new Date().getDate()} */}
+          September 22
           {", "}
           {new Date().getFullYear()} marks {new Date().getFullYear() - 1944}{" "}
           {""}
@@ -53,6 +57,8 @@ const WelcomePage = () => {
           </strong>{" "}
           hours of nonstop ministry!
         </h2>
+        
+
 
         <p>
           That first mission has grown into a broad continuum of ministries

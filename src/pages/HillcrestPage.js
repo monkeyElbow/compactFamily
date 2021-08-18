@@ -1,5 +1,6 @@
 import ResponsiveEmbed from "react-responsive-embed";
 import { Container, Col, Row, Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const HillcrestPage = () => {
   document.title = "Hillcrest"
@@ -264,14 +265,14 @@ const HillcrestPage = () => {
             the modern orphan in America.
           </p>
           <p className="h4">
-            Become a sponsor today by emailing spage@compactfamilyservices.org
+            Become a sponsor today by emailing rwhitlock@compact.family
             <br />
             or calling our office <strong>501-262-1660</strong>.
           </p>
           <div className="text-center my-4">
-            <a href="../get-involved-sponsor.html" className="btn btn-dark">
+            <Link to="/sponsor" className="btn btn-dark">
               Become a Cottage Sponsor Today
-            </a>
+            </Link>
           </div>
           <div className="text-center">
             <h3>

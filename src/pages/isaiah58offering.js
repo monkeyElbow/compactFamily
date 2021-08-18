@@ -220,7 +220,10 @@ Pastor Mark English of Christian Life Center, Bensalem, PA shares a testimonial 
 
         <Row className="text-center">
           <Col md={6}>
+            <div>
+
             <Isaiah58Logo />
+            </div>
             {/* <Image src={Isaiah58Logo} alt="Isaiah 58 logo" fluid /> */}
             <a
               href="https://compact.family/download/logos/isaiah58Logo.png"
@@ -233,6 +236,7 @@ Pastor Mark English of Christian Life Center, Bensalem, PA shares a testimonial 
 
           <Col md={6}>
             <Image src={CompactLogo} fluid />
+  
             <a
               href="https://compact.family/download/logos/compactLogoK.png"
               target="_blank"

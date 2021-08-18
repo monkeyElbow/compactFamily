@@ -86,7 +86,7 @@ const MissionPage = () => {
 
         <p className="lead">
           COMP<strong>ACT</strong> endeavors to equip and resource the Church
-          over the next decade to reach and redeem at least 3% (13,000) of the
+          over the next decade to reach and redeem at least 5% (20,000) of the
           daily modern orphan need in the United States.
         </p>
       </Container>

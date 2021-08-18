@@ -7,7 +7,7 @@ import {
   useQuery,
   gql
 } from "@apollo/client";
-import Moment from 'react-moment';
+// import Moment from 'react-moment';
 
 const HomeAnnouncements = () => {
 
@@ -49,10 +49,10 @@ const AnnouncementList = () => {
              <p>databaseId:{node.databaseId}</p> */}
                   
            
+              {/* <p>{node.date}</p> */}
+           {/* <Moment format="YYYY/MM/DD">
               <p>{node.date}</p>
-           <Moment format="MM-DD-YYYY">
-              <p>{node.date}</p>
-           </Moment>
+           </Moment> */}
          
               <h5>{node.title}</h5>
             {/* <div dangerouslySetInnerHTML={{ __html: node.excerpt }}></div> */}

@@ -23,7 +23,6 @@ export default function CompaCareCourseRegisterForm() {
         PastorName,
         UserName,
         UserEmail,
-        UserShipping,
         Rep,
     } = formData;
     try {
@@ -40,7 +39,6 @@ export default function CompaCareCourseRegisterForm() {
                 PastorName,
                 UserName,
                 UserEmail,
-                UserShipping,
                 Rep,
             ],
           ]),
@@ -113,7 +111,6 @@ export default function CompaCareCourseRegisterForm() {
           name="UserName"
           type="text"
           placeholder="Your Name(if different than above)"
-          required
           onChange={handleInput}
           className="form-control m-2"
         />
@@ -127,14 +124,6 @@ export default function CompaCareCourseRegisterForm() {
           className="form-control m-2"
         />
 
-        <textarea
-          rows="5"
-          name="UserShipping"
-          type="textarea"
-          placeholder="Your shipping address"
-          className="form-control m-2"
-          onChange={handleInput}
-        />
 <select
 name="Rep"
 // type="select"

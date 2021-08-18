@@ -6,7 +6,7 @@ import {
   Fade,
 } from "react-bootstrap";
 // import ContactForm from "../components/ContactForm";
-import ContactToSheet from "../components/ContactToSheet";
+// import ContactToSheet from "../components/ContactToSheet";
 import ContactAddress from "../components/ContactAddress"
 
 const ContactUs = () => {
@@ -30,7 +30,7 @@ const ContactUs = () => {
           </Col>
 
           <Col className="text-center pb-4 d-flex align-items-center justify-content-center">
-            <ContactToSheet />
+            {/* <ContactToSheet /> */}
           </Col>
         </Row>
       </Container>

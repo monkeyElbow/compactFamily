@@ -57,7 +57,7 @@ const Scoreboard = () => {
               {scores && (
                 <div>
                   <h5>
-                      <span>
+                      <span style={{fontSize:"2rem"}}>
                         <strong>
                         {scores.page.scores.hillcrest} {" "}
                         </strong>
@@ -91,7 +91,7 @@ const Scoreboard = () => {
                 <div>
                   <h5>
                    
-                      <span>
+                      <span style={{fontSize:"2rem"}}>
                         <strong>
                         {scores.page.scores.highlands} {" "}
                         </strong>
@@ -125,7 +125,7 @@ const Scoreboard = () => {
               {scores && (
                 <div>
                   <h5>
-                      <span>
+                      <span style={{fontSize:"2rem"}}>
                     <strong>
                         {scores.page.scores.fostercare} {" "}
                     </strong>
@@ -161,7 +161,7 @@ const Scoreboard = () => {
               {scores && (
                 <div>
                   <h5>
-                      <span>
+                      <span style={{fontSize:"2rem"}}>
                         <strong>
                         {scores.page.scores.safecare} {" "}
                         </strong>
@@ -195,7 +195,7 @@ const Scoreboard = () => {
               {scores && (
                 <div>
                   <h5>
-                      <span>
+                      <span style={{fontSize:"2rem"}}>
                         <strong>
                         {scores.page.scores.compacare} {" "}
                         </strong>
@@ -229,13 +229,15 @@ const Scoreboard = () => {
 
               <h4 style={{lineHeight:"2.5rem"}}>
                 {scores && (
-                  <span>
+                  <>
+                  <span style={{fontSize:"2rem"}}>
                    <strong>
                           {scores.page.scores.total.toLocaleString()} 
                    </strong>
+                  </span>
                    {" "}Clients served
                     in{" "}
-                  </span>
+                </>
                 )}
                 <Link to="/hillcrest">Hillcrest</Link>,{" "}
                 <Link to="/highlands">Highlands</Link>,{" "}
@@ -245,22 +247,22 @@ const Scoreboard = () => {
               
               </h4>
               
-                <p
-                className="text-center"
-                dangerouslySetInnerHTML={{ __html: scores.page.content }}
+              <p
+              className="text-center"
+              dangerouslySetInnerHTML={{ __html: scores.page.content }}
               ></p>
-
+              
 <small>
   The COMP<strong>ACT</strong> Scoreboard is a measurement of
   its redeeming compassionate action for vulnerable children and
   families.
 </small>
             </Col>
-
-
-          </Row>
-        </Container>
-
+            
+            
+            </Row>
+            </Container>
+            
 <Container className="text-center py-3">
 
 
@@ -282,47 +284,47 @@ Foster child placements made in Private License Placement Agency (PLPA) and Spec
 </Container>
 
 
-        {/* <Container className="text-center mb-5">
-          <Row>
-            <Col md={6}>
-              <div className="p-5">
-                <CompactLogo color="#666" />
-              </div>
-            </Col>
+{/* <Container className="text-center mb-5">
+<Row>
+<Col md={6}>
+<div className="p-5">
+<CompactLogo color="#666" />
+</div>
+</Col>
 
-            <Col className="d-flex align-items-center">
-              <h2 className="font-weight-bold blue">
-                {scores && (
-                  <span>
-                    {" "}
-                    {scores.page.scores.total.toLocaleString()} Clients served
-                    in{" "}
-                  </span>
-                )}
-                <Link to="/hillcrest">Hillcrest</Link>,{" "}
-                <Link to="/highlands">Highlands</Link>,{" "}
-                <Link to="/fostercare">Foster Care</Link>,{" "}
-                <Link to="/safecare">SafeCare</Link> and{" "}
-                <Link to="/compacare">CompaCare</Link>
-              </h2>
-            </Col>
-          </Row>
-
-          {scores && (
-            <div>
-              <p
-                className="text-center"
-                dangerouslySetInnerHTML={{ __html: scores.page.content }}
-              ></p>
-              
-              
-             
-            </div>
-          )}
-        </Container> */}
-      </>
-    );
-  };
+<Col className="d-flex align-items-center">
+<h2 className="font-weight-bold blue">
+{scores && (
+  <span>
+  {" "}
+  {scores.page.scores.total.toLocaleString()} Clients served
+  in{" "}
+  </span>
+  )}
+  <Link to="/hillcrest">Hillcrest</Link>,{" "}
+  <Link to="/highlands">Highlands</Link>,{" "}
+  <Link to="/fostercare">Foster Care</Link>,{" "}
+  <Link to="/safecare">SafeCare</Link> and{" "}
+  <Link to="/compacare">CompaCare</Link>
+  </h2>
+  </Col>
+  </Row>
+  
+  {scores && (
+    <div>
+    <p
+    className="text-center"
+    dangerouslySetInnerHTML={{ __html: scores.page.content }}
+    ></p>
+    
+    
+    
+    </div>
+    )}
+  </Container> */}
+  </>
+  );
+};
 
   return (
     <>

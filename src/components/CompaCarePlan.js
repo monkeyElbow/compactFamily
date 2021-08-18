@@ -106,10 +106,20 @@ const CompaCarePlan = () => {
         </svg>
 
       </Container>
-      <p className="lead">
-        Trained CompaCare<sup>&reg;</sup> Representatives are being deployed across the nation. Their mission assignment is to competently equip and support churches in CompaCare<sup>&reg;</sup>.
-      </p>
+ 
               </Container>
+
+              <Container>
+              <p className="text-center">
+        Trained CompaCare<sup>&reg;</sup> Representatives are deployed across the nation to help churches implement a detailed, 4-Phase, 17-Step plan to mobilize the church for service.  There Representatives are Certified by CompaCare and have the approval of the AG District Office to serve you.
+      </p>
+      {/* <p className="lead">
+        Trained CompaCare<sup>&reg;</sup> Representatives are being deployed across the nation. Their mission assignment is to competently equip and support churches in CompaCare<sup>&reg;</sup>.
+      </p> */}
+              </Container>
+              <br />
+              <br />
+              <br />
     </>
   );
 };

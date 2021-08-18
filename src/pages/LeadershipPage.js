@@ -18,7 +18,7 @@ const LeadershipPage = () => {
         <Row>
           <Col lg={4} md={12}>
             <Image fluid
-              src="https:compact.family/images-staff/1886.jpeg"
+              src="https://compact.family/images-staff/1886.jpeg"
               alt="Jay Mooney"
             />
           </Col>
@@ -53,7 +53,7 @@ const LeadershipPage = () => {
         <Row>
           <Col lg={4} md={12}>
             <Image fluid
-              src="https:compact.family/images-staff/2441-800.jpg"
+              src="https://compact.family/images-staff/2441-800.jpg"
               layout="intrinsic"
               width="400"
               height="487"
@@ -93,7 +93,7 @@ const LeadershipPage = () => {
         <Row>
           <Col lg={4} md={12}>
             <Image fluid
-              src="https:compact.family/images-staff/JohanMostert_t.jpg"
+              src="https://compact.family/images-staff/JohanMostert_t.jpg"
               layout="intrinsic"
               width="400"
               height="509"
@@ -128,7 +128,7 @@ const LeadershipPage = () => {
         <Row>
           <Col lg={4} md={12}>
             <Image fluid
-              src="https:compact.family/images-staff/RodWhitlock_t.jpg"
+              src="https://compact.family/images-staff/RodWhitlock_t.jpg"
               layout="intrinsic"
               width="400"
               height="531"
@@ -170,7 +170,7 @@ const LeadershipPage = () => {
         <Row>
           <Col lg={4} md={12}>
             <Image fluid
-              src="https:compact.family/images-staff/LanceNelson_t.jpg"
+              src="https://compact.family/images-staff/LanceNelson_t.jpg"
               layout="intrinsic"
               width="400"
               height="477"
@@ -220,7 +220,7 @@ const LeadershipPage = () => {
         <Row>
           <Col lg={4} md={12}>
             <Image fluid
-              src="https:compact.family/images-staff/AshleyGrant_t.jpg"
+              src="https://compact.family/images-staff/AshleyGrant_t.jpg"
               layout="intrinsic"
               width="400"
               height="499"
@@ -258,7 +258,7 @@ const LeadershipPage = () => {
         <Row>
           <Col lg={4} md={12}>
             <Image fluid
-              src="https:compact.family/images-staff/ladana.jpg"
+              src="https://compact.family/images-staff/ladana.jpg"
               layout="intrinsic"
               width="400"
               height="300"

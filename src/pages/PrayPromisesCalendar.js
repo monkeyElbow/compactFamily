@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Container, Col, Card } from "react-bootstrap";
 
 const PrayPromises = () => {
   document.title = "COMPACT Pray the Promises"
@@ -81,6 +81,28 @@ const PrayPromises = () => {
 
         {/* <p><a href="https://compact.family/download/CompactPrayThePromisesCalendar.pdf" target="_new">Download the Pray the Promises PDF version</a></p> */}
       </p>
+
+      <Col md={4} className="p-2">
+              <Card>
+
+              <Card.Img
+              src="https://compact.family/images/prayCal.jpg" />
+              <Card.Body>
+              <p>
+                <a
+                  className="lead stretched-link"
+                  href="https://compact.family/download/CompactPrayThePromisesCalendar.pdf"
+                  target="_new"
+                  rel="noopener noreferrer"
+
+                >
+                  Pray the Promises Calendar PDF
+                </a>
+              </p>
+
+              </Card.Body>
+              </Card>
+            </Col>
     </Container>
   );
 };
