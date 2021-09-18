@@ -3,6 +3,8 @@ import { Navbar, NavDropdown, Nav } from "react-bootstrap";
 import { SocialLineup } from "./SocialLineup";
 // import { MenuOne, MenuTwo, MenuThree, MenuFour, MenuFive } from './MenuPanels'
 
+import {FaHome} from "react-icons/fa"
+
 const MenuMain = () => {
   return (
 
@@ -130,9 +132,13 @@ const MenuMain = () => {
             Contact Us
           </Nav.Link>
 
-          <SocialLineup className="pt-1" />
         </Nav>
       </Navbar.Collapse>
+          <SocialLineup className="pt-1" />
+     <Nav.Link as={Link} to="/dashboard">
+     <FaHome />
+     </Nav.Link> 
+
     </Navbar>
     </>
   );

@@ -6,28 +6,42 @@ import {
   // Fade,
 } from "react-bootstrap";
 
+import { db } from "../util/firebase";
+// import { useAuth } from "../util/AuthContext";
+
+
+
 const ContactForm = () => {
-  const [name, setName] = useState("");
+  // const { currentUser } = useAuth();
+
+    const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [body, setBody] = useState("");
-  const [date, setDate] = useState(new Date());
-  const [isPending, setIsPending] = useState(false);
+  const [date] = useState(new Date());
+  const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
+  const [human, setHuman] = useState(false);
 
-  const handleSubmit = (e) => {
+  function humanCheck(e) {
     e.preventDefault();
-    const contactMessage = { name, email, body, date };
+    setHuman(true);
+  }
 
-    setIsPending(true);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setLoading(true);
+    const elementsArray = [...event.target.elements];
+    const formData = elementsArray.reduce((accumulator, currentValue) => {
+      if (currentValue.id) {
+        accumulator[currentValue.id] = currentValue.value;
+      }
+      return accumulator;
+    }, {});
 
-    fetch("http://localhost:8001/contactmessages", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(contactMessage),
-    }).then(() => {
-      setIsPending(false);
-      setSent(true);
-    });
+    db.collection("Contact").doc().set(formData);
+
+    setLoading(false);
+    setSent(true);
   };
 
   return (
@@ -42,7 +56,7 @@ const ContactForm = () => {
 
       {!sent && (
         <Form onSubmit={handleSubmit}>
-          <Form.Group controlId="formName">
+          <Form.Group controlId="name">
             <Form.Label>Your Name:</Form.Label>
 
             <Form.Control
@@ -53,7 +67,7 @@ const ContactForm = () => {
             />
           </Form.Group>
 
-          <Form.Group controlId="formBasicEmail">
+          <Form.Group controlId="email">
             <Form.Label>Your Email:</Form.Label>
             <Form.Control
               type="email"
@@ -66,7 +80,7 @@ const ContactForm = () => {
             </Form.Text>
           </Form.Group>
 
-          <Form.Group>
+          <Form.Group controlId="message">
             <Form.Label>Message:</Form.Label>
             <Form.Control
               as="textarea"
@@ -76,19 +90,42 @@ const ContactForm = () => {
               onChange={(e) => setBody(e.target.value)}
             ></Form.Control>
 
-            <Form.Control plaintext readonly defaultValue="date" value={date} />
           </Form.Group>
 
-          {!isPending && (
-            <Button variant="primary" type="submit">
-              Send
+          <Form.Group hidden controlId="date">
+            <Form.Control plaintext readonly value={date} />
+          </Form.Group>
+
+          <Form.Group hidden controlId="form">
+<Form.Control 
+value="contactus"
+/>
+          </Form.Group>
+
+{!human &&  <Button className="w-100 btn-secondary" onClick={humanCheck}>
+              I am indeed a person
             </Button>
-          )}
-          {isPending && (
-            <Button disabled variant="primary" type="submit">
-              Sending Message...
+            }
+
+
+
+{human && (
+<>
+  {!loading && (
+    <Button className="w-100" variant="primary" type="submit">
+    Send
+    </Button>
+    )}
+          {loading && (
+            <Button  className="w-100" disabled variant="primary" type="submit">
+            Sending Message...
             </Button>
-          )}
+            )}
+            </>
+            )}
+
+
+
         </Form>
       )}
 

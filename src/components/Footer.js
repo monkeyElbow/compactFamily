@@ -10,11 +10,11 @@ import ContactAddress from "./ContactAddress";
 const Footer = () => {
   return (
     <>
+{/* 
+<Container fluid className="bg-dark p-0 mt-0 noprint">
+      </Container> */}
 
-<Container fluid className="bg-dark p-0 mt-0">
-      </Container>
-
-      <Container fluid id="reverse" className="bg-dark py-2">
+      <Container fluid id="reverse" className="bg-dark py-2 noprint">
 <div className="d-flex justify-content-center">
 
         <SocialLineup />
@@ -65,7 +65,7 @@ const Footer = () => {
       </Container>
 
 
-      <Container className="small text-center py-3">
+      <Container className="small text-center py-3 noprint">
 
 
         <div style={{height:"50px"}} className="col-md-auto d-flex justify-content-around" align="center">

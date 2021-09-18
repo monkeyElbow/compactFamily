@@ -1,4 +1,4 @@
-
+import { AuthProvider } from './util/AuthContext';
 
 import HomePage from "./pages/HomePage";
 import ContactUs from "./pages/ContactPage";
@@ -36,6 +36,8 @@ import teams from "./pages/teams";
 import volunteer from "./pages/volunteer";
 
 import CompaCarePage from "./pages/CompaCarePage";
+import compactPracticePage from "./pages/compactPracticePage";
+
 import CompaCareTrainingPage from "./pages/compacare-training/CompaCareTrainingPage";
 import CompaCareTrainingMaterials from "./pages/compacare-training/materials";
 import compaCareRegister from "./pages/compacare-training/compaCareRegister";
@@ -44,6 +46,7 @@ import compaCareTrainingSession1 from "./pages/compacare-training/session1";
 import compaCareTrainingSession2 from "./pages/compacare-training/session2";
 import compaCareTrainingSession3 from "./pages/compacare-training/session3";
 import compaCareTrainingSession4 from "./pages/compacare-training/session4";
+import compaCareTrainingCertificate from "./pages/compacare-training/CompaCareCertificate";
 
 
 
@@ -78,7 +81,6 @@ import MenuMain from "./components/MenuMain";
 import Banner from "./components/Banner";
 import PlannedGiving from "./pages/PlannedGivingPage";
 
-import gc21 from "./pages/gc21/gc21";
 import isaiah58offering from "./pages/isaiah58offering";
 import isaiah58Sermon from "./pages/isaiah58Sermon";
 import hostFamilies from "./pages/host-families";
@@ -89,11 +91,19 @@ import ReactGA from 'react-ga'
 import {createBrowserHistory} from 'history'
 import { useEffect } from "react";
 
+import Dashboard from "./pages/users/dashboard"
+import PrivateRoute from './components/PrivateRoute';
+import Signin from "./pages/users/signin";
+import Signup from './pages/users/signup';
+import ForgotPassword from './pages/users/forgotPassword';
+import UpdatePassword from './pages/users/updatePassword';
+import CreateProfile from './pages/users/createProfile';
 
 // am trying to delete browserrouter as, for GA to work
 // remove this double once proven
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import AdminHome from './pages/admin/admin';
 
 // import { Router, Route, Switch } from "react-router-dom";
 
@@ -115,6 +125,8 @@ ReactGA.initialize('UA-145080690-2')
 
   return (
     <Router history={history}>
+            <AuthProvider>
+
       <ScrollToTop />
       <div className="App">
         <MenuMain />
@@ -150,6 +162,9 @@ ReactGA.initialize('UA-145080690-2')
             <Route exact path="/employment" component={EmploymentPage} />
             <Route exact path="/employment/:id" component={JobPage} />
             <Route exact path="/compacare" component={CompaCarePage} />
+            <Route exact path="/compacare-practice" component={compactPracticePage} />
+
+
             <Route exact path="/find" component={FindPage} />
             <Route exact path="/safecare" component={SafecarePage} />
 
@@ -263,43 +278,58 @@ ReactGA.initialize('UA-145080690-2')
               path="/compacare-training-materials"
               component={CompaCareTrainingMaterials}
             />
-            <Route
+            <PrivateRoute
               exact
               path="/compacare-training-register"
               component={compaCareRegister}
             />
-            <Route
+            <PrivateRoute
               exact
               path="/compacare-training-sessions"
               component={compaCareTrainingSessions}
             />
-            <Route
+            <PrivateRoute
               exact
               path="/compacare-training-session-1"
               component={compaCareTrainingSession1}
             />
-            <Route
+            <PrivateRoute
               exact
               path="/compacare-training-session-2"
               component={compaCareTrainingSession2}
             />
-            <Route
+            <PrivateRoute
               exact
               path="/compacare-training-session-3"
               component={compaCareTrainingSession3}
             />
-            <Route
+            <PrivateRoute
               exact
               path="/compacare-training-session-4"
               component={compaCareTrainingSession4}
+            />
+            <PrivateRoute
+              exact
+              path="/compacare-training-certificate"
+              component={compaCareTrainingCertificate}
             />
 
             <Route exact path="/brand" component={Brand} />
 
 {/* seasonal or temporary pages */}
-            <Route path="/gc21" component={gc21} />
             <Route path="/isaiah58offering" component={isaiah58offering} />
             <Route path="/isaiah58sermon" component={isaiah58Sermon} />
+
+
+            {/* users */}
+            <Route path="/forgot-password" component={ForgotPassword} />
+            <PrivateRoute path="/dashboard" component={Dashboard} />
+            <PrivateRoute path="/admin" component={AdminHome} />
+            <PrivateRoute path="/update-password" component={UpdatePassword} />
+            <PrivateRoute path="/create-profile" component={CreateProfile} />
+            <Route path="/signin" component={Signin} />
+            <Route path="/login" component={Signin} />
+            <Route path="/signup" component={Signup} />
             
             <Route component={NotFoundPage} />
             
@@ -307,6 +337,8 @@ ReactGA.initialize('UA-145080690-2')
           <Footer />
         </div>
       </div>
+      </AuthProvider>
+
     </Router>
   );
 }

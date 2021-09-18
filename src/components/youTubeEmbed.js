@@ -8,7 +8,11 @@ const YoutubeEmbed = ({ embedId }) => (
       height="480"
       src={`https://www.youtube.com/embed/${embedId}`}
       frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allow="accelerometer; 
+      autoplay; 
+      encrypted-media; 
+      gyroscope; 
+      "
       allowFullScreen
       title="Embedded youtube"
     />
@@ -20,3 +24,7 @@ YoutubeEmbed.propTypes = {
 };
 
 export default YoutubeEmbed;
+
+// removed from allow list:
+//       clipboard-write; 
+//       picture-in-picture

@@ -18,8 +18,8 @@ const MenuOne = () => {
 const MenuTwo = () => {
     return(
         <>
-<Link to="/hillcrest">Hillcrest Children's Home</Link>
-<Link to="/highlands">Highlands Maternity Home</Link>
+<Link to="/hillcrest">Hillcrest Children's</Link>
+<Link to="/highlands">Highlands Maternity</Link>
 <Link to="/fostercare">Foster Care</Link>
 <Link to="/compacare">CompaCare</Link>
 <Link to="/find">FIND Kinship Navigator</Link>

@@ -1,14 +1,11 @@
 import Text from "react-svg-text";
 
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 
 const CompaCarePhilosophy = () => {
   return (
     <>
-      <Container className="my-5">
-        <h2>The CompaCare Philosophy</h2>
-<Container className="col-lg-6 col-mg-12 my-5">
-
+    
 
 
         <svg viewBox="0 0 720 720">
@@ -215,19 +212,6 @@ const CompaCarePhilosophy = () => {
           </g>
         </svg>
 
-</Container>
-      </Container>
-
-      <Container>
-      <p className="text-center">
-          CompaCare<sup>&reg;</sup> Philosophy CompaCare is a local-church based, evidence-informed program that is driven by Biblical values. When you deploy CompaCare you raise foster care quality by increasing the capacity and stability of foster parents.
-        </p>
-        {/* <p className="lead text-center">
-          CompaCare<sup>&reg;</sup> mobilizes the church to improve the
-          capacity, stability and quality of foster families and other social
-          needs.
-        </p> */}
-      </Container>
     </>
   );
 };

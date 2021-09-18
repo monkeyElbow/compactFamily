@@ -1,19 +1,14 @@
 import Text from "react-svg-text";
 // import { Link } from "react-router-dom";
 
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 
 const CompaCarePractice = () => {
   return (
     <>
-    <br />
-      <Container className="pt-0 col-lg-8 col-mg-12 my-5">
-        <p className="h2">
-          The <span className="red">CompaCare</span>
-          <sup>&reg;</sup> Practice
-        </p>
+   
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1368 794">
+        <svg viewBox="0 0 1368 794">
           <style type="text/css">
             {
               ".linestroke{fill:none;strokeWidth:5;stroke-linecap:round;stroke-miterlimit:10}"
@@ -287,25 +282,7 @@ const CompaCarePractice = () => {
           </g>
         </svg>
 
-       
-      </Container>
-
-      <Container>
-      <p>
-        Foster families should never minister alone.  CompaCare creates a faith-based wraparound volunteer system to help foster parents be successful in their ministry. We have training programs for the Church Leader to manage the implementation of the CompaCare plan in their church, for Family Advocates to become the point person who liaises with foster parents and the resources in the community, and for Volunteers.
-        </p>
-
-
-        {/* old */}
-        {/* <p className="lead">
-          The purpose of Christ’s gifts to the Church was to equip his people
-          for volunteering. CompaCare<sup>&reg;</sup> provides churches an
-          evidence-based, sustainable system for volunteerism on behalf of
-          vulnerable persons. It provides a workable philosophy, practice and
-          plan.
-        </p> */}
-      </Container>
-      <br />
+     
     </>
   );
 };

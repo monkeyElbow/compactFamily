@@ -1,15 +1,9 @@
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 
 const CompaCarePlan = () => {
   return (
     <>
-      <Container className="my-5">
-        <p className="h2">
-          The <span className="red">CompaCare</span>
-          <sup>&reg;</sup> Plan
-        </p>
-        <Container className="py-1 col-lg-8 col-mg-12">
-
+     
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1221.2 784">
           <style>
@@ -105,21 +99,6 @@ const CompaCarePlan = () => {
           </g>
         </svg>
 
-      </Container>
- 
-              </Container>
-
-              <Container>
-              <p className="text-center">
-        Trained CompaCare<sup>&reg;</sup> Representatives are deployed across the nation to help churches implement a detailed, 4-Phase, 17-Step plan to mobilize the church for service.  There Representatives are Certified by CompaCare and have the approval of the AG District Office to serve you.
-      </p>
-      {/* <p className="lead">
-        Trained CompaCare<sup>&reg;</sup> Representatives are being deployed across the nation. Their mission assignment is to competently equip and support churches in CompaCare<sup>&reg;</sup>.
-      </p> */}
-              </Container>
-              <br />
-              <br />
-              <br />
     </>
   );
 };

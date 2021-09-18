@@ -1,6 +1,6 @@
-import firebase from "firebase/app";
-import "firebase/auth";
-import "firebase/firestore";
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import "firebase/compat/firestore";
 
 const app = firebase.initializeApp({
   apiKey: "AIzaSyBMrGLNzhn4fJt9vRFXkrFtFC1_r91IrCo",
@@ -17,3 +17,6 @@ export const db = firebase.firestore();
 export const auth = app.auth();
 
 export default db;
+
+// update to 9 modular soon
+// https://firebase.google.com/docs/web/modular-upgrade

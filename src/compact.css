@@ -4,7 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+
+
 
 :root {
   --red: #bb0000;
@@ -15,6 +18,7 @@
   --orange: #F26322;
   --purple: #684e9d;
   --yellow: #FBAE17;
+  --royal: #1222b1;
   --body-fonts: 'Inter', 'Poppins',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
@@ -39,7 +43,8 @@ p {
   /* font-family: Montserrat; */
   /* font-family: Raleway; */
   font-weight: 400;
-  line-height: 1.95rem;}
+  /* line-height: 1.95rem; */
+}
 
 strong{font-weight: 800}
 
@@ -121,6 +126,8 @@ strong{font-weight: 800}
 .bg-yellow a{color:white;text-decoration: none;}
 .clickable.bg-yellow:hover{background-color:#d8870d;}
 
+/* compacare colors */
+.bg-royal{background-color: var(--royal);}
 
 #reverse a{
   /* text-decoration: none; */
@@ -248,3 +255,13 @@ color: #999;
         -webkit-background-size: cover;
 
 }
+
+/* effort to suppress objects from printing */
+@media print {
+
+  .noprint {
+    display: none;
+    /* border-width:0 !important */
+  }
+}
+
