@@ -10,13 +10,14 @@ import { useAuth } from "../../util/AuthContext";
 import { db } from "../../util/firebase";
 
 import { FaCheck } from "react-icons/fa";
-import { fieldNameFromStoreName } from "@apollo/client/cache";
+import firebase from "firebase/compat/app";
+
 
 
 const CompaCareTrainingSession4 = () => {
   document.title = "CompaCare Training Session 4"
   const { currentUser } = useAuth();
-  const [profile, setProfile] = useState([]);
+  // const [profile, setProfile] = useState([]);
   const history = useHistory();
   const [error, setError] = useState('')
   const [progress, setProgress] = useState(0)
@@ -29,7 +30,7 @@ const CompaCareTrainingSession4 = () => {
       try {
         var doc = await userRef.get();
         const data = await doc.data();
-        setProfile(data)
+        // setProfile(data)
         setProgress(data.cc_training_progress)
 
         return data.profile
@@ -44,20 +45,27 @@ const CompaCareTrainingSession4 = () => {
       fetchUser()
     } else { return null}
   
-  }, [])
+  }, [currentUser])
 
 
 
   const SendData = async (e) => {
     e.preventDefault();
 
-            const unsubscribe = db.collection('Users').doc(currentUser.uid).update({
-              "cc_training_progress" : 4,
-              // "cc_training_completed" : Timestamp()
+            const batch = db.batch();
+
+            const dateRef = db.collection('Users').doc(currentUser.uid);
+            batch.update(dateRef, {cc_training_date_completed: firebase.firestore.FieldValue.serverTimestamp()})
+            
+            const progRef= db.collection('Users').doc(currentUser.uid)
+            batch.update(progRef, {
+              cc_training_progress: 4,
             })
+
+            await batch.commit()
+
         history.push("/compacare-training")
 
-    return unsubscribe
 
   };
 
@@ -76,7 +84,7 @@ const CompaCareTrainingSession4 = () => {
         {progress > 3 ?
 (
 <div className="d-flex flex-row pt-2">
-<FaCheck className="mt-1 mr-2" /> <h5>Completed</h5>
+<FaCheck className="mt-1 me-2" /> <h5>Completed</h5>
 </div>
 ) : (
 <Button to="/#" onClick={SendData}>I've completed this session</Button>

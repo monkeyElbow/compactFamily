@@ -1,25 +1,28 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { Container, Card, Button, Alert } from "react-bootstrap";
 import { 
-  // Link,
-   useHistory } from "react-router-dom";
-import { useAuth } from "../../util/AuthContext";
-import { db, auth } from "../../util/firebase";
+  Link,
+  //  useHistory
+   } from "react-router-dom";
+// import { useAuth } from "../../util/AuthContext";
+import { db } from "../../util/firebase";
 import { FaRegTrashAlt, 
   // FaCopy
  } from "react-icons/fa";
  
- export default function adminCompacare() {
-    const { currentUser, signout } = useAuth();
+ export default function AdminCompacare() {
+    // const { currentUser  } = useAuth();
     const [error, setError] = useState("");
-    const history = useHistory();
+    // const history = useHistory();
     const [compacareMessages, setCompacareMessages] = useState([]);
-        // get contact us form data 
+
+
+        // get contact us data 
         useEffect(() => {
             const allContactData = [];
             try {
               const unsubscribe = db
-                .collection("Contact")
+                .collection("CompacareContact")
                 .get()
                 .then((querySnapshot) => {
                   querySnapshot.forEach(doc => {
@@ -29,7 +32,7 @@ import { FaRegTrashAlt,
                       });
 
                     });
-                    setContactUsMessages(allContactData);
+                    setCompacareMessages(allContactData);
                   });
                 return unsubscribe
             } catch (error) {
@@ -42,7 +45,9 @@ import { FaRegTrashAlt,
     return (
         <>
               {error && <Alert variant="danger">{error}</Alert>} 
-      <Container>
+      <Container className="py-3">
+      <Link to="/admin">Back to Admin Home</Link>
+
         <h4>CompaCare Interest Form Messages:{compacareMessages.length}</h4>
 
         {compacareMessages.map((message) => (
@@ -50,38 +55,29 @@ import { FaRegTrashAlt,
             {/* <p><small>Message Key:
             {message.key}
               </small></p> */}
+            <h5>{message.name}</h5>
 <small>
               {message.date}
 </small>
             
-            <h5>{message.name}</h5>
            <p>
             {message.email}
            {/* <FaCopy /> */}
            </p>
           
            <p>
-Phone:
-            {message.phone}
+Phone: {message.phone}
            </p>
            <p>
-Church Name:
-            {message.churchName}
+Church Name: {message.churchName}
            </p>
-           <p>
-Lead Pastor:
-            {message.leadPastor}
-           </p>
-           <p>
-Church Address:
-            {message.churchAddress}
-           </p>
-            {message.HearAboutUs}
-            <p>Message:        </p>
-            <p>
-            {message.message}
-            </p>
-            <Button variant="danger" onClick={() => db.collection('CompacareContact').doc(message.key).delete()} >
+           <p>Lead Pastor: {message.leadPastor}</p>
+           <p>Church Address: {message.churchAddress}</p>
+            <p>Heard about us: {message.hearAboutUs}</p>
+            <Button variant="danger" 
+            onClick={() => (
+              db.collection('CompacareContact').doc(message.key).delete()
+              )} >
               <FaRegTrashAlt /> Delete Message
             </Button>
           </Card>

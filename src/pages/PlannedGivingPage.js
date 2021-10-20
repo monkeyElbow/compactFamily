@@ -1,7 +1,8 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { SocialLineup } from "../components/SocialLineup";
-import { Link } from "react-router-dom";
+import {FaPhone, FaFacebook, FaInstagram, FaTwitter, FaYoutube} from 'react-icons/fa'
+// import { Link } from "react-router-dom";
 
 const PlannedGiving = () => {
   document.title = "COMPACT Planned Giving"
@@ -224,6 +225,7 @@ const PlannedGiving = () => {
             <NavLink to="mission">and Mission and Vision.</NavLink>
           </p>
         </Container>
+
         <Container className="bg-light border my-4 p-5">
           <p className="h4">
             How Can I Remain Connected to What’s Taking Place at COMP
@@ -232,17 +234,24 @@ const PlannedGiving = () => {
 
      
           <p>
-            <Link to="/newsletter">
+            {/* <Link to="/newsletter">
               Subscribe to our monthly newsletter at COMPACT.Family/Newsletter
-            </Link>
+            </Link> */}
           </p>
           <p>Follow us on Social Media</p>
 
-          <h4 className="red bg-warning p-3">FIX SOCIAL CONDITIONAL STLYE</h4>
-          <SocialLineup className="vanilla" />
+         
+          <SocialMedia />
 
-          <div className="d-flex justify-content-center">
-            <a className="fa fa-phone mr-1 h4" href="tel:501-262-1660">501-262-1660</a>
+          <div className="mt-3 d-flex justify-content-center">
+            <h5 className="me-2">
+            <FaPhone />
+            </h5>
+            <h3>
+            <strong>
+            501-262-1660
+            </strong>
+            </h3>
       
           </div>
         </Container>
@@ -252,3 +261,50 @@ const PlannedGiving = () => {
 };
 
 export default PlannedGiving;
+
+
+const SocialMedia = () => {
+  return (
+    <>
+
+<div className="p-1">
+      <a
+        className="h1"
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://www.facebook.com/COMPACTFamilyServices/"
+      >
+        <FaFacebook />
+      </a>
+
+      <a
+        rel="noopener noreferrer"
+        className="h1 ms-3 me-3"
+        target="_blank"
+        href="https://www.instagram.com/compactfamilyservices/"
+      >
+        <FaInstagram />
+      </a>
+
+      <a
+        rel="noopener noreferrer"
+        className="h1 me-3"
+        target="_blank"
+        href="https://twitter.com/COMPACTfamily"
+      >
+        <FaTwitter />
+      </a>
+
+      <a
+        rel="noopener noreferrer"
+        className="h1"
+        target="_blank"
+        href="https://www.youtube.com/channel/UC7LHU70Uou3e8DsrNj6CnNA/"
+      >
+        <FaYoutube />
+      </a>
+</div>
+
+    </>
+  )
+}

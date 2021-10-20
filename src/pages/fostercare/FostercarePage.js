@@ -1,7 +1,7 @@
 import { Image, Container, Row, Col, Card } from "react-bootstrap";
-import ArkansasShape from "../graphics/ArkansasShape";
+import ArkansasShape from "../../graphics/ArkansasShape";
 import ResponsiveEmbed from "react-responsive-embed";
-import FosterCareLogo from "../graphics/FosterCareLogo";
+import FosterCareLogo from "../../graphics/FosterCareLogo";
 import {Link} from 'react-router-dom';
 
 const FostercarePage = () => {

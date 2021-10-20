@@ -1,102 +1,73 @@
 import { Link } from "react-router-dom";
 import { Navbar, NavDropdown, Nav } from "react-bootstrap";
 import { SocialLineup } from "./SocialLineup";
-// import { MenuOne, MenuTwo, MenuThree, MenuFour, MenuFive } from './MenuPanels'
 
-import {FaHome} from "react-icons/fa"
 
 const MenuMain = () => {
   return (
 
     <>
-    {/* <Navbar className='menu bg-dark text-light p-2 d-flex align-content-center justify-content-between'>
-    <Link to="/">
-               <a>COMP<strong>ACT</strong></a>
-    </Link>
-             
-    <SocialLineup />
-            </Navbar>
+  
 
-            <div className="bg-light p-4">
-              <div className="row text-center d-flex justify-content-center">
-                <div className="col-lg-2 col-md-4 p-2 d-flex flex-column">
-<MenuOne />
-                </div>
-                <div className="col-lg-2 col-md-4 p-2 d-flex flex-column">
-<MenuTwo />
-                </div>
-                <div className="col-lg-2 col-md-4 p-2 d-flex flex-column">
-<MenuThree />
-                </div>
-                <div className="col-lg-2 col-md-4 p-2 d-flex flex-column">
-<MenuFour />
-                </div>
-                <div className="col-lg-2 col-md-4 p-2 d-flex flex-column">
-<MenuFive />
-                </div>
-
-
-              </div>
-            </div> */}
-
-    <Navbar id="reverse" bg="dark" variant="dark" expand="lg">
+    <Navbar id="reverse" bg="dark" variant="dark" expand="lg" className="px-2">
       <Navbar.Brand as={Link} to="/">
         COMP<strong>ACT</strong>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav activekey="/home" className="mr-auto">
+        <Nav activekey="/home" className="me-auto">
           <Nav.Link as={Link} to="/">
             Home
           </Nav.Link>
 
           <NavDropdown title="About Us" id="basic-nav-dropdown">
-            <NavDropdown.Item as={Link} to="welcome">
+            <NavDropdown.Item as={Link} to="/welcome">
               Welcome
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="mission">
+            <NavDropdown.Item as={Link} to="/mission">
               COMP<strong>ACT</strong> Mission
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="leadership">
+            <NavDropdown.Item as={Link} to="/leadership">
               Leadership
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="campus">
+            <NavDropdown.Item as={Link} to="/campus">
               The Campus
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="history-and-future">
+            <NavDropdown.Item as={Link} to="/history-and-future">
               COMP<strong>ACT</strong> History and Future
             </NavDropdown.Item>
           </NavDropdown>
 
           <NavDropdown title="Ministries" id="basic-nav-dropdown">
-            <NavDropdown.Item as={Link} to="hillcrest">
+            <NavDropdown.Item as={Link} to="/hillcrest">
               Hillcrest Children's Home
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="highlands">
+            <NavDropdown.Item as={Link} to="/highlands">
               Highlands Adoption and Maternity
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="fostercare">
+            <NavDropdown.Item as={Link} to="/fostercare">
               Foster Care
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="compacare">
+            <NavDropdown.Item as={Link} to="/compacare">
               CompaCare
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="find">
+            <NavDropdown.Item as={Link} to="/find">
               FIND Kinship navigator
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="safecare">
+            <NavDropdown.Item as={Link} to="/safecare">
               SAFECARE
             </NavDropdown.Item>
           </NavDropdown>
 
           <NavDropdown title="Get Involved" id="basic-nav-dropdown">
-            <NavDropdown.Item as={Link} to="pray">
+            <NavDropdown.Item as={Link} to="/pray">
               Pray
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="give">
+            <NavDropdown.Item as={Link} to="/give">
               Give
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="serve">
+            <NavDropdown.Item as={Link} to="/serve">
               Serve
             </NavDropdown.Item>
             <NavDropdown.Item href="https://agfostercare.network"
@@ -128,16 +99,17 @@ const MenuMain = () => {
             </NavDropdown.Item>
           </NavDropdown>
 
-          <Nav.Link as={Link} to="contact-us">
+          <Nav.Link as={Link} to="/contact-us">
             Contact Us
           </Nav.Link>
 
         </Nav>
       </Navbar.Collapse>
           <SocialLineup className="pt-1" />
-     <Nav.Link as={Link} to="/dashboard">
+
+     {/* <Nav.Link as={Link} to="/dashboard">
      <FaHome />
-     </Nav.Link> 
+     </Nav.Link>  */}
 
     </Navbar>
     </>

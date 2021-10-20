@@ -3,6 +3,9 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import {FaHome} from "react-icons/fa"
+import { Link } from "react-router-dom";
+
 import "../compact.css";
 
 export const SocialLineup = () => {
@@ -20,7 +23,7 @@ export const SocialLineup = () => {
 
       <a
         rel="noopener noreferrer"
-        className="SocialStyle ml-1 mr-1"
+        className="SocialStyle ms-1 me-1"
         target="_blank"
         href="https://www.instagram.com/compactfamilyservices/"
       >
@@ -29,7 +32,7 @@ export const SocialLineup = () => {
 
       <a
         rel="noopener noreferrer"
-        className="SocialStyle mr-1"
+        className="SocialStyle me-1"
         target="_blank"
         href="https://twitter.com/COMPACTfamily"
       >
@@ -38,30 +41,18 @@ export const SocialLineup = () => {
 
       <a
         rel="noopener noreferrer"
-        className="SocialStyle"
+        className="SocialStyle me-3"
         target="_blank"
         href="https://www.youtube.com/channel/UC7LHU70Uou3e8DsrNj6CnNA/"
       >
         <FaYoutube />
       </a>
-
-      {/* <Link style={SocialStyle} to="https://www.facebook.com/COMPACTFamilyServices/">
-        <FaFacebook />
-      </Link> */}
-
-      {/* <Link style={SocialStyle} className="ml-1 mr-1" to="https://www.instagram.com/compactfamilyservices/">
-        
-        <FaInstagram />
+      <Link to="/dashboard">
+     <FaHome />
       </Link>
 
-      <Link style={SocialStyle} className="mr-1" to="https://twitter.com/COMPACTfamily">
-        
-        <FaTwitter />
-      </Link>
 
-      <Link style={SocialStyle} to="https://www.youtube.com/channel/UC7LHU70Uou3e8DsrNj6CnNA/">
-        <FaYoutube />
-      </Link> */}
+     
     </div>
   );
 };

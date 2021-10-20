@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Card, Button, Alert } from "react-bootstrap";
 import { 
-  // Link,
+  Link,
    useHistory } from "react-router-dom";
 import { useAuth } from "../../util/AuthContext";
 import { db } from "../../util/firebase";
@@ -43,20 +43,9 @@ try{
 setError("Failed admin check")
 }
 
-    },[])
+    },[currentUser])
 
 
-  // LOGOUT FUNCTION
-  async function handleLogout() {
-    setError("");
-
-    try {
-      await signout();
-      history.push("/");
-    } catch {
-      setError("Failed to log out");
-    }
-  }
       
 
     return (
@@ -68,16 +57,16 @@ setError("Failed admin check")
 
 {isAdmin && (
 <>
-<Container className="p-5">
-<Card className="p-5 m-5">
+<Container className="p-md-5">
+<Card className="p-5 m-1">
 
   <h5>Admin</h5>
-<p>link to</p>
-<p>general admin with messages</p>
-<p>compacare admin</p>
-<Button variant="link" className="link" onClick={handleLogout}>
-            Sign Out
-          </Button>
+<Link to="admin-contact">COMPACT Contact Us Form Messages</Link>
+<br />
+<h5>CompaCare</h5>
+<Link to="/admin-compacare">CompaCare Interest Form Messages</Link>
+<Link to="/admin-compacare-training">CompaCare Training Users</Link>
+
 </Card>
 </Container>
 

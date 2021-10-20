@@ -2,6 +2,9 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
+// import { initializeApp } from "firebase/app";
+import {getStorage} from 'firebase/storage'
+
 const app = firebase.initializeApp({
   apiKey: "AIzaSyBMrGLNzhn4fJt9vRFXkrFtFC1_r91IrCo",
   authDomain: "compact-5205a.firebaseapp.com",
@@ -15,6 +18,12 @@ const app = firebase.initializeApp({
 export const db = firebase.firestore();
 
 export const auth = app.auth();
+
+// const firebaseApp = initializeApp(app);
+export const storage = getStorage(app);
+
+// note ref prob only needs to be used on ind pages.
+// export const profileRef = ref(storage, 'profile_images')
 
 export default db;
 

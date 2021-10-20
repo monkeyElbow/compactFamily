@@ -53,7 +53,7 @@ const LeadershipPage = () => {
         <Row>
           <Col lg={4} md={12}>
             <Image fluid
-              src="https://compact.family/images-staff/2441-800.jpg"
+              src="https://compact.family/images-staff/BrianPage_t.jpg"
               layout="intrinsic"
               width="400"
               height="487"
@@ -66,23 +66,19 @@ const LeadershipPage = () => {
               <h2>BRIAN PAGE, MSW, LCSW</h2>
               <h4>ARKANSAS DIRECTOR & ADMINISTRATOR</h4>
               <p>
-                Brian Page joined COMP<strong>ACT</strong> in 2017. He has a
-                rich child welfare and leadership background that will serve
-                this growing agency. The role of Administrator serves directly
-                under the leadership of the agency’s Executive Director.
-                Regarding his new assignment as Administrator with Assemblies of
-                God COMP<strong>ACT</strong> Family Services, Brian says, “In
-                1993, God gave me a vision of working with vulnerable children
-                and youth. In my social work career, I have had the opportunity
-                to serve as a relief houseparent at Hillcrest Children’s Home,
-                social services director with Pleasant Hills Children’s Home,
-                and professional counselor in education and military contexts.
-                Yet this new opportunity fills a vacant part of that
-                life-shaping dream from almost 25 years ago. I am excited to
-                work with such great people in a professional work with a
-                Christ-centered culture to help redeem the fatherless and family
-                need in this world. Sharon and I are humbled to join COMPACT in
-                this vision and mission.”
+              Brian Page joined COMP<strong>ACT</strong> in 2017. He has a rich child welfare and leadership
+background that will serve this growing agency. The role of Administrator
+serves directly under the leadership of the agency’s Executive Director.
+Regarding his new assignment as Administrator with Assemblies of God
+COMP<strong>ACT</strong> Family Services, Brian says, “In 1993, God gave me a vision of working
+with vulnerable children and youth. In my social work career, I have had the
+opportunity to serve as a relief houseparent at Hillcrest Children’s Home, social
+services director with Pleasant Hills Children’s Home, and professional
+counselor in education and military contexts. Yet this new opportunity fills a
+vacant part of that life-shaping dream from almost 25 years ago. I am excited
+to work with such great people in a professional work with a Christ-centered
+culture to help redeem the fatherless and family need in this world. I am
+humbled to join COMP<strong>ACT</strong> in this vision and mission.”
               </p>
             </div>
           </Col>

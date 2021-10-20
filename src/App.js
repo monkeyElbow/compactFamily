@@ -26,17 +26,18 @@ import highlandsConnectWeek10 from "./pages/highlands-training/week10";
 import highlandsConnectWeek11 from "./pages/highlands-training/week11";
 import highlandsConnectWeek12 from "./pages/highlands-training/week12";
 
-import highlandsLeader from "./pages/highlands-leader/highlands-leader";
+import HighlandsLeader from "./pages/highlands-leader/HighlandsLeader";
 
-import FostercarePage from "./pages/FostercarePage";
-import fosterform from './pages/fosterform';
+import FostercarePage from "./pages/fostercare/FostercarePage";
+import fosterform from './pages/fostercare/fosterform';
 import EmploymentPage from "./pages/EmploymentPage";
 import JobPage from "./pages/JobPage";
 import teams from "./pages/teams";
 import volunteer from "./pages/volunteer";
 
-import CompaCarePage from "./pages/CompaCarePage";
-import compactPracticePage from "./pages/compactPracticePage";
+import CompaCareHome from "./pages/compacare/CompaCareHome";
+// import CompaCarePractice from "./pages/compacare/components/CompaCarePractice"
+
 
 import CompaCareTrainingPage from "./pages/compacare-training/CompaCareTrainingPage";
 import CompaCareTrainingMaterials from "./pages/compacare-training/materials";
@@ -66,7 +67,7 @@ import ServePage from "./pages/ServePage";
 
 import Partners from "./pages/Partners";
 import Products from "./pages/Products";
-import newsletter from "./pages/newsletter";
+import NewsletterPage from "./pages/newsletter";
 
 import Brand from "./pages/Brand";
 
@@ -99,11 +100,17 @@ import ForgotPassword from './pages/users/forgotPassword';
 import UpdatePassword from './pages/users/updatePassword';
 import CreateProfile from './pages/users/createProfile';
 
+// admin
+import AdminHome from './pages/admin/admin';
+import AdminCompacare from './pages/admin/adminCompacare';
 // am trying to delete browserrouter as, for GA to work
 // remove this double once proven
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import AdminHome from './pages/admin/admin';
+import adminContact from './pages/admin/adminContact';
+import AdminCompacareTraining from './pages/admin/adminCompacareTraining';
+import christmasPage from './pages/seasonalPages/christmasPage';
+// import ProfileImageUpdater from './pages/users/components/ProfileImage';
 
 // import { Router, Route, Switch } from "react-router-dom";
 
@@ -161,8 +168,9 @@ ReactGA.initialize('UA-145080690-2')
             <Route exact path="/fosterform" component={fosterform} />
             <Route exact path="/employment" component={EmploymentPage} />
             <Route exact path="/employment/:id" component={JobPage} />
-            <Route exact path="/compacare" component={CompaCarePage} />
-            <Route exact path="/compacare-practice" component={compactPracticePage} />
+            <Route exact path="/compacare" component={CompaCareHome} />
+            {/* <Route exact path="/compacare-practice" component={CompaCarePractice} /> */}
+
 
 
             <Route exact path="/find" component={FindPage} />
@@ -190,7 +198,7 @@ ReactGA.initialize('UA-145080690-2')
             <Route exact path='/volunteer' component={volunteer} />
 
             <Route exact path="/products" component={Products} />
-            <Route exact path="/newsletter" component={newsletter} />
+            <Route exact path="/newsletter" component={NewsletterPage} />
             <Route exact path="/Partners" component={Partners} />
 
             <Route
@@ -264,7 +272,7 @@ ReactGA.initialize('UA-145080690-2')
             <Route
               exact
               path="/highlands-leader"
-              component={highlandsLeader}
+              component={HighlandsLeader}
             />
 
 
@@ -320,11 +328,17 @@ ReactGA.initialize('UA-145080690-2')
             <Route path="/isaiah58offering" component={isaiah58offering} />
             <Route path="/isaiah58sermon" component={isaiah58Sermon} />
 
+            <Route path="/christmas" component={christmasPage} />
+
 
             {/* users */}
             <Route path="/forgot-password" component={ForgotPassword} />
             <PrivateRoute path="/dashboard" component={Dashboard} />
+            {/* <PrivateRoute path="/update-profile-pic" component={ProfileImageUpdater} /> */}
             <PrivateRoute path="/admin" component={AdminHome} />
+            <PrivateRoute path="/admin-compacare" component={AdminCompacare} />
+            <PrivateRoute path="/admin-compacare-training" component={AdminCompacareTraining} />
+            <PrivateRoute path="/admin-contact" component={adminContact} />
             <PrivateRoute path="/update-password" component={UpdatePassword} />
             <PrivateRoute path="/create-profile" component={CreateProfile} />
             <Route path="/signin" component={Signin} />

@@ -98,7 +98,7 @@ const HillcrestPage = () => {
             disabilities who have been removed from abusive and neglectful
             circumstances.
           </p>
-          <div className="col-md-5 col-sm-12 float-right mb-md-3 ms-md-3">
+          <div className="col-md-5 col-sm-12 float-end mb-md-3 ms-md-3 mb-3">
             {/* <Image src={Gilliam} fluid /> */}
             <Image fluid
             alt="Gilliam Cottage"
@@ -180,15 +180,15 @@ const HillcrestPage = () => {
           HILLCREST QUALIFIED RESIDENTIAL TREATMENT Program (QRTP)
         </h2>
 
-          <div className="float-left m-lg-4 m-md-0 col-lg-6 col-md-12 text-center">
+          <div className="float-start me-lg-4 me-md-0 col-lg-6 col-md-12 text-center mb-3">
             {/* <img src="../images/garrison900.jpg" className="img-fluid" alt=""> */}
             {/* <Image src={Garrison} fluid /> */}
             <Image fluid
             alt="Garrison Cottage"
             src="https://compact.family/images/garrison900.jpg"
             layout="intrinsic"
-            width="600"
-            height="400"
+            width="500"
+            // height="300"
           />
               </div>
           <p>
@@ -216,14 +216,14 @@ const HillcrestPage = () => {
         <h2 className="green">HILLCREST TRANSITIONAL LIVING CENTER</h2>
 
 
-          <div className="col-sm-12 col-md-12 col-lg-6 mb-3 float-left">
+          <div className="col-sm-12 col-md-12 col-lg-6 ms-md-4 ms-0 mb-3 float-end">
           <Image
             fluid
             alt="TLC Building"
             src="https://compact.family/images/tlc.jpg"
             layout="intrinsic"
-            width="600"
-            height="400"
+            width="500"
+            // height="400"
             // objectFit="cover"
           />
           </div>
@@ -280,7 +280,7 @@ const HillcrestPage = () => {
             </h3>
 
             <a
-              className="btn btn-dark mr-1"
+              className="btn btn-dark me-1"
               href="https://giving.ag.org/Give/Details/886056?MinistryName=886056&Page=1"
               target="_blank" rel="noopener noreferrer"
             >
@@ -288,7 +288,7 @@ const HillcrestPage = () => {
             </a>
 
             <a
-              className="btn btn-dark mr-1 my-2"
+              className="btn btn-dark me-1 my-2"
               href="https://giving.ag.org/Give/Details/886057?MinistryName=886057&Page=1"
               target="_blank" rel="noopener noreferrer"
             >
@@ -296,7 +296,7 @@ const HillcrestPage = () => {
             </a>
 
             <a
-              className="btn btn-dark mr-1 my-2"
+              className="btn btn-dark me-1 my-2"
               href="https://giving.ag.org/Give/Details/890061?MinistryName=890061&Page=1"
               target="_blank" rel="noopener noreferrer"
             >
@@ -304,7 +304,7 @@ const HillcrestPage = () => {
             </a>
 
             <a
-              className="btn btn-dark mr-1 my-2"
+              className="btn btn-dark me-1 my-2"
               href="https://giving.ag.org/Give/Details/890056?MinistryName=890056&Page=1"
               target="_blank" rel="noopener noreferrer"
             >

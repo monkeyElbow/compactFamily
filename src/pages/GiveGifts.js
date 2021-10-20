@@ -43,7 +43,7 @@ const GiveGifts = () => {
         </p>
 
         <div className="row d-flex align-items-stretch <!-- important --> justify-content-center align-items-center text-center">
-          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-blue rounded d-flex justify-content-center align-items-center text-center">
+          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-blue rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/801051?MinistryName=801051&Page=0"
               target="_blank" rel="noopener noreferrer"
@@ -52,7 +52,7 @@ const GiveGifts = () => {
               All COMP<strong>ACT</strong> Family Services
             </a>
           </div>
-          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-orange rounded d-flex justify-content-center align-items-center text-center">
+          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-orange rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/886053?MinistryName=886053&Page=0"
               target="_blank" rel="noopener noreferrer"
@@ -61,7 +61,7 @@ const GiveGifts = () => {
               Foster Care
             </a>
           </div>
-          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-yellow rounded d-flex justify-content-center align-items-center text-center">
+          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-yellow rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/860059?MinistryName=860059%20&Page=0"
               target="_blank" rel="noopener noreferrer"
@@ -70,7 +70,7 @@ const GiveGifts = () => {
               FIND
             </a>{" "}
           </div>
-          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-purple rounded d-flex justify-content-center align-items-center text-center">
+          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-purple rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/801059?MinistryName=801059%20&Page=0"
               target="_blank" rel="noopener noreferrer"
@@ -82,7 +82,7 @@ const GiveGifts = () => {
 
           <div className="w-100"></div>
 
-          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-blue rounded d-flex justify-content-center align-items-center text-center">
+          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-blue rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/801051?MinistryName=801051&Page=0"
               target="_blank" rel="noopener noreferrer"
@@ -91,7 +91,7 @@ const GiveGifts = () => {
               Arkansas COMP<strong>ACT</strong> Family Services
             </a>
           </div>
-          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-green rounded d-flex justify-content-center align-items-center text-center">
+          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-green rounded d-flex justify-content-center align-items-center text-center position-relative">
             {" "}
             <a
               href="https://giving.ag.org/Give/Details/886001?MinistryName=886001&Page=0"
@@ -101,7 +101,7 @@ const GiveGifts = () => {
               Hillcrest Children's Home
             </a>
           </div>
-          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-purple rounded d-flex justify-content-center align-items-center text-center">
+          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-purple rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/801057?MinistryName=801057&Page=0"
               target="_blank" rel="noopener noreferrer"
@@ -110,7 +110,7 @@ const GiveGifts = () => {
               Transitional Living Center
             </a>{" "}
           </div>
-          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-red rounded d-flex justify-content-center align-items-center text-center">
+          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-red rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/886054?MinistryName=886054&Page=0"
               className="stretched-link"
@@ -122,7 +122,7 @@ const GiveGifts = () => {
 
           <div className="w-100"></div>
 
-          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-blue rounded d-flex justify-content-center align-items-center text-center">
+          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-blue rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/801051?MinistryName=801051&Page=0"
               target="_blank" rel="noopener noreferrer"
@@ -131,7 +131,7 @@ const GiveGifts = () => {
               Missouri COMP<strong>ACT</strong> Family Services
             </a>
           </div>
-          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-pink rounded d-flex justify-content-center align-items-center text-center">
+          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-pink rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/860051?MinistryName=860051&Page=0"
               target="_blank" rel="noopener noreferrer"
@@ -140,7 +140,7 @@ const GiveGifts = () => {
               Highlands Adoption and Maternity
             </a>{" "}
           </div>
-          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-pink rounded d-flex justify-content-center align-items-center text-center">
+          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-pink rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/860056?MinistryName=860056&Page=0"
               target="_blank" rel="noopener noreferrer"
@@ -149,7 +149,7 @@ const GiveGifts = () => {
               Highlands Baby Bootie
             </a>{" "}
           </div>
-          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-pink rounded d-flex justify-content-center align-items-center text-center">
+          <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-pink rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/894001-999269?MinistryName=894001&Page=0"
               target="_blank" rel="noopener noreferrer"

@@ -15,7 +15,7 @@ import { FaCheck } from "react-icons/fa";
 const CompaCareTrainingSession3 = () => {
   document.title = "CompaCare Training Session 3"
   const { currentUser } = useAuth();
-  const [profile, setProfile] = useState([]);
+  // const [profile, setProfile] = useState([]);
   const history = useHistory();
   const [error, setError] = useState('')
   const [progress, setProgress] = useState(0)
@@ -28,7 +28,7 @@ const CompaCareTrainingSession3 = () => {
       try {
         var doc = await userRef.get();
         const data = await doc.data();
-        setProfile(data)
+        // setProfile(data)
         setProgress(data.cc_training_progress)
         
         return data.profile
@@ -43,7 +43,7 @@ const CompaCareTrainingSession3 = () => {
       fetchUser()
     } else { return null}
   
-  }, [])
+  }, [currentUser])
 
 
 
@@ -74,7 +74,7 @@ const CompaCareTrainingSession3 = () => {
         {progress > 2 ?
 (
 <div className="d-flex flex-row pt-2">
-<FaCheck className="mt-1 mr-2" /> <h5>Completed</h5>
+<FaCheck className="mt-1 me-2" /> <h5>Completed</h5>
 </div>
 ) : (
 <Button to="/#" onClick={SendData}>I've completed this session</Button>

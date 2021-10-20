@@ -142,7 +142,7 @@ const CompaCarePhilosophy = () => {
 
               <text
                 x="70%"
-                text-anchor="middle"
+                textAnchor="middle"
                 className="planphase"
                 // dy="0"
                 // textLength="600"
@@ -154,7 +154,7 @@ const CompaCarePhilosophy = () => {
 
               <text
                 x="140%"
-                text-anchor="middle"
+                textAnchor="middle"
                 className="planphase"
                 // dy="0"
                 // textLength="600"
@@ -176,7 +176,7 @@ const CompaCarePhilosophy = () => {
 
               <text
                 x="70%"
-                text-anchor="middle"
+                textAnchor="middle"
                 className="planphase"
                 dy="22"
                 // textLength="600"
@@ -199,7 +199,7 @@ const CompaCarePhilosophy = () => {
               <text
                 transform="rotate(0 0 0)"
                 x="42%"
-                text-anchor="middle"
+                textAnchor="middle"
                 className="planphase"
                 dx="180"
                 // textLength="600"

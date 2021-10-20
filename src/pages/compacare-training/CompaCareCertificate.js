@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-import { Container, Row, Col, Card, Button, Alert } from "react-bootstrap";
+import { Container, Row, Col, Button, Alert } from "react-bootstrap";
 
 import BannerCompaCareTraining from "./components/BannerCompaCareTraining";
 import { useAuth } from "../../util/AuthContext";
 import { db } from "../../util/firebase";
 import CompaCareLogo from "../../graphics/CompaCareLogo";
+import Moment from "react-moment";
 
 export default function CompaCareCertificate() {
     document.title = "CompaCare Training Certificate"
@@ -36,7 +37,7 @@ export default function CompaCareCertificate() {
       fetchUser()
     } else { return null}
   
-  }, [])
+  }, [currentUser])
 
   // const printStyle = {
 
@@ -95,7 +96,7 @@ head.appendChild(style);
     <Container className="border border-5 border-dark pt-5 mt-2 d-flex flex-column justify-content-center rounded align-items-center">
         <h1>CERTIFICATE of PARTICIPATION</h1>
         <br />
-        <p>THIS ACKNOWLEDGES THAT</p>
+        <p><em>PRESENTED TO</em></p>
 
         <div className="d-flex justify-content-center border-top border-bottom pt-4 pb-3 w-50">
 <h2>
@@ -103,15 +104,26 @@ head.appendChild(style);
         {profile.last_name}
 </h2>
         </div>
-        <p>WAS AN ACTIVE PARTICIPANT IN A NATIONAL CONSULTATION ON</p>
-        <h4 className="">Community-based, Church-led, Foster Care Initiatives</h4>
+        <p>
+          <em>
+          for completing the 
+          </em>
+        </p>
+        <h4 className="">Official Training for CompaCare® Church Leaders</h4>
         <p style={{lineHeight:"0.1rem"}}>
-            <small>
-            (16 hours November 30 to December 2)
-            </small>
+          
             </p>
+          <p>
+            <em>
+            <Moment format='MMMM Do YYYY'>
+<p>{profile.cc_training_date_completed}</p>
+</Moment>
 
-<Row className="d-flex align-content-end justify-items-between pt-5">
+
+            </em>
+          </p>
+
+<Row className="d-flex align-content-end justify-items-between pt-2">
     {/* <Col md={4} className="d-flex align-items-center justify-content-center p-5">
 
         <Container 
@@ -125,20 +137,20 @@ head.appendChild(style);
             </strong></h5>
         </Container>
     </Col> */}
-    <Col className="p-5">
-        <div className="border-bottom mb-3 border-5">
+    <Col className="p-5 text-center">
+        <div className="border-bottom mb-0 border-5">
 <JohanSig />
         </div>
         <p className="">
             <strong>
-            JOHAN MOSTERT, PHD
+            JOHAN MOSTERT, PhD
             </strong>
-            </p>
-        <p>
+            <br />
             <small>
-            NATIONAL DIRECTOR COMPACARE
+            NATIONAL DIRECTOR COMPACARE®
             </small>
             </p>
+
     </Col>
     <Col className="p-5">
     <CompaCareLogo />

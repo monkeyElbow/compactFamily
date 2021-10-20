@@ -1,15 +1,18 @@
 import { useState } from "react";
 // import { useHistory } from "react-router-dom";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Form, Row, Col, Button } from "react-bootstrap";
 import { useAuth } from "../../util/AuthContext";
 import { db } from "../../util/firebase";
+import { useHistory } from "react-router-dom";
+
 
 export default function CreateProfile() {
   const { currentUser } = useAuth();
+  const history = useHistory();
+
 
   const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
 
 
   // SAVING PROFILE INFO CODE //
@@ -27,7 +30,8 @@ export default function CreateProfile() {
 
     db.collection("Users").doc(currentUser.uid).set(formData);
 
-    setSuccess(true)
+    history.push("/dashboard")
+
   };
   // END SAVING PROFILE INFO CODE //
 
@@ -260,12 +264,7 @@ export default function CreateProfile() {
       
     */}
       
-      {success && (
-        <div className="alert alert-success" style={{padding: "20px", marginTop: "25px"}}>Your profile has been updated!
-        <br />
-        Check out the <Link to="/network">Network page</Link>
-        </div>
-      )} 
+     
     </div>
   );
 }

@@ -62,7 +62,7 @@ const ContactForm = () => {
             <Form.Control
               type="text"
               required
-              value={name}
+              defaultValue={name}
               onChange={(e) => setName(e.target.value)}
             />
           </Form.Group>
@@ -72,7 +72,7 @@ const ContactForm = () => {
             <Form.Control
               type="email"
               required
-              value={email}
+              defaultValue={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <Form.Text className="text-muted">
@@ -86,7 +86,7 @@ const ContactForm = () => {
               as="textarea"
               rows="5"
               required
-              value={body}
+              defaultValue={body}
               onChange={(e) => setBody(e.target.value)}
             ></Form.Control>
 

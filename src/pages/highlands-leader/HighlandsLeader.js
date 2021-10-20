@@ -3,15 +3,17 @@ import BannerHighlandsLeader from './components/BannerHighlandsLeader';
 import { Link } from "react-router-dom";
 import { Container, Image, Col, Row } from "react-bootstrap";
 
-const highlandsLeader = () => {
+import { FaCheck } from "react-icons/fa";
+
+
+const HighlandsLeader = () => {
   document.title = "Highlands Leader"
 
     return(
         <>
 <BannerHighlandsLeader />
 
-<Container>
-          <div className="container py-3">
+<Container className="container py-3">
             <p className="lead">
               <strong>
                 Thank you for your heart and willingness to reach and mentor
@@ -40,40 +42,36 @@ const highlandsLeader = () => {
             </p>
 
             <p className="h4">Your Journey Begins…</p>
-            <ul className="fa-ul">
+            <ul style={{listStyleType:"none"}}>
               <li>
-                <i className="fa-li fa fa-check-circle"></i>
-                <p>
+                
+                <p><FaCheck className="me-3" />
                   Pray that God would open doors and lead you to young, single
                   moms whom He wants you to mentor.
                 </p>
               </li>
               <li>
-                <i className="fa-li fa fa-check-circle"></i>
-                <p>
+                <p><FaCheck className="me-3" />
                   Inform your pastor of the journey you are about to take. Let
                   him/her know of your desire to reach and minister to this
                   vulnerable population.
                 </p>
               </li>
               <li>
-                <i className="fa-li fa fa-check-circle"></i>
-                <p>
+                <p><FaCheck className="me-3" />
                   Invite a single mom(s) to go on the journey with you. We
                   suggest one-on-one mentoring, but you may also want to
                   consider a small group instead.
                 </p>
               </li>
               <li>
-                <i className="fa-li fa fa-check-circle"></i>
-                <p>
+                <p><FaCheck className="me-3" />
                   Establish a time to meet together. Remember to choose a place
                   that feels warm, inviting, and without distractions.
                 </p>
               </li>
               <li>
-                <i className="fa-li fa fa-check-circle"></i>
-                <p>
+                <p><FaCheck className="me-3" />
                   <a href="https://compactfamily.square.site/" target="_blank" rel="noopener noreferrer">  
                     Purchase
                   </a>{" "}
@@ -83,8 +81,8 @@ const highlandsLeader = () => {
                 </p>
               </li>
 
-              <div className="row d-flex justify-content-center mb-4">
-                <div className="col-md-2">
+              <Row className="d-flex justify-content-center align-items-center mb-4">
+                <Col md={2} >
                   <Image fluid
                     src="https://compact.family/images/HighlandsConnect_Leader2020_COVERlowres.png"
                     width="165"
@@ -92,8 +90,8 @@ const highlandsLeader = () => {
                     layout="intrinsic"
                     alt="Highlands Connect Workbook Leader's Guide"
                   />
-                </div>
-                <div className="col-md-3">
+                </Col>
+                <Col md={3} className="col-md-3">
                   <p>
                     {" "}
                     <a
@@ -105,28 +103,26 @@ const highlandsLeader = () => {
                       Purchase Workbook
                     </a>
                   </p>
-                </div>
-              </div>
+                </Col>
+              </Row>
 
               <li>
-                <i className="fa-li fa fa-check-circle"></i>
-                <p>
+                <p><FaCheck className="me-3" />
                   Call and remind those in your group of the first gathering and
                   meeting place.
                 </p>
               </li>
 
               <li>
-                <i className="fa-li fa fa-check-circle"></i>{" "}
-                <p>
+                <p><FaCheck className="me-3" />
                   CELEBRATE at the conclusion of your formal time together!
                   We've included a certificate to print for the girls/women upon
                   completion of the curriculum.
                 </p>
               </li>
 
-              <div className="row d-flex justify-content-center">
-                <div className="col-md-2">
+              <Row className="d-flex justify-content-center align-items-center">
+                <Col md={2}>
                   <Image fluid 
                     src="https://compact.family/images/highlandsconnect_certificate.png"
                     width="400"
@@ -134,8 +130,8 @@ const highlandsLeader = () => {
                     layout="intrinsic"
                     alt="Certificate example"
                   />
-                </div>
-                <div className="col-md-3">
+                </Col>
+                <Col md={3}>
                   <p>
                     <a
                       className="btn btn-primary"
@@ -145,8 +141,8 @@ const highlandsLeader = () => {
                       Download PDF
                     </a>
                   </p>
-                </div>
-              </div>
+                </Col>
+              </Row>
             </ul>
 
             <p className="h4">Before Your First Gathering…</p>
@@ -162,7 +158,6 @@ const highlandsLeader = () => {
                 Back to the lessons
               </Link>
             </p>
-          </div>
         </Container>
 
         <Container fluid className="bg-secondary">
@@ -228,4 +223,4 @@ const highlandsLeader = () => {
     )
 }
 
-export default highlandsLeader;
+export default HighlandsLeader;

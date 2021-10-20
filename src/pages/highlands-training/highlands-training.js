@@ -23,7 +23,7 @@ export default function highandsConnect() {
               healthy, happy children.
             </p>
           </Col>
-          <Col className="bg-dark p-0 d-flex align-items-center justify-content-center">
+          <Col className="bg-dark p-0 d-flex align-items-center justify-content-center position-relative">
             <div className="p-3 text-white rounded-3 text-center">
               <p className="h5">
                 <strong>Are you a leader?</strong>

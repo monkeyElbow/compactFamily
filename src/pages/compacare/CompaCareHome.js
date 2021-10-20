@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import { Container, Col, Row, Image } from "react-bootstrap";
-import CompaCarePhilosophy from "../components/CompaCarePhilosophy";
-import CompaCarePractice from "../components/CompaCarePractice";
-import CompaCarePlan from "../components/CompaCarePlan";
-import CompaCareInterestForm from "../components/CompaCareInterestForm";
+import CompaCarePhilosophy from "./components/CompaCarePhilosophy";
 
-const CompaCarePage = () => {
+import CompaCarePractice from './components/CompaCarePractice'
+import CompaCarePlan from "./components/CompaCarePlan";
+import CompaCareInterestForm from "./components/CompaCareInterestForm";
+
+const CompaCareHome = () => {
   document.title = "CompaCare by COMPACT";
 
   return (
@@ -41,18 +42,18 @@ const CompaCarePage = () => {
 <br />
         <Row>
           <Col md={4} sm={12}>
-        <h1>capacity</h1>
+        <h1>CAPACITY</h1>
         <small>(we don’t have enough foster parents)</small>
           </Col>
           <Col md={4} sm={12}>
-        <h1>stability</h1>
+        <h1>STABILITY</h1>
         <small>
           (too many foster parents are overwhelmed by the complexity of the
           task)
         </small>
           </Col>
           <Col md={4} sm={12}>
-        <h1>and quality</h1>
+        <h1>and QUALITY</h1>
         <small>(foster children suffer in the process).</small>
           </Col>
         </Row>
@@ -68,7 +69,7 @@ const CompaCarePage = () => {
         <Row>
           <Col
             lg={6}
-            className="p-5 text-center text-white d-flex flex-column justify-content-around bg-red"
+            className="p-5 text-center text-white d-flex flex-column justify-content-around bg-red position-relative"
           >
             <h4>
               For CompaCare® Church Leaders’ online training
@@ -79,7 +80,7 @@ const CompaCarePage = () => {
                 </strong>
               </Link>
           </Col>
-          <Col className="p-5 text-center text-white d-flex flex-column justify-content-around bg-dark">
+          <Col className="position-relative p-5 text-center text-white d-flex flex-column justify-content-around bg-dark">
             <h4 className="text-center">
               To order training manuals from my healthy church
               </h4>
@@ -127,7 +128,7 @@ const CompaCarePage = () => {
           have access to the myriad of volunteer services available in the
           church and the community.
         </p>
-        <Link to="/compacare-practice" className="btn btn-primary">More about CompaCare® Practice</Link>
+        {/* <Link to="/compacare-practice" className="btn btn-primary">More about CompaCare® Practice</Link> */}
       </Container>
       <br />
 
@@ -308,7 +309,7 @@ const CompaCarePage = () => {
   );
 };
 
-export default CompaCarePage;
+export default CompaCareHome;
 
 
 const RepIcon = () => {

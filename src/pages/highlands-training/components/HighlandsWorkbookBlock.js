@@ -16,7 +16,7 @@ export default function HighlandsWorkBookBlock() {
         <Col>
 
       <Row>
-          <Col md={12} lg={6} >
+          <Col md={12} lg={6} className="position-relative">
             
             <Image fluid
             src="https://compact.family/images/HC_PartricipantWorkbook_printableCover.png" 
@@ -32,7 +32,7 @@ export default function HighlandsWorkBookBlock() {
               >Download PDF</a>
 </Col>  </Col>
         
-          <Col>
+          <Col className="position-relative">
             
             <Image fluid
             src="https://compact.family/images/HC_Partricipantworkbook.png" 

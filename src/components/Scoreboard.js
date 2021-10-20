@@ -48,7 +48,7 @@ const Scoreboard = () => {
             <Col
               md={6}
               lg={4}
-              className="p-5 d-flex flex-column justify-content-center align-content-around bg-green text-white text-center clickable"
+              className="position-relative p-5 d-flex flex-column justify-content-center align-content-around bg-green text-white text-center clickable"
             >
               <h2 className="mb-3" style={{ lineHeight: "1em" }}>
                 <strong>Hillcrest Children's Home</strong>
@@ -81,7 +81,7 @@ const Scoreboard = () => {
             <Col
               md={6}
               lg={4}
-              className="p-5 d-flex flex-column justify-content-center bg-pink text-white text-center align-content-around clickable"
+              className="position-relative p-5 d-flex flex-column justify-content-center bg-pink text-white text-center align-content-around clickable"
             >
               <h2 className="mb-3" style={{ lineHeight: "1em" }}>
                 <strong>Highlands Maternity Home</strong>
@@ -116,7 +116,7 @@ const Scoreboard = () => {
             <Col
               md={6}
               lg={4}
-              className="p-5 d-flex flex-column justify-content-center align-content-around bg-orange text-white text-center clickable"
+              className="position-relative p-5 d-flex flex-column justify-content-center align-content-around bg-orange text-white text-center clickable"
             >
               <h2 className="mb-3" style={{ lineHeight: "1em" }}>
                 <strong>Foster Care</strong>
@@ -152,7 +152,7 @@ const Scoreboard = () => {
             <Col
               md={6}
               lg={4}
-              className="p-5 d-flex flex-column justify-content-center bg-purple text-white text-center align-content-around clickable"
+              className="position-relative p-5 d-flex flex-column justify-content-center bg-purple text-white text-center align-content-around clickable"
             >
               <h2 className="mb-3" style={{ lineHeight: "1em" }}>
                 <strong>SafeCare</strong>
@@ -186,7 +186,7 @@ const Scoreboard = () => {
             <Col
               md={6}
               lg={4}
-              className="p-5 d-flex flex-column justify-content-center bg-red text-white text-center align-content-around clickable"
+              className="position-relative p-5 d-flex flex-column justify-content-center bg-red text-white text-center align-content-around clickable"
             >
               <h2 className="mb-3" style={{ lineHeight: "1em" }}>
                 <strong>CompaCare</strong>

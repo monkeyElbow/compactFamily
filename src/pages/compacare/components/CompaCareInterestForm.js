@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { db } from "../util/firebase";
+import { db } from "../../../util/firebase";
 import { Button, Form, Container } from "react-bootstrap";
 
 export default function CompaCareInterestForm() {
@@ -75,7 +75,7 @@ export default function CompaCareInterestForm() {
       {!sent && (
         <Form
           onSubmit={handleSubmit}
-          className="d-flex flex-column justify-items-center w-100 mr-3"
+          className="d-flex flex-column justify-items-center w-100 me-3"
         >
           <h5 className="m-3">
             Interested in CompaCare? <br />
@@ -159,7 +159,7 @@ export default function CompaCareInterestForm() {
             </Form.Group>
 
           <Form.Group hidden controlId="date">
-            <Form.Control plaintext readonly value={date} />
+            <Form.Control plaintext readOnly value={date} />
           </Form.Group>
 
           <Form.Group hidden controlId="form">

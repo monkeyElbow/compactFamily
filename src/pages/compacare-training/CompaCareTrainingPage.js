@@ -39,7 +39,7 @@ const CompaCareTrainingPage = () => {
     } else {
       return null;
     }
-  }, []);
+  }, [currentUser]);
 
   return (
     <>
@@ -90,8 +90,9 @@ const CompaCareTrainingPage = () => {
       {/* Materials!!! User is registered.  */}
       {profile.cc_training_enrolled === "yes" && (
         <Container className="py-1 d-flex justify-content-center">
-          <Row className="py-2">
-            <Col md={7}>
+          <Row>
+
+            <Col lg={7} md={12} className="py-2">
               <Card className="p-3">
                 <h4>Training materials needed for this course</h4>
                 <p className="ml-0">
@@ -131,8 +132,8 @@ const CompaCareTrainingPage = () => {
             </Col>
 
 
-            <Col className="card">
-              <Container id="videos" className="d-flex flex-column my-3">
+            <Col className="py-2">
+              <Card className="d-flex flex-column p-3">
                 <h5>Video courses</h5>
                 <small>
                   Click completed on each course to unlock the next session.
@@ -140,10 +141,10 @@ const CompaCareTrainingPage = () => {
 
                 <Button
                   href="/compacare-training-session-1"
-                  className="btn btn-Primary m-2"
+                  className="btn btn-Primary m-2 w-100"
                 >
                   {profile.cc_training_progress > 0 && (
-                    <FaCheck className="mr-3" />
+                    <FaCheck className="me-3" />
                   )}
                   Video 1: Introduction to CompaCare (49:30)
                 </Button>
@@ -152,10 +153,10 @@ const CompaCareTrainingPage = () => {
                 {progress > 0 ? (
                   <Button
                     href="/compacare-training-session-2"
-                    className="btn btn-primary m-2"
+                    className="btn btn-primary m-2 w-100"
                   >
                     {progress > 1 && (
-                      <FaCheck className="mr-3" />
+                      <FaCheck className="me-3" />
                     )}
                     Video 2: The Problem in Foster Care (36:43)
                   </Button>
@@ -163,9 +164,9 @@ const CompaCareTrainingPage = () => {
      <Button
                     disabled
                     href="/compacare-training-session-2"
-                    className="btn btn-secondary m-2"
+                    className="btn btn-secondary m-2 w-100"
                   >
-                    <FaLock className="mr-3" />
+                    <FaLock className="me-3" />
                     Video 2: The Problem in Foster Care (36:43)
                   </Button>
                 )}
@@ -175,10 +176,10 @@ const CompaCareTrainingPage = () => {
                 {progress > 1 ?
                ( <Button
                  href="/compacare-training-session-3"
-                className="btn btn-primary m-2"
+                className="btn btn-primary m-2 w-100"
                 >
  {progress > 2 && (
-                      <FaCheck className="mr-3" />
+                      <FaCheck className="me-3" />
                     )}                  
                   Video 3: The CompaCare Solution (36:43)
                 </Button>) : 
@@ -186,9 +187,9 @@ const CompaCareTrainingPage = () => {
                 <Button
                 disabled
                 href="/compacare-training-session-3"
-                className="btn btn-secondary m-2"
+                className="btn btn-secondary m-2 w-100"
                 >
-                    <FaLock className="mr-3" />
+                    <FaLock className="me-3" />
                   
                   Video 3: The CompaCare Solution (36:43)
                 </Button>
@@ -201,10 +202,10 @@ const CompaCareTrainingPage = () => {
                 (
                 <Button
                 href="/compacare-training-session-4"
-                className="btn btn-primary m-2"
+                className="btn btn-primary m-2 w-100"
                 >
                   {progress > 3 && (
-                    <FaCheck className="mr-3" />
+                    <FaCheck className="me-3" />
                     )}
                   Video 4: The CompaCare Plan (38:26)
                 </Button>
@@ -212,9 +213,9 @@ const CompaCareTrainingPage = () => {
                 <Button
                 disabled
                 href="/compacare-training-session-4"
-                className="btn btn-secondary m-2"
+                className="btn btn-secondary m-2 w-100"
                 >
-                    <FaLock className="mr-3" />
+                    <FaLock className="me-3" />
                   Video 4: The CompaCare Plan (38:26)
                 </Button>
                 )
@@ -227,7 +228,7 @@ const CompaCareTrainingPage = () => {
 (
                 <Button
                   href="/compacare-training-certificate"
-                  className="btn btn-primary m-2"
+                  className="btn btn-primary m-2 w-100"
                 >
                   Print my certificate
                 </Button>
@@ -236,9 +237,9 @@ const CompaCareTrainingPage = () => {
                 <Button
                 disabled
                   href="/compacare-training-certificate"
-                  className="btn btn-secondary m-2"
+                  className="btn btn-secondary m-2 w-100"
                 >
-                    <FaLock className="mr-3" />
+                    <FaLock className="me-3" />
                   Print my certificate
                 </Button>
 
@@ -247,12 +248,12 @@ const CompaCareTrainingPage = () => {
                 <br />
                 <h5>Update your training profile</h5>
                 <Button
-                  className="btn btn-primary m-2"
+                  className="btn btn-primary m-2 w-100"
                   href="/compacare-training-register"
                 >
                   Update Training Profile
                 </Button>
-              </Container>
+              </Card>
             </Col>
           </Row>
         </Container>
