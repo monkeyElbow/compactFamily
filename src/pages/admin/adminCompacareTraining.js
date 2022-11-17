@@ -1,43 +1,49 @@
 import { useState, useEffect } from "react";
-import { Container, Card, Alert } from "react-bootstrap";
+import { Container, Card, Alert, Col, Row } from "react-bootstrap";
 import { 
   Link,
-  //  useHistory 
   } from "react-router-dom";
-// import { useAuth } from "../../util/AuthContext";
 import { db } from "../../util/firebase";
+import {
+  collection,
+  getDocs
+} from "firebase/firestore";
 
  
  export default function AdminCompacareTraining() {
-    // const { currentUser  } = useAuth();
     const [error, setError] = useState("");
-    // const history = useHistory();
     const [ccTrainingUsers, setCcTrainingUsers] = useState([]);
 
 
         // get contact us data 
         useEffect(() => {
-            const trainingEnrolled = [];
-            try {
-              const unsubscribe = db
-                .collection("Users")
-                .where("cc_training_enrolled", "==", "yes")
-                .get()
-                .then((querySnapshot) => {
-                  querySnapshot.forEach(doc => {
-                      trainingEnrolled.push({
-                        ...doc.data(),
-                        key: doc.id,
-                      });
+          async function fetchProfiles() {
+           
+            const usersRef = collection(db, "Users")
+            const usersSnap = await getDocs(usersRef)
+            const tempProfs = []
+            usersSnap.forEach(doc => {
+              tempProfs.push({
+                ...doc.data(),
+                key: doc.data()
+              })
 
-                    });
-                    setCcTrainingUsers(trainingEnrolled);
-                  });
-                return unsubscribe
+            })
+           
+            setCcTrainingUsers(tempProfs)
+          
+          }
+            try {
+           if (ccTrainingUsers.length < 1) {
+             fetchProfiles()
+           } else {
+             console.log('check')
+           }
+
             } catch (error) {
               setError("Trouble fetching contact data");
             }
-          }, []);
+          }, []); // eslint-disable-line
 
 
 
@@ -49,36 +55,106 @@ import { db } from "../../util/firebase";
 
         <h4>CompaCare Training Enrolled Users:{ccTrainingUsers.length}</h4>
 
-        {ccTrainingUsers.map((user) => (
-          <Card className="m-3 p-3" key={user.key}>
-            {/* <p><small>{user.uid}</small></p> */}
-            <h5>{user.first_name} {user.last_name}</h5>
-            
-           <p>{user.email}
-           {/* <FaCopy /> */}
-           </p>
-          
-           <p>Training Progress Level: {user.cc_training_progress}</p>
-           <p>CompaCare Rep: {user.compacare_rep}</p>
-           <p>Church Name: {user.church_name}</p>
-           <p>Pastor Name: {user.pastor_name}</p>
-           <p>Church Phone: {user.church_phone}</p>
-           <p>Church City: {user.church_city}</p>
-           <p>Church State: {user.church_state}</p>
-           <p>Church Website: <a
-      rel="noopener noreferrer"
-      target="_blank"
-      href={`//${user.church_website.replace(/^\/\/|^.*?:(\/\/)?/, '')}`}
-      >
-      {user.church_website.replace(/^\/\/|^.*?:(\/\/)?/, '')}
-    </a></p>
-
-
-          
-          
-          </Card>
-        ))}
+        {ccTrainingUsers.map(user => 
+        {
+          return user.cc_training_enrolled === 'yes' ? (
+            <ProfileCard key={user.id} {...user} />
+          ) :(null)
+        })}
       </Container>
         </>
     )
+}
+
+
+
+
+function ProfileCard({ 
+  first_name,
+last_name,
+cc_training_progress,
+email,
+pastor_name,
+compacare_rep,
+church_name,
+church_city,
+church_phone,
+church_state,
+church_website}) {
+  return(
+    <Card className="m-3">
+    {/* <p><small>{user.uid}</small></p> */}
+    <Card.Header className="pt-3 d-flex justify-content-between">
+    <h5>{first_name} {last_name}</h5>
+   <p>{' '}{email}</p>
+    </Card.Header>
+    <Card.Body>
+
+  
+   <p>
+     CompaCare Training Progress Level: 
+     <strong> {cc_training_progress}
+     </strong>
+     </p>
+   <p>CompaCare Rep: 
+     <strong>             {compacare_rep}
+     </strong>
+     </p>
+
+<Row>
+<Col md={4} className="p-3">
+   <small>Church Name: </small>
+   <h5>
+     <strong>             {church_name}
+     </strong>
+     </h5>
+</Col>
+<Col md={4} className="p-3">
+   <small>Pastor Name:
+       </small> 
+     <h5>
+     <strong>             {pastor_name}
+     </strong>
+   </h5>
+</Col>
+<Col md={4} className="p-3">
+   <small>Church Phone: 
+     </small>
+     <h5>
+       
+     <strong>       {church_phone}
+     </strong>
+     </h5>
+</Col>
+   </Row>
+
+   <Row>
+     <Col md={4} className="p-3">
+   <small>Church City: </small>
+   <h5><strong>{church_city}</strong></h5>
+     </Col>
+     <Col md={4} className="p-3">
+   <small>Church State: </small>
+   <h5><strong>{church_state}</strong></h5>
+     </Col>
+     <Col md={4} className="p-3">
+   <small>Church Website:</small> 
+   <h5><strong>
+   <a
+rel="noopener noreferrer"
+target="_blank"
+href={`//${church_website.replace(/^\/\/|^.*?:(\/\/)?/, '')}`}
+>
+{church_website.replace(/^\/\/|^.*?:(\/\/)?/, '')}
+</a>
+</strong></h5>
+     </Col>
+   </Row>
+
+
+  
+  
+</Card.Body>
+  </Card>
+  )
 }

@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 
 const ThirtyDaysPrayer = () => {
-  document.title = "30 Days of Prayer"
+  document.title = "30 Days of Prayer";
 
   return (
     <Container className="p-3">
@@ -34,9 +34,13 @@ const ThirtyDaysPrayer = () => {
             them in the armor of your love to do your will.
           </li>
           <li>
-            LORD, resource COMP<strong>ACT</strong> with competent, experienced,
-            licensed, professional workers of Christian character and
-            servant-leadership necessary to fulfill its mandate and mission.
+            LORD, resource COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            with competent, experienced, licensed, professional workers of
+            Christian character and servant-leadership necessary to fulfill its
+            mandate and mission.
           </li>
           <li>
             LORD, pour forth your favor and wisdom upon the programs of
@@ -60,7 +64,11 @@ const ThirtyDaysPrayer = () => {
             <strong>ACT</strong>’s professional practice.
           </li>
           <li>
-            LORD, make COMP<strong>ACT</strong> excellent in its redeeming work.
+            LORD, make COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            excellent in its redeeming work.
           </li>
           <li>
             LORD, teach the ministry and its people to lean on your Word and
@@ -68,7 +76,11 @@ const ThirtyDaysPrayer = () => {
           </li>
           <li>
             LORD, daily create a clean heart and build a right spirit within in
-            the people of COMP<strong>ACT</strong>.
+            the people of COMP
+            <strong>
+              <em>ACT</em>
+            </strong>
+            .
           </li>
           <li>
             LORD, bless our ministry partners - churches, donors, professionals,
@@ -88,8 +100,12 @@ const ThirtyDaysPrayer = () => {
             <strong>ACT</strong>.
           </li>
           <li>
-            LORD, lead COMP<strong>ACT</strong> into a greater and healthier
-            season of victory on behalf of vulnerable children and families.
+            LORD, lead COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            into a greater and healthier season of victory on behalf of
+            vulnerable children and families.
           </li>
           <li>
             LORD, bless the partnership of private and public sectors in child

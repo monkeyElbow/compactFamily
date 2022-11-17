@@ -1,69 +1,64 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+// import { Button } from "react-bootstrap";
 
 export default function Continuum() {
   return (
     <>
-      <section id="desktop_permanency" className="d-none d-md-block py-3">
+      <section id="desktop_permanency" 
+      className="d-none d-md-block py-3">
         <div className="bg-white">
           <div className="container text-center">
+           
             <svg
               id="permanencychartfull"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 827 481"
+              viewBox="0 0 827 585"
             >
-              <path
-                className="cstroke"
-                d="M618.2,128.5c65.5,66.5,108.1,165,111.5,275.7"
-              />
-              <path
-                className="cstroke"
-                d="M105.4,404.2c5.1-167.8,100.5-307.6,229-350.5c26.5-8.8,54.4-13.5,83.2-13.5c21.1,0,41.7,2.5,61.6,7.3"
-              />
-              <path
-                className="cstrokegreen"
-                d="M491.8,48.4c0,0,56.2,9,114.2,63.5"
-              />
+             <circle cx="424.3" cy="308.5" r="246.7" fill="none" stroke="#0e73a3" stroke-miterlimit="10" stroke-width="15"/>
+             
+  {/* <path d="M312.5 252.2a125.2 125.2 0 0 1 224 0h4.9a129.7 129.7 0 0 0-233.8 0ZM535.5 366.2a125.2 125.2 0 0 1-222 0h-5a129.6 129.6 0 0 0 231.9 0Z" fill="#2d81c4"/>
+  <path d="M425.5 238.3a71.8 71.8 0 0 0-64.1 39.5H378a57.3 57.3 0 0 1 94.8 0h16.7a71.8 71.8 0 0 0-64.1-39.5ZM425.5 386.3a76.3 76.3 0 0 1-69-43.7h-49.8l2 3.2 36.6 2a88.7 88.7 0 0 0 160.5 0l36.6-2 2-3.2h-50a76.3 76.3 0 0 1-68.9 43.7Z" fill="#2d81c4"/>
+  <path d="M425.5 233.8a76.3 76.3 0 0 1 69.2 44h49.7l-2-3.1-36.4-2a88.7 88.7 0 0 0-161 0l-36.3 2-2 3.1h49.7a76.3 76.3 0 0 1 69.1-44ZM425.5 381.8a71.9 71.9 0 0 0 64-39.2h-16.9a57.3 57.3 0 0 1-94.2 0h-16.8a71.8 71.8 0 0 0 64 39.2ZM487.8 325.8h-21.4l-3.2 7.9H449l21.5-47.9H484l21.4 47.9h-14.5ZM477 299.2l-6.2 15.3h12.3ZM547.4 327.5c-5.4 5.3-12 7.5-19.2 7.5C509.4 335 502 323 502 310c-.1-12.3 8.2-25.3 26.2-25.3a25.6 25.6 0 0 1 18.5 7.6l-8.4 8.2a14 14 0 0 0-10.1-4.1c-9.3 0-12.9 7.5-12.8 13.7s3.3 13.3 12.8 13.3a16.6 16.6 0 0 0 11.2-5ZM562 297h-14v-11.2h41.4V297h-14v36.7H562Z" fill="#2d81c4"/>
+  <path d="M278.7 334.4c-16.9 0-24.9-11.7-25-24.4s8.2-25 25-25a24.8 24.8 0 0 1 17.5 7.2l-4.1 3.8a19 19 0 0 0-13.4-5.3c-12.9 0-19 9.3-19 19.2.1 9.7 6 18.8 19 18.8a19.6 19.6 0 0 0 13.6-5.5l4.2 4a25 25 0 0 1-17.8 7.2ZM379.7 318.6h-1.2l-17.4-24.3v39.4h-5.8v-47.9h7l16.9 24.6 16.7-24.6h7v47.9h-5.8v-39.3ZM419.5 333.7h-5.8v-47.9h21.7c22 0 22 32.4 0 32.4h-15.9Zm15.9-42.3h-15.9v21.3h15.9c14 0 14-21.3 0-21.3ZM347.6 309.9c0 12.5-7.9 24.7-24.3 24.7S299 322.5 299 310c0-13.9 9.3-25 24.4-25 16.2.2 24.3 12.3 24.2 25Zm-24.2-19.4c-12.2 0-18.5 9-18.5 19.4 0 9.7 5.9 19.2 18.5 19.2s18.2-9.7 18.2-19.2c.1-9.7-5.7-19.3-18.2-19.4Z" fill="#a8a8a8"/>
+  <path d="M596.8 285.6a2.6 2.6 0 1 1-2.6-2.7 2.5 2.5 0 0 1 2.6 2.7Zm-2.6 2a2 2 0 1 0-1.9-2 1.8 1.8 0 0 0 1.9 1.9Zm.6-1.6c1-.2.8-1.7-.4-1.7H593v2.6h.7v-.8h.3l.6.8h.8v-.1Zm-.4-1a.3.3 0 1 1 0 .5h-.6v-.6ZM362 390.5c-1.4-1-3.2-1.6-4.2-.3s.2 2.5 1.6 4c1.8 1.8 3.6 3.8 1.8 6.2s-4.7 1.4-6.7-.1c-1.8-1.4-3.1-3.4-2.6-5.8l1.6.2a4.8 4.8 0 0 0 2 4.4c1.3 1 3.3 1.8 4.5.3 1-1.3-.2-2.8-1.6-4.2-1.8-1.9-3.4-3.9-1.8-6s4.4-1.3 6.3 0c1.5 1.3 2.8 2.7 2.5 5h-1.5a4.4 4.4 0 0 0-2-3.7ZM375.4 398l8.4 4-.7 1.4-6.9-3.4-1.8 3.7 6.6 3.3-.7 1.4-6.6-3.3-2 4 7.2 3.5-.7 1.4-8.7-4.2ZM395.9 415.1l-3.1-.8-1.3 4.6-1.6-.4 3.5-12.8 5.8 1.5a4.2 4.2 0 0 1 3.2 5.3 3.8 3.8 0 0 1-4.8 3l3 5.9-2-.6Zm4.9-3a2.7 2.7 0 0 0-2-3.4l-4.2-1.2-1.5 5.3 4.2 1.1a2.6 2.6 0 0 0 3.5-1.8ZM413.6 410l3.8 11.5 5.3-11 1.8.1-6.3 12.9-1.7-.1-4.7-13.6ZM434 410l1.6-.2 1.4 13.1-1.6.2ZM455.8 419.5c-4.5 1.2-7.5-1.3-8.4-4.7a6.6 6.6 0 0 1 4.8-8.5 6.8 6.8 0 0 1 5.2.7l-.8 1.3a5.2 5.2 0 0 0-4-.5 5.3 5.3 0 1 0 2.8 10.2 5.4 5.4 0 0 0 3.2-2.5l1.4.8a7 7 0 0 1-4.2 3.2ZM466 401.7l8.3-4.2.7 1.4-6.9 3.4 1.8 3.7 6.6-3.3.7 1.4-6.6 3.3 2 4 7.2-3.6.7 1.4-8.6 4.3ZM487.3 390.3c-1.4 1-2.4 2.7-1.4 4s2.4.4 4.2-.5c2.3-1.3 4.7-2.4 6.5 0s.1 4.8-1.9 6.3-4.1 2.1-6.3 1l.6-1.4a4.8 4.8 0 0 0 4.8-.8c1.3-1 2.7-2.6 1.5-4.2-1-1.3-2.7-.6-4.5.4-2.3 1.2-4.6 2.3-6.2.1s0-4.6 1.7-6c1.6-1.2 3.3-2 5.5-1.1l-.5 1.4a4.4 4.4 0 0 0-4 .8ZM388.6 202l.6 1.5-7 2.8 1.7 4.3 6.7-2.7.6 1.4-6.8 2.7 2.1 5.1-1.5.6-5-12.3ZM402 198.5l8.6 11.7-1.7.4-2-2.6-7.3 1.6-.7 3.1-1.7.4 3-14.2Zm-.5 1.8-1.6 7.7 6.1-1.3ZM422.7 205.3h-.3l-5-6.6.3 10.9H416l-.2-13.2h2l4.7 6.7 4.5-7h2l.3 13.3h-1.6l-.3-10.8ZM437.8 197l1.7.3-1.7 13.1-1.6-.2ZM446.7 210.5l7 1.8-.4 1.4-8.6-2.2 3.2-12.8 1.6.4ZM460.4 202l1.8.8 1.4 7.3 6.1-4.3 1.9.7-7.8 5.4-2 5-1.6-.7 2-5Z"/> */}
 
-              <text
-                transform="matrix(1 0 0 1 22.9082 462.2539)"
-                className="st8 st6 ctitle"
-              >
-                PREVENTION
-              </text>
-              <text
-                transform="matrix(1 0 0 1 593.2324 462.2539)"
-                className="st8 st6 ctitle"
-              >
-                PERMANENCY
-              </text>
-              <a className="clickable" href="hillcrest/">
-                <path
-                  className="svggreen"
-                  d="M775.6,186.6H499.9c-20.7,0-37.6-16.9-37.6-37.6V144c0-20.7,16.9-37.6,37.6-37.6h275.8
-	c20.7,0,37.6,16.9,37.6,37.6v4.9C813.3,169.6,796.3,186.6,775.6,186.6z"
-                />
+{/* New logo replacement */}
+  <path d="M534.09 365.49c-20.74 39.65-62.27 66.71-110.11 66.71s-89.37-27.06-110.11-66.71h-4.92c21.11 42.15 64.69 71.09 115.04 71.09s93.93-28.94 115.04-71.09h-4.92ZM312.9 252.39c20.4-40.67 62.48-68.59 111.08-68.59s90.67 27.92 111.08 68.59h4.89c-20.74-43.17-64.87-72.97-115.97-72.97s-95.23 29.8-115.97 72.97h4.89Z" fill="#231f20"/>
+  <g fill="#1095d3">
+    <path d="M425 238.62c-19.66 0-37.44 7.96-50.32 20.84-5.35 5.35-9.85 11.55-13.28 18.38h16.58c10.23-15.03 27.47-24.91 47.03-24.91s36.8 9.88 47.03 24.91h16.58c-3.43-6.83-7.93-13.03-13.28-18.38-12.88-12.88-30.67-20.84-50.32-20.84Zm0 146.84c-30.23 0-56.31-17.72-68.43-43.34h-49.44l1.94 3.13 36.31 2c14.07 29.86 44.43 50.53 79.63 50.53s65.55-20.67 79.62-50.53l36.31-2 1.94-3.13h-49.44c-12.12 25.62-38.2 43.34-68.43 43.34Z"/>
+    <path d="M425 234.11c30.38 0 56.57 17.9 68.61 43.73h49.26l-1.94-3.13-36.13-1.99c-13.99-30.07-44.45-50.92-79.8-50.92s-65.82 20.85-79.81 50.92l-36.12 1.99-1.94 3.13h49.26c12.05-25.83 38.24-43.73 68.61-43.73Zm0 146.84c19.66 0 37.44-7.96 50.32-20.85 5.25-5.25 9.69-11.32 13.1-18h-16.66c-10.27 14.82-27.38 24.53-46.76 24.53s-36.5-9.71-46.76-24.53h-16.66c3.41 6.68 7.84 12.74 13.09 18 12.89 12.88 30.66 20.85 50.32 20.85Z"/>
+  </g>
+  <path d="M486.74 325.43h-21.23l-3.12 7.8h-14.24l21.3-47.48h13.57l21.23 47.48h-14.38l-3.12-7.8Zm-10.58-26.39-6.11 15.13h12.15l-6.04-15.13Zm69.69 28.02c-5.36 5.29-11.86 7.39-19.06 7.39-18.65 0-25.91-11.74-25.99-24.62-.07-12.21 8.14-25.17 25.99-25.17 6.85 0 13.02 2.37 18.38 7.6l-8.28 8.14c-3.39-3.26-6.92-4.14-10.1-4.14-9.16 0-12.75 7.46-12.69 13.64.07 6.17 3.33 13.16 12.69 13.16 3.19 0 7.8-1.36 11.19-4.82l7.87 8.82Zm14.56-30.26h-13.84v-11.05h41.11v11.05h-13.91v36.43h-13.36V296.8Z" fill="#1095d3"/>
+  <path d="M279.33 333.98c-16.75 0-24.69-11.6-24.76-24.22-.13-12.55 8.07-24.76 24.76-24.76 6.31 0 12.55 2.38 17.37 7.12l-4.07 3.8c-3.66-3.59-8.48-5.29-13.3-5.29-12.75 0-18.92 9.23-18.86 19.06.13 9.63 6.04 18.66 18.86 18.66 4.82 0 9.91-1.9 13.5-5.5l4.14 4.07c-4.82 4.75-11.13 7.05-17.64 7.05Zm100.25-15.67h-1.22l-17.23-24.15v39.07h-5.83v-47.48h7.05l16.69 24.42 16.55-24.42h7.05v47.48h-5.83v-38.94l-17.23 24.01Zm39.48 14.92h-5.83v-47.48h21.57c21.85 0 21.85 32.09 0 32.15h-15.74v15.33Zm15.74-41.99h-15.74v21.17h15.74c13.97 0 13.97-21.17 0-21.17Zm-87.09 18.38c-.07 12.41-7.8 24.56-24.08 24.56s-24.15-12.08-24.15-24.56c0-13.77 9.22-24.69 24.22-24.69 16.08.07 24.08 12.14 24.01 24.69Zm-24.01-19.27c-12.08 0-18.32 8.89-18.32 19.27 0 9.64 5.84 19 18.32 19s18.11-9.63 18.11-19c.07-9.63-5.7-19.13-18.11-19.27Z" fill="#7d7d7d"/>
+  <path d="M595.58 285.23c0 1.58-1.04 2.92-2.9 2.92s-2.89-1.34-2.89-2.92 1.04-2.92 2.89-2.92 2.9 1.34 2.9 2.92Zm-2.9 2.16c1.3 0 2.04-.95 2.04-2.16s-.74-2.16-2.04-2.16-2.03.95-2.04 2.16c0 1.21.74 2.16 2.04 2.16Zm.7-1.76c1.06-.24.85-1.87-.45-1.87h-1.4v2.94h.78v-.91h.27l.7.91h.83v-.17l-.73-.9Zm-.45-1.18c.46 0 .46.67 0 .67h-.62v-.67h.62ZM376.21 397.93l1.57.82-1.69 13.28-1.53-.79.59-4.01-4.44-2.31-2.97 2.77-1.43-.75 9.9-9Zm-4.5 6.05 3.64 1.9.67-4.4c.11-.74.32-1.83.32-1.83l-.03-.02s-.78.78-1.33 1.3l-3.27 3.05Zm17.21 6.45c1.02-3.54 3.94-5.68 7.53-4.65 2.82.81 4.06 2.92 3.74 5.24l-1.49-.43c.14-1.58-.76-2.96-2.66-3.51-2.65-.76-4.75.96-5.56 3.79-.85 2.95.22 5.41 2.73 6.14 2.28.65 3.8-.59 4.47-2.32l1.5.43c-.36 1.19-1.32 2.38-2.43 2.97-1.08.58-2.44.67-3.97.23-3.43-.98-4.9-4.24-3.85-7.9Zm22.02-1.28 9.91.78-.11 1.38-4.17-.33-.88 11.13-1.58-.12.88-11.13-4.17-.33.11-1.38Zm20.81.4 1.58-.13 1.07 12.51-1.57.13-1.07-12.51Zm14.28 4.45c-.97-3.63.57-6.93 4.24-7.92 3.66-.98 6.66 1.1 7.63 4.73.97 3.63-.57 6.93-4.24 7.92s-6.66-1.1-7.63-4.73Zm10.31-2.77c-.76-2.85-2.87-4.59-5.72-3.83s-3.8 3.33-3.03 6.18 2.86 4.58 5.71 3.81c2.85-.76 3.8-3.31 3.04-6.16Zm10.13-10.56 1.48-.77 9.1 5.12c.67.38 1.55 1.02 1.55 1.02l.03-.02-4.75-9.18 1.31-.68 5.77 11.15-1.43.74-9.13-5.12c-.64-.36-1.54-.96-1.54-.96l-.03.02 4.74 9.15-1.31.68-5.77-11.15Zm-130.4-152.16c-2.95-2.23-3.91-5.73-1.65-8.72 1.77-2.35 4.19-2.75 6.25-1.62l-.93 1.24c-1.43-.7-3.04-.35-4.24 1.24-1.66 2.21-.81 4.79 1.55 6.57 2.46 1.85 5.15 1.74 6.73-.35 1.43-1.9.82-3.77-.56-5.01l.94-1.25c.99.77 1.75 2.09 1.91 3.34.16 1.22-.25 2.52-1.21 3.8-2.15 2.85-5.73 3.07-8.78.77Zm11.25-14c-2.56-2.76-2.74-6.42.04-9.01 2.79-2.59 6.42-2.14 8.99.62 2.56 2.76 2.74 6.42-.04 9.01-2.79 2.59-6.42 2.14-8.99-.62Zm7.84-7.29c-2.01-2.17-4.7-2.73-6.86-.71-2.17 2.01-1.81 4.73.21 6.9 2.01 2.17 4.68 2.71 6.85.7s1.82-4.72-.2-6.88Zm3.73-10.95 1.71-1.08 9.03 6.68.03-.02-2.15-11.01 1.74-1.1 6.71 10.66-1.28.81-5.52-8.76-.03.02s.24 1.01.37 1.64l1.75 9.26-1.03.65-7.59-5.58c-.55-.4-1.32-1.04-1.32-1.04l-.03.02 5.52 8.76-1.21.76-6.71-10.65Zm18.35-10.44 4.85-2c1.22-.5 2.33-.49 3.23-.02.72.37 1.33 1.01 1.7 1.89.88 2.13.19 3.92-2.35 4.97l-3.17 1.31 2.02 4.88-1.46.6-4.81-11.63Zm3.76 4.96 3.06-1.26c1.64-.68 2.08-1.83 1.53-3.17-.58-1.4-1.74-1.78-3.22-1.16l-3.14 1.3 1.77 4.29Zm14.55-11.42 1.72-.44 7.61 11.05-1.67.42-2.24-3.39-4.86 1.24-.37 4.05-1.57.4 1.38-13.34Zm.68 7.53 3.99-1.01-2.44-3.74c-.41-.62-.98-1.58-.98-1.58h-.03s-.06 1.11-.13 1.87l-.41 4.46Zm12.95-1.94 1.54-.15c.41 2.1 1.81 3.08 4.18 2.86 1.74-.16 2.91-1.07 2.76-2.63-.16-1.72-1.71-1.98-4-2.26-2.26-.28-4.21-.74-4.43-3.1-.19-2.07 1.41-3.48 3.95-3.71 3.14-.3 4.59 1.18 5.12 3.46l-1.49.14c-.4-1.77-1.64-2.55-3.48-2.38-1.7.16-2.75.98-2.63 2.28.13 1.42 1.58 1.71 3.49 1.9 2.48.26 4.77.65 5.03 3.47.22 2.35-1.57 3.84-4.27 4.1-3.52.33-5.39-1.47-5.77-3.98Zm16.02-1.06 1.55.1c.08 2.14 1.31 3.33 3.69 3.47 1.74.11 3.04-.61 3.13-2.17.11-1.72-1.38-2.22-3.6-2.85-2.18-.63-4.04-1.38-3.9-3.75.13-2.07 1.93-3.22 4.47-3.06 3.15.19 4.35 1.87 4.52 4.21l-1.49-.09c-.12-1.81-1.22-2.77-3.07-2.89-1.7-.1-2.87.55-2.95 1.85-.09 1.42 1.29 1.93 3.15 2.42 2.41.64 4.61 1.38 4.43 4.21-.14 2.36-2.14 3.56-4.85 3.39-3.53-.22-5.1-2.29-5.08-4.83Zm18.14-6.52 1.56.29-2.27 12.38-1.56-.29 2.26-12.38Zm7.42 7.87c1.16-3.58 4.27-5.52 7.89-4.35s5 4.56 3.84 8.15c-1.16 3.58-4.27 5.52-7.89 4.35s-5-4.56-3.84-8.15Zm10.18 3.3c.91-2.81.09-5.43-2.72-6.34-2.81-.91-5.01.73-5.92 3.54-.91 2.81-.09 5.41 2.72 6.32 2.81.91 5-.71 5.92-3.52Zm11.21-2.1 1.48.78.98 10.42c.07.77.05 1.86.05 1.86l.03.02 4.85-9.17 1.31.69-5.88 11.13-1.43-.76-1.01-10.45c-.07-.73-.09-1.82-.09-1.82l-.03-.02-4.83 9.14-1.31-.69 5.89-11.13Zm18.98 11.53 1.42 1.07-3.89 12.84-1.38-1.04 1.25-3.87-4-3.03-3.4 2.24-1.29-.98 11.29-7.24Zm-5.46 5.23 3.29 2.49 1.4-4.24c.23-.71.62-1.76.62-1.76l-.03-.02s-.9.64-1.54 1.07l-3.74 2.47Zm14.42 2.05 7.03 7.06-.99.98-2.96-2.97-7.93 7.9-1.12-1.12 7.93-7.9-2.96-2.97.99-.98Zm12.1 13.08 5.24 7.19-1.12.82-4.31-5.9-3.21 2.34 3.91 5.36-1.08.79-3.91-5.36-3.57 2.6 4.43 6.08-1.18.86-5.36-7.36 10.17-7.42Z" fill="#231f20"/>
 
-                <text transform="matrix(1 0 0 1 579 123)">
-                  <tspan x="-80" y="15.5" className="ctext">
-                    DEVELOPMENTAL DISABILITIES
+              <a className="clickable" href="/hillcrest">
+
+              <rect
+                className="svggreen"
+               x="570.6" y="95.7" width="226.8" height="94.5" rx="47.2" fill="#00b473"/>
+
+                <text transform="matrix(1 0 0 1 680 110)">
+                  <tspan x="-42" y="15.5" className="ctext">
+                  Disabilities 
                   </tspan>
-                  <tspan x="-50" y="30.9" className="ctext">
-                    RESIDENTIAL TREATMENT
+                  <tspan x="-40" y="30.9" className="ctext">
+Treatment 
                   </tspan>
-                  <tspan x="-40" y="46.4" className="ctext">
-                    TRANSITIONAL LIVING
+                  <tspan x="-37" y="46.4" className="ctext">
+Maternity 
+                  </tspan>
+                  <tspan x="-39" y="62" className="ctext">
+Transition
                   </tspan>
                 </text>
               </a>
 
-              <a className="clickable" href="hillcrest/">
-                <path
+              <a className="clickable" href="/hillcrest">
+<path
                   className="svggreen"
-                  d="M493.9,51.7C489.7,64,478,73,464.3,73h-89.9c-17.2,0-31.2-14-31.2-31.2v0c0-17.2,14-31.2,31.2-31.2h89.9
-	c17.2,0,31.2,14,31.2,31.2v0C495.5,45.3,494.9,48.6,493.9,51.7"
-                />
+ d="M502.7 69.2a34.7 34.7 0 0 1-32.8 23.6h-99.5a34.6 34.6 0 0 1-34.5-34.5 34.6 34.6 0 0 1 34.5-34.5h99.5a34.6 34.6 0 0 1 34.5 34.5 34.4 34.4 0 0 1-1.7 10.9" fill="#00b473"/>
 
-                <text transform="matrix(1 0 0 1 372 32.3989)">
+                <text transform="matrix(1 0 0 1 372 48)">
                   <tspan x="0" y="0" className="ctext">
                     HILLCREST
                   </tspan>
@@ -76,94 +71,88 @@ export default function Continuum() {
                 </text>
               </a>
 
-              <path
-                className="svgblue"
-                d="M789.2,430.1h-119c-12.6,0-23-10.3-23-23v-3c0-12.6,10.3-23,23-23h119c12.6,0,23,10.3,23,23v3
-	C812.2,419.8,801.9,430.1,789.2,430.1z"
-              />
 
-              <text transform="matrix(1 0 0 1 700 403.6982)">
+                <rect
+                className="svgblue"
+                 x="333.7" y="524.9" width="182.6" height="54.2" rx="27.1" fill="#2d81c4"/>
+
+              <text transform="matrix(1 0 0 1 397 558)">
                 <tspan x="0" y="0" className="ctext">
                   FAMILY
                 </tspan>
-                <tspan x="-40" y="15.5" className="ctext">
-                  REUNIFICATION
-                </tspan>
+
               </text>
 
-              <a className="clickable" href="compacare/">
-                <path
+              <a className="clickable" href="/compacare">
+
+                  <rect 
                   className="svgred"
-                  d="M164.9,429.2h-119c-12.6,0-23-10.3-23-23v-3c0-12.6,10.3-23,23-23h119c12.6,0,23,10.3,23,23v3
-	C187.9,418.9,177.6,429.2,164.9,429.2z"
-                />
-                <text transform="matrix(1 0 0 1 47 410.9512)" className="ctext">
+                  x="80.2" y="420.9" width="182.6" height="54.2" rx="27.1" fill="#c80000"/>
+                <text transform="matrix(1 0 0 1 117 454)" 
+                className="ctext"
+                >
                   COMPACARE
                 </text>
                 <text
-                  transform="matrix(0.583 0 0 0.583 160.3525 404.7676)"
+                  transform="matrix(0.583 0 0 0.580 230 445)"
                   className="ctext"
                 >
                   ®
                 </text>
               </a>
 
-              <a className="clickable" href="find/">
-                {" "}
-                <path
-                  className="svgyellow"
-                  d="M224,224.2H105c-12.6,0-23-10.3-23-23v-3c0-12.6,10.3-23,23-23h119c12.6,0,23,10.3,23,23v3
-                C247,213.9,236.7,224.2,224,224.2z"
-                />
-                <text transform="matrix(1 0 0 1 110 199)">
+              <a className="clickable" href="/find">
+              <rect
+                className="svgyellow"
+               x="642" y="273.4" width="182.6" height="54.2" rx="27.1" fill="#fbae17"/>
+              
+
+                <text transform="matrix(1 0 0 1 677 299)">
                   <tspan x="0" y="0" className="ctext">
-                    FIND Kinship{" "}
+                  FIND KINSHIP
                   </tspan>
                   <tspan x="12" y="15.5" className="ctext">
-                    Navigator
+                    NAVIGATOR
                   </tspan>
                 </text>
               </a>
 
-              <a className="clickable" href="safecare/">
-                <path
-                  className="svgpurple"
-                  d="M178,323.2H59c-12.6,0-23-10.3-23-23v-3c0-12.6,10.3-23,23-23h119c12.6,0,23,10.3,23,23v3
-               C201,312.9,190.7,323.2,178,323.2z"
-                />
+              <a className="clickable" href="/safecare">
 
-                <text transform="matrix(1 0 0 1 73 305)" className="ctext">
+<rect
+                  className="svgpurple"
+ x="23.6" y="273.4" width="182.6" height="54.2" rx="27.1" fill="#684e9d"/>
+
+                <text transform="matrix(1 0 0 1 72 307)" className="ctext">
                   SAFECARE
                 </text>
               </a>
 
-              <a className="clickable" href="highlands/">
-                <path
-                  className="svgpink"
-                  d="M778.9,290.7C774.7,303,763,312,749.3,312h-89.9c-17.2,0-31.2-14-31.2-31.2v0c0-17.2,14-31.2,31.2-31.2h89.9
-c17.2,0,31.2,14,31.2,31.2v0C780.5,284.3,779.9,287.6,778.9,290.7"
-                />
-                <text transform="matrix(1 0 0 1 652 272)">
+              <a className="clickable" href="/highlands">
+              
+              
+              <path
+                className="svgpink"
+               d="M763.8 459.6a34.6 34.6 0 0 1-32.8 23.6h-99.5a34.6 34.6 0 0 1-34.5-34.5 34.6 34.6 0 0 1 34.5-34.5H731a34.6 34.6 0 0 1 34.6 34.5 34 34 0 0 1-1.8 10.9"/>
+              
+
+                <text transform="matrix(1 0 0 1 633 446)">
                   <tspan x="0" y="0" className="ctext">
                     HIGHLANDS
                   </tspan>
                   <tspan x="2" y="16" className="ctext">
-                    MATERNITY
+                    ADOPTION
                   </tspan>
-                  <tspan x="0" y="32" className="ctext">
-                    & ADOPTION
-                  </tspan>
+
                 </text>
               </a>
 
-              <a className="clickable" href="fostercare/">
-                <path
-                  className="svgorange"
-                  d="M303.4,134.4h-119c-12.6,0-23-10.3-23-23v-3c0-12.6,10.3-23,23-23h119c12.6,0,23,10.3,23,23v3
-	C326.4,124.1,316.1,134.4,303.4,134.4z"
-                />
+              <a className="clickable" href="/fostercare">
+              <rect
+                className="svgorange"
+               x="80.2" y="120.5" width="182.6" height="54.2" rx="27.1"/>
 
-                <text transform="matrix(1 0 0 1 185 116)" className="ctext">
+                <text transform="matrix(1 0 0 1 112 154)" className="ctext">
                   FOSTER CARE
                 </text>
               </a>
@@ -175,182 +164,168 @@ c17.2,0,31.2,14,31.2,31.2v0C780.5,284.3,779.9,287.6,778.9,290.7"
       {/* Show prevention to permanency chart mobile */}
       <section id="mobile_permanency" className="d-md-none">
         <div className="bg-white">
-          <div className="container text-center">
-            <svg
+          <div className="container text-center d-flex flex-column my-5">
+
+            <Link className="my-1 px-4 py-3 bg-red clickable text-white rounded w-100" to="/compacare">CompaCare</Link>
+            <Link className="my-1 px-4 py-3 bg-purple clickable text-white rounded w-100" to="/safecare">SafeCare</Link>
+            <Link className="my-1 px-4 py-3 bg-green clickable text-white rounded w-100" to="/hillcrest">Hillcrest Children's Home</Link>
+            <Link className="my-1 px-4 py-3 bg-yellow clickable text-white rounded w-100" to="/find">FIND</Link>
+            <Link className="my-1 px-4 py-3 bg-pink clickable text-white rounded w-100" to="/highlands">Highlands Adpotion</Link>
+            {/* <svg
               id="continuum_mobile"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 392 803"
+              viewBox="0 0 700 540"
             >
-              <line
-                className="cstroke"
-                x1="196.8"
-                y1="702.9"
-                x2="196.8"
-                y2="526.6"
-              />
-              <line
-                className="cstroke"
-                x1="196.8"
-                y1="432.5"
-                x2="196.8"
-                y2="101.6"
-              />
-              <line
-                className="cstrokegreen"
-                x1="196.8"
-                y1="542.9"
-                x2="196.8"
-                y2="432.5"
-              />
-
-              <text
-                transform="matrix(1 0 0 1 92.9649 42.2539)"
-                className="ctitle"
-              >
-                PREVENTION
-              </text>
-
-              <text transform="matrix(1 0 0 1 85.8825 795)" className="ctitle">
-                PERMANENCY
-              </text>
-
-              <a className="clickable" href="compacare/">
-                <path
-                  className="svgred"
-                  d="M256.3,122.2h-119c-12.6,0-23-10.3-23-23v-3c0-12.6,10.3-23,23-23h119c12.6,0,23,10.3,23,23v3
-	C279.3,111.8,268.9,122.2,256.3,122.2z"
-                />
-
-                <text transform="matrix(1 0 0 1 140 102)" className="ctext">
-                  COMPACARE
-                </text>
-                <text
-                  transform="matrix(0.583 0 0 0.583 251.7085 97.7321)"
-                  className="ctext"
-                >
-                  ®
-                </text>
-              </a>
-
-              <a className="clickable" href="safecare/">
-                <path
-                  className="svgpurple"
-                  d="M256,202.2H137c-12.6,0-23-10.3-23-23v-3c0-12.6,10.3-23,23-23h119c12.6,0,23,10.3,23,23v3
-  C279,191.9,268.7,202.2,256,202.2z"
-                />
-
-                <text transform="matrix(1 0 0 1 152 183)" className="ctext">
-                  SAFECARE
-                </text>
-              </a>
-
-              <a className="clickable" href="find/">
-                <path
-                  className="svgyellow"
-                  d="M256,282.2H137c-12.6,0-23-10.3-23-23v-3c0-12.6,10.3-23,23-23h119c12.6,0,23,10.3,23,23v3
-    C279,271.8,268.7,282.2,256,282.2z"
-                />
-
-                <text transform="matrix(1 0 0 1 142 255)">
-                  <tspan x="0" y="0" className="ctext">
-                    FIND Kinship{" "}
-                  </tspan>
-                  <tspan x="12" y="16" className="ctext">
-                    Navigator
-                  </tspan>
-                </text>
-              </a>
-
-              <a className="clickable" href="fostercare/">
-                <path
-                  className="svgorange"
-                  d="M256.3,362.3h-119c-12.6,0-23-10.3-23-23v-3c0-12.6,10.3-23,23-23h119c12.6,0,23,10.3,23,23v3
-C279.3,351.9,268.9,362.3,256.3,362.3z"
-                />
-
-                <text
-                  transform="matrix(1 0 0 1 137 342.8147)"
-                  className="ctext"
-                >
-                  FOSTER CARE
-                </text>
-              </a>
-
-              <a className="clickable" href="hillcrest/">
-                <path
+              <defs>
+    <linearGradient id="a" x1="297.6" y1="411" x2="299.5" y2="395.5" gradientUnits="userSpaceOnUse">
+      <stop offset=".4" stop-color="#2d81c4"/>
+      <stop offset=".8" stop-color="#0e73a3"/>
+    </linearGradient>
+    <linearGradient id="b" x1="307.1" y1="129.4" x2="310.9" y2="172.1" gradientUnits="userSpaceOnUse">
+      <stop offset=".4" stop-color="#00b473"/>
+      <stop offset=".8" stop-color="#0e73a3"/>
+    </linearGradient>
+  </defs>
+  <path d="M223.7 414.3c33-4 49.4-4 69.1-9.8s20-13.8 20-13.8-6.1 7.7 5.8 9 43.3-1.3 43.3-1.3-22.3 5.5-20 9 9 3.8 16.5 6.4 10.3 15.5 10.3 15.5Z" fill="url(#a)"/>
+  <path d="M394.7 94c2 9 0 23-5.2 32.3s-23.3 26.3-31.6 32c-13.6 9.4-4.9 10-5.8 13s-28.2 6-28.2 6 11-9-11-19.3c-12.3-5.8-32.6-10.7-50.4-12s-46.2-12.3-46.2-12.3Z" fill="url(#b)"/>
+  <circle cx="345.5" cy="286.4" r="108" fill="none" stroke="#0e73a3" stroke-miterlimit="10" stroke-width="21"/>
+  
+  
+  <a className="clickable" href="/hillcrest">
+  <path 
                   className="svggreen"
-                  d="M271.3,433.7c-4.1,12.4-15.9,21.4-29.6,21.4h-89.9c-17.2,0-31.2-14-31.2-31.2v0c0-17.2,14-31.2,31.2-31.2h89.9
-	c17.2,0,31.2,14,31.2,31.2v0C272.9,427.3,272.4,430.6,271.3,433.7"
-                />
+  d="M393.4 114.2a47.1 47.1 0 0 1-44.5 32.1H213.6a47 47 0 0 1-47-47 47 47 0 0 1 47-46.8h135.3a47 47 0 0 1 46.9 46.9 46.7 46.7 0 0 1-2.4 14.8"/>
+               
 
-                <text transform="matrix(1 0 0 1 149 414.3989)">
-                  <tspan x="0" y="0" className="ctext">
+                <text transform="matrix(1 0 0 1 219 90)">
+                  <tspan x="0" y="0" className="ctext mobileText">
                     HILLCREST
                   </tspan>
-                  <tspan x="-3.9" y="15.5" className="ctext">
+                  <tspan x="-3.9" y="20" className="ctext mobileText">
                     CHILDREN’S
                   </tspan>
-                  <tspan x="22.2" y="30.9" className="ctext">
+                  <tspan x="22.2" y="40" className="ctext mobileText">
                     HOME
                   </tspan>
                 </text>
               </a>
 
-              <a className="clickable" href="hillcrest/">
-                <path
-                  className="svggreen"
-                  d="M334.7,566.6H58.9c-20.7,0-37.6-16.9-37.6-37.6V524c0-20.7,16.9-37.6,37.6-37.6h275.8
-    c20.7,0,37.6,16.9,37.6,37.6v4.9C372.3,549.6,355.4,566.6,334.7,566.6z"
-                />
 
-                <text transform="matrix(1 0 0 1 140 500)">
-                  <tspan x="-80" y="15.5" className="ctext">
-                    DEVELOPMENTAL DISABILITIES
+
+  <a className="clickable" href="/hillcrest">
+  <rect className="svggreen" x="385.8" y="110.1" width="308.3" height="128.4" rx="64.2" fill="#00b473"/>
+
+                <text transform="matrix(1 0 0 1 480 125)">
+                  <tspan x="0" y="15.5" className="ctext mobileText">
+                  Disabilities
+
+
                   </tspan>
-                  <tspan x="-50" y="30.9" className="ctext">
-                    RESIDENTIAL TREATMENT
+                  <tspan x="0" y="40" className="ctext mobileText">
+                  Treatment 
                   </tspan>
-                  <tspan x="-40" y="46.4" className="ctext">
-                    TRANSITIONAL LIVING
+                  <tspan x="0" y="65" className="ctext mobileText">
+                  Maternity
+                  </tspan>
+                  <tspan x="0" y="90" className="ctext mobileText">
+                  Transition
                   </tspan>
                 </text>
               </a>
 
-              <a className="clickable" href="highlands/">
-                <path
-                  className="svgpink"
-                  d="M270.9,639.7C266.7,652,255,661,241.3,661h-89.9c-17.2,0-31.2-14-31.2-31.2v0c0-17.2,14-31.2,31.2-31.2h89.9
-              c17.2,0,31.2,14,31.2,31.2v0C272.5,633.3,271.9,636.6,270.9,639.7"
-                />
+              <a className="clickable" href="/find">
+  <rect className="svgyellow" x="429" y="254.9" width="248.2" height="73.7" rx="36.9" fill="#fbae17"/>
 
-                <text transform="matrix(1 0 0 1 146 620)">
-                  <tspan x="0" y="0" className="ctext">
+                <text transform="matrix(1 0 0 1 480 290)">
+                  <tspan x="0" y="0" className="ctext mobileText">
+                    FIND Kinship
+                  </tspan>
+                  <tspan x="12" y="20" className="ctext mobileText">
+                    Navigator
+                  </tspan>
+                </text>
+              </a>
+
+              
+
+
+              <a className="clickable" href="/highlands">
+
+              <path 
+                className="svgpink"
+              d="M617 405.7a47.1 47.1 0 0 1-44.4 32H437.3a47 47 0 0 1-47-46.8 47 47 0 0 1 47-47h135.3a47 47 0 0 1 46.9 47 46.8 46.8 0 0 1-2.4 14.8" fill="#ec2079"/>
+
+                <text transform="matrix(1 0 0 1 440 385)">
+                  <tspan x="0" y="0" className="ctext mobileText">
                     HIGHLANDS
                   </tspan>
-                  <tspan x="2" y="16" className="ctext">
+                  <tspan x="2" y="23" className="ctext mobileText">
                     MATERNITY
-                  </tspan>
-                  <tspan x="0" y="32" className="ctext">
-                    & ADOPTION
                   </tspan>
                 </text>
               </a>
 
-              <path
-                className="svgblue"
-                d="M256,742.4H137c-12.6,0-23-10.3-23-23v-3c0-12.6,10.3-23,23-23h119c12.6,0,23,10.3,23,23v3
-                     C279,732.1,268.7,742.4,256,742.4z"
-              />
 
-              <text transform="matrix(1 0 0 1 168 715)">
-                <tspan x="0" y="0" className="ctext">
+  <rect x="139.8" y="412.6" width="248.2" height="73.7" rx="36.9" fill="#2d81c4"/>
+  
+  <text transform="matrix(1 0 0 1 225 458)">
+                <tspan x="0" y="0" className="ctext mobileText">
                   FAMILY
                 </tspan>
-                <tspan x="-38" y="15.5" className="ctext">
-                  REUNIFICATION
-                </tspan>
+               
               </text>
-            </svg>
+
+
+
+  <a className="clickable" href="/safecare">
+  <rect 
+                  className="svgpurple"
+  x="4.2" y="238.7" width="248.2" height="73.7" rx="36.9" fill="#684e9d"/>
+               
+                <text transform="matrix(1 0 0 1 70 283)" className="ctext mobileText">
+                  SAFECARE
+                </text>
+              </a>
+
+
+
+
+
+
+  <a className="clickable" href="/compacare">
+  <rect 
+                  className="svgred"
+  x="26.6" y="323.5" width="248.2" height="73.7" rx="36.9" fill="#c80000"/>
+               
+
+                <text transform="matrix(1 0 0 1 69 369)" className="ctext mobileText">
+                  COMPACARE
+                </text>
+                <text
+                  transform="matrix(0.583 0 0 0.583 211 357)"
+                  className="ctext mobileText"
+                >
+                  ®
+                </text>
+              </a>
+
+
+
+              <a className="clickable" href="/fostercare">
+  <rect 
+className="svgorange"
+  x="42.9" y="155.8" width="248.2" height="73.7" rx="36.9" fill="#f26322"/>
+
+                <text
+                  transform="matrix(1 0 0 1 90 199)"
+                  className="ctext mobileText"
+                >
+                  FOSTER CARE
+                </text>
+              </a>
+
+            
+
+            </svg> */}
           </div>
         </div>
       </section>

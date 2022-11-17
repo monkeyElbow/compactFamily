@@ -17,7 +17,7 @@ export default function BrandPalette({ area, color, rgb, cmyk }) {
 
   return (
     <>
-<Col md={3} lg={3} xl={2} className="my-1">
+<Col md={3} lg={3} xl={3} className="my-1">
       <CopyToClipboard text={`${color}`} onCopy={handleCopy}>
         <div className="card pointer-event">
           <div

@@ -1,11 +1,17 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import { SocialLineup } from "../components/SocialLineup";
-import {FaPhone, FaFacebook, FaInstagram, FaTwitter, FaYoutube} from 'react-icons/fa'
+// import { SocialLineup } from "../components/SocialLineup";
+import {
+  FaPhone,
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 // import { Link } from "react-router-dom";
 
 const PlannedGiving = () => {
-  document.title = "COMPACT Planned Giving"
+  document.title = "COMPACT Planned Giving";
 
   return (
     <>
@@ -19,15 +25,19 @@ const PlannedGiving = () => {
                 <p className="lead text-left">
                   A planned gift, estate gift or endowment ensures that your
                   legacy is continued and helps secure the future to see the
-                  mission of COMP<strong>ACT</strong> continue. You will have
-                  peace of mind knowing that your gifts are given as you
-                  intended.{" "}
+                  mission of COMP
+                  <strong>
+                    <em>ACT</em>
+                  </strong>{" "}
+                  continue. You will have peace of mind knowing that your gifts
+                  are given as you intended.{" "}
                 </p>
               </div>
             </Col>
 
             <Col lg={6} md={12}>
-            <Image fluid
+              <Image
+                fluid
                 src="https://compact.family/images/0590.jpg"
                 alt="Child representative"
                 layout="intrinsic"
@@ -42,8 +52,12 @@ const PlannedGiving = () => {
       <Container className="text-center">
         <Container className="bg-light border my-4 p-5">
           <p className="h3">
-            What Is The Best Way To Give To COMP<strong>ACT</strong> Family Via
-            Planned Giving (Estate, Will, Grant, Annuities, Trusts, etc)?
+            What Is The Best Way To Give To COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            Family Via Planned Giving (Estate, Will, Grant, Annuities, Trusts,
+            etc)?
           </p>
 
           <p>
@@ -57,8 +71,11 @@ const PlannedGiving = () => {
 
         <Container className="bg-light border my-4 p-5">
           <p className="h3">
-            Can I Donate A Non-Cash Item (Vehicle, Property, Stocks, vehicle) To
-            COMP<strong>ACT</strong>?
+            Can I Donate A Non-Cash Item (Vehicle, Property, Stocks) To COMP
+            <strong>
+              <em>ACT</em>
+            </strong>
+            ?
           </p>
 
           <p>
@@ -86,11 +103,17 @@ const PlannedGiving = () => {
 
           <p>
             You can also work with one of our financial advisors or one of your
-            own, designating COMP<strong>ACT</strong> Family Services as a
-            recipient. COMP<strong>ACT</strong> works alongside an expert
-            financial institution to help ensure that you are receiving advice
-            that will help support COMPACT, while providing significant benefits
-            for your family. Email{" "}
+            own, designating COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            Family Services as a recipient. COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            works alongside an expert financial institution to help ensure that
+            you are receiving advice that will help support COMPACT, while
+            providing significant benefits for your family. Email{" "}
             <a href="mailto:PlannedGiving@COMPACT.Family">
               PlannedGiving@COMPACT.Family
             </a>
@@ -166,7 +189,11 @@ const PlannedGiving = () => {
 
         <Container className="bg-light border my-4 p-5 text-left">
           <p className="h3 text-center">
-            How Do I Go About Including COMP<strong>ACT</strong> in My Will?
+            How Do I Go About Including COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            in My Will?
           </p>
 
           <p className="lead text-center">
@@ -178,9 +205,12 @@ const PlannedGiving = () => {
 
           <p>
             I hereby give, devise and bequeath $_______ to Assemblies of God
-            Family Services Agency, dba COMP<strong>ACT</strong> Family
-            Services, 2325 Malvern Ave, Hot Springs, AR 71901, a non-profit
-            ministry, Federal Tax ID #20-5112679 to be used by COMP
+            Family Services Agency, dba COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            Family Services, 2325 Malvern Ave, Hot Springs, AR 71901, a
+            non-profit ministry, Federal Tax ID #20-5112679 to be used by COMP
             <strong>ACT</strong> Family Services’ general use and ministry
             purpose <em>(or ministry purpose of your choice)</em>.
           </p>
@@ -189,24 +219,39 @@ const PlannedGiving = () => {
             Assemblies of God Family Services Agency, dba COMP
             <strong>ACT</strong> Family Services, 2325 Malvern Ave, Hot Springs,
             AR 71901, a non-profit ministry, Federal Tax ID #20-5112679 to be
-            used by COMP<strong>ACT</strong> Family Services’ general use and
-            ministry purpose <em>(or ministry purpose of your choice)</em>.
+            used by COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            Family Services’ general use and ministry purpose{" "}
+            <em>(or ministry purpose of your choice)</em>.
           </p>
           <p>
             I hereby give, devise and bequeath all or _____% of the rest,
             residue and remainder of my estate to be used by Assemblies of God
-            Family Services Agency, dba COMP<strong>ACT</strong> Family
-            Services, located at 2325 Malvern Ave, Hot Springs, AR 71901, a
-            non-profit ministry, Federal Tax ID # 20-5112679 to be used by COMP
+            Family Services Agency, dba COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            Family Services, located at 2325 Malvern Ave, Hot Springs, AR 71901,
+            a non-profit ministry, Federal Tax ID # 20-5112679 to be used by
+            COMP
             <strong>ACT</strong> Family Services’ general use and ministry
             purpose<em> (or ministry purpose of your choice)</em>.
           </p>
           <p>
             If primary beneficiary does not survive me, then I hereby give,
             devise and bequeath to Assemblies of God Family Services Agency, dba
-            COMP<strong>ACT</strong> Family Services, 2325 Malvern Ave, Hot
-            Springs, AR 71901, a non-profit ministry, Federal Tax ID #20-5112679
-            (description of property) to be used for COMP<strong>ACT</strong>{" "}
+            COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            Family Services, 2325 Malvern Ave, Hot Springs, AR 71901, a
+            non-profit ministry, Federal Tax ID #20-5112679 (description of
+            property) to be used for COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
             Family Services’ general use and purpose{" "}
             <em>(or ministry purpose of your choice)</em>.
           </p>
@@ -214,15 +259,23 @@ const PlannedGiving = () => {
         <Container className="bg-light border my-4 p-5">
           <p className="h4">
             How Can I Learn More About the History, Leadership, Mission And
-            Vision of COMP<strong>ACT</strong>?
+            Vision of COMP
+            <strong>
+              <em>ACT</em>
+            </strong>
+            ?
           </p>
 
           <p>
             {" "}
-            More about COMP<strong>ACT</strong> can be found at
-            <NavLink to="history-and-future"> History, </NavLink>
-            <NavLink to="leadership">Leadership, </NavLink>
-            <NavLink to="mission">and Mission and Vision.</NavLink>
+            More about COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            can be found at
+            <NavLink to="/history-and-future"> History, </NavLink>
+            <NavLink to="/leadership">Leadership, </NavLink>
+            <NavLink to="/mission">and Mission and Vision.</NavLink>
           </p>
         </Container>
 
@@ -232,7 +285,6 @@ const PlannedGiving = () => {
             <strong>ACT</strong>?
           </p>
 
-     
           <p>
             {/* <Link to="/newsletter">
               Subscribe to our monthly newsletter at COMPACT.Family/Newsletter
@@ -240,19 +292,15 @@ const PlannedGiving = () => {
           </p>
           <p>Follow us on Social Media</p>
 
-         
           <SocialMedia />
 
           <div className="mt-3 d-flex justify-content-center">
             <h5 className="me-2">
-            <FaPhone />
+              <FaPhone />
             </h5>
             <h3>
-            <strong>
-            501-262-1660
-            </strong>
+              <strong>501-262-1660</strong>
             </h3>
-      
           </div>
         </Container>
       </Container>
@@ -262,49 +310,46 @@ const PlannedGiving = () => {
 
 export default PlannedGiving;
 
-
 const SocialMedia = () => {
   return (
     <>
+      <div className="p-1">
+        <a
+          className="h1"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.facebook.com/COMPACTFamilyServices/"
+        >
+          <FaFacebook />
+        </a>
 
-<div className="p-1">
-      <a
-        className="h1"
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://www.facebook.com/COMPACTFamilyServices/"
-      >
-        <FaFacebook />
-      </a>
+        <a
+          rel="noopener noreferrer"
+          className="h1 ms-3 me-3"
+          target="_blank"
+          href="https://www.instagram.com/compactfamilyservices/"
+        >
+          <FaInstagram />
+        </a>
 
-      <a
-        rel="noopener noreferrer"
-        className="h1 ms-3 me-3"
-        target="_blank"
-        href="https://www.instagram.com/compactfamilyservices/"
-      >
-        <FaInstagram />
-      </a>
+        <a
+          rel="noopener noreferrer"
+          className="h1 me-3"
+          target="_blank"
+          href="https://twitter.com/COMPACTfamily"
+        >
+          <FaTwitter />
+        </a>
 
-      <a
-        rel="noopener noreferrer"
-        className="h1 me-3"
-        target="_blank"
-        href="https://twitter.com/COMPACTfamily"
-      >
-        <FaTwitter />
-      </a>
-
-      <a
-        rel="noopener noreferrer"
-        className="h1"
-        target="_blank"
-        href="https://www.youtube.com/channel/UC7LHU70Uou3e8DsrNj6CnNA/"
-      >
-        <FaYoutube />
-      </a>
-</div>
-
+        <a
+          rel="noopener noreferrer"
+          className="h1"
+          target="_blank"
+          href="https://www.youtube.com/channel/UC7LHU70Uou3e8DsrNj6CnNA/"
+        >
+          <FaYoutube />
+        </a>
+      </div>
     </>
-  )
-}
+  );
+};

@@ -1,11 +1,12 @@
-import firebase from "firebase/compat/app";
-import "firebase/compat/auth";
-import "firebase/compat/firestore";
-
-// import { initializeApp } from "firebase/app";
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from 'firebase/firestore';
 import {getStorage} from 'firebase/storage'
 
-const app = firebase.initializeApp({
+
+const firebaseConfig = {
+  // PRODUCTION *****************
+
   apiKey: "AIzaSyBMrGLNzhn4fJt9vRFXkrFtFC1_r91IrCo",
   authDomain: "compact-5205a.firebaseapp.com",
   databaseURL: "https://compact-5205a-default-rtdb.firebaseio.com",
@@ -13,17 +14,28 @@ const app = firebase.initializeApp({
   storageBucket: "compact-5205a.appspot.com",
   messagingSenderId: "1075993977531",
   appId: "1:1075993977531:web:5f74fa99b510176ef1ff9e",
-});
 
-export const db = firebase.firestore();
 
-export const auth = app.auth();
 
-// const firebaseApp = initializeApp(app);
+// DEV *********************
+
+  // apiKey: "AIzaSyANW0C3GcQPSLyp5G2DOeKGiFegyuPjd_s",
+  // authDomain: "compactdev-1baa5.firebaseapp.com",
+  // projectId: "compactdev-1baa5",
+  // storageBucket: "compactdev-1baa5.appspot.com",
+  // messagingSenderId: "284691991023",
+  // appId: "1:284691991023:web:b1fea8367a89a25d904e1a"
+};
+
+
+const app = initializeApp(firebaseConfig)
+
+export const db = getFirestore();
+
+export const auth = getAuth(app);
+
 export const storage = getStorage(app);
 
-// note ref prob only needs to be used on ind pages.
-// export const profileRef = ref(storage, 'profile_images')
 
 export default db;
 

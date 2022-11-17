@@ -1,8 +1,49 @@
 import { NavLink } from "react-router-dom";
 import { Col, Row, Container, Image } from "react-bootstrap";
+import { useSpring, animated, easings } from "react-spring";
 
 const PrayPage = () => {
-  document.title = "COMPACT Pray"
+  document.title = "COMPACT Pray";
+
+  const titleOne = useSpring({
+    to: { opacity: 1, y: 0 },
+    from: { opacity: 0, y: -50 },
+    pause: 2000,
+    // loop: true,
+    delay: 500,
+    config: {
+      duration: 2000,
+      mass: 500,
+      friction: 500,
+      easing: easings.easeInOutQuad,
+    },
+  });
+  const titleTwo = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    pause: 2000,
+    // loop: true,
+    delay: 2500,
+    config: {
+      duration: 2000,
+      mass: 500,
+      friction: 500,
+      easing: easings.easeInOutQuad,
+    },
+  });
+  const titleThree = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    pause: 2000,
+    // loop: true,
+    delay: 3500,
+    config: {
+      duration: 2000,
+      mass: 500,
+      friction: 500,
+      easing: easings.easeInOutQuad,
+    },
+  });
 
   return (
     <>
@@ -11,22 +52,29 @@ const PrayPage = () => {
           <Row className="text-center">
             <Col lg={6} md={12} className="mt-3 d-flex align-items-center">
               <div>
-                <h1 className="display-4">PRAY</h1>
+                <animated.h1 style={titleOne} className="display-4">
+                  PRAY
+                </animated.h1>
 
-                <p className="lead">
+                <animated.p style={titleTwo} className="lead">
                   Your prayers and financial support make it possible to
-                  continue the mission of COMP<strong>ACT</strong>.{" "}
-                </p>
-                <p className="lead">
+                  continue the mission of COMP
+                  <strong>
+                    <em>ACT</em>
+                  </strong>
+                  .{" "}
+                </animated.p>
+                <animated.p style={titleThree} className="lead">
                   Prayer is vital to the redeeming services we provide on a
                   daily basis for every child, teen, and young adult that steps
                   foot on our campus.
-                </p>
+                </animated.p>
               </div>
             </Col>
 
             <Col lg={6} md={12}>
-            <Image fluid
+              <Image
+                fluid
                 src="https://compact.family/images/0758.jpg"
                 alt="Child representative"
                 layout="intrinsic"
@@ -54,8 +102,8 @@ const PrayPage = () => {
                 <strong>Use the 30-day Prayer Guide below as a guide:</strong>
               </p>
               <p className="lead">
-                <NavLink to="thirty-days-of-prayer">
-                  <button className="btn btn-secondary btn-lg" >
+                <NavLink to="/thirty-days-of-prayer">
+                  <button className="btn btn-secondary btn-lg">
                     Prayer Guide
                   </button>
                 </NavLink>
@@ -68,7 +116,7 @@ const PrayPage = () => {
                 </strong>
               </p>
               <p className="lead">
-                <NavLink to="pray-the-promises-calendar">
+                <NavLink to="/pray-the-promises-calendar">
                   <button className="btn btn-secondary btn-lg">
                     Pray the Promises Calendar
                   </button>

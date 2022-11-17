@@ -1,67 +1,45 @@
 import { useState } from "react";
 import { db } from "../../../util/firebase";
 import { Button, Form, Container } from "react-bootstrap";
+import { addDoc, collection } from "@firebase/firestore";
 
 export default function CompaCareInterestForm() {
-  const [date] = useState(new Date());
-
-//   const [formData, setFormData] = useState({});
-//   const [message, setMessage] = useState("");
 
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
   const [human, setHuman] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [body, setBody] = useState("");
+  const [date] = useState(new Date());
+  const [phone, setPhone] = useState('')
+  const [churchName, setChurchName] = useState('')
+  const [pastor, setPastor] = useState('')
+  const [churchAddress, setChurchAddress] = useState('')
 
   function humanCheck(e) {
     e.preventDefault();
     setHuman(true);
   }
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     setLoading(true);
-    const elementsArray = [...event.target.elements];
-    const formData = elementsArray.reduce((accumulator, currentValue) => {
-      if (currentValue.id) {
-        accumulator[currentValue.id] = currentValue.value;
-      }
-      return accumulator;
-    }, {});
-
-    db.collection("CompacareContact").doc().set(formData);
-
+    await addDoc(collection(db, "Contact"), {
+      date: date,
+      form: 'compacare',
+      message: body,
+      name: name,
+      email: email,
+      phone: phone,
+      church_name: churchName,
+      lead_pastor: pastor,
+      church_address: churchAddress,
+    });
     setLoading(false);
     setSent(true);
   };
 
-//   const handleInput = (e) => {
-//     const copyFormData = { ...formData };
-//     copyFormData[e.target.name] = e.target.value;
-//     setFormData(copyFormData);
-//   };
-
-  // const sendData = async e => {
-  //     e.preventDefault();
-  //     const {Date, Name, Email, Phone, ChurchName, Pastor, ChurchAddress, HearAboutUs} = formData
-  //     try {
-  //         const response = await fetch(
-  //             "https://v1.nocodeapi.com/monkeyelbow/google_sheets/ARcIFlMgbSYAzdFO?tabId=interest",
-  //             {
-  //                 method: "post",
-  //                 body: JSON.stringify([[postDate, Name, Email, Phone, ChurchName, Pastor, ChurchAddress, HearAboutUs]]),
-  //                 headers: {
-  //                     "Content-Type": "application/json"
-  //                 }
-  //             }
-  //         );
-  //         const json = await response.json();
-  //         console.log("Success:", JSON.stringify(json));
-  //         setMessage("Success! Thanks for your interest in CompaCare");
-  //     } catch (error) {
-  //         console.error("Error:", error);
-  //         setMessage("Error");
-  //     }
-  // };
   return (
     <>
       {sent && (
@@ -88,7 +66,7 @@ export default function CompaCareInterestForm() {
               type="text"
               placeholder="Your Full Name"
               required
-            //   onChange={handleInput}
+              onChange={(e) => setName(e.target.value)}
               className="form-control m-2"
             />
           </Form.Group>
@@ -99,7 +77,7 @@ export default function CompaCareInterestForm() {
             type="email"
             placeholder="Your Email"
             required
-            // onChange={handleInput}
+            onChange={(e) => setEmail(e.target.value)}
             className="form-control m-2"
             />
             </Form.Group>
@@ -111,17 +89,17 @@ export default function CompaCareInterestForm() {
             type="tel"
             placeholder="Your Phone Number"
             className="form-control m-2"
-            // onChange={handleInput}
+            onChange={(e) => setPhone(e.target.value)}
             />
             </Form.Group>
 
 <Form.Group controlId="churchName">
           <Form.Control
-            name="ChurchName"
+            name="church_Name"
             type="text"
             placeholder="Your Church's Name"
             className="form-control m-2"
-            // onChange={handleInput}
+            onChange={(e) => setChurchName(e.target.value)}
             />
             </Form.Group>
 
@@ -131,7 +109,7 @@ export default function CompaCareInterestForm() {
             type="text"
             placeholder="Lead Pastor's Name"
             className="form-control m-2"
-            // onChange={handleInput}
+            onChange={(e) => setPastor(e.target.value)}
             />
             </Form.Group>
 
@@ -143,7 +121,7 @@ export default function CompaCareInterestForm() {
             type="text"
             placeholder="Church Address"
             className="form-control m-2"
-            // onChange={handleInput}
+            onChange={(e) => setChurchAddress(e.target.value)}
             />
             </Form.Group>
 
@@ -154,17 +132,10 @@ export default function CompaCareInterestForm() {
             as="textarea"
             placeholder="How did you hear about CompaCare?"
             className="form-control m-2"
-            // onChange={handleInput}
+            onChange={(e) => setBody(e.target.value)}
             />
             </Form.Group>
 
-          <Form.Group hidden controlId="date">
-            <Form.Control plaintext readOnly value={date} />
-          </Form.Group>
-
-          <Form.Group hidden controlId="form">
-            <Form.Control value="compacare" />
-          </Form.Group>
 
           {!human && (
             <Button className="w-100 btn-secondary" onClick={humanCheck}>

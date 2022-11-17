@@ -9,37 +9,37 @@ import { db } from "../../util/firebase";
 
 import { FaCheck, FaLock } from "react-icons/fa";
 
+import {getDoc, doc} from 'firebase/firestore'
+
 const CompaCareTrainingPage = () => {
   document.title = "CompaCare Training";
   const { currentUser } = useAuth();
-  const [profile, setProfile] = useState([]);
   const [error, setError] = useState("");
-
+  
+  const [profile, setProfile] = useState([]);
   const [progress, setProgress] = useState(0)
 
 
   useEffect(() => {
     async function fetchUser() {
-      var userRef = db.collection("Users").doc(currentUser.uid);
+      const userRef = doc(db, "Users", currentUser.uid);
+      const docSnap = await getDoc(userRef);
+      setProfile(docSnap.data());
+      setProgress(docSnap.data().cc_training_progress)
+      console.log('loaded profile')
+    }
 
       try {
-        var doc = await userRef.get();
-        const data = await doc.data();
-        setProfile(data);
-        setProgress(data.cc_training_progress)
-          
-        return data.profile;
+        if (currentUser) {
+          fetchUser();
+        } else {
+          return null;
+        }
       } catch (error) {
         console.log(error);
         setError("Mr Stark, I don't feel so good.");
       }
-    }
-    if (currentUser) {
-      fetchUser();
-    } else {
-      return null;
-    }
-  }, [currentUser]);
+  }, []); // eslint-disable-line
 
   return (
     <>
@@ -259,32 +259,6 @@ const CompaCareTrainingPage = () => {
         </Container>
       )}
 
-      {/* <Row className="text-white">
-<Col lg={4} className="p-5 bg-dark d-flex align-items-center">
-            <Link to="/compacare-training-register">
-              <h4 className="m-2 stretched-link">
-                Register my church with CompaCare 
-              </h4>
-               
-            </Link>
-</Col>
-<Col lg={4} className="p-5 d-flex align-items-center" style={{backgroundColor:"#666"}}>
-            <Link to="/compacare-training-materials">
-              <h4 className="m-2 stretched-link">
-                I have registered our church and I am ready to order training
-                materials
-              </h4>
-            </Link>
-</Col>
-<Col className="p-5 d-flex align-items-center" style={{backgroundColor:"var(--red)"}}>
-            <Link to="/compacare-training-sessions">
-              <h4 className="m-2 stretched-link">
-                Access training videos
-              </h4>
-            </Link>
-</Col>
-           
-          </Row> */}
     </>
   );
 };

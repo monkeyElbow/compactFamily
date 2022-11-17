@@ -2,7 +2,7 @@ import Scoreboard from "../components/Scoreboard";
 import HomeFeature from "../components/HomeFeature";
 import HomeFeatures2 from "../components/HomeFeatures2";
 import HomeBrandBanner from "../components/HomeBrandBanner";
-import YouTubeEmbed from "../components/youTubeEmbed";
+// import YouTubeEmbed from "../components/youTubeEmbed";
 
 // import ScoreboardFirebase from "../components/ScoreboardFirebase";
 
@@ -13,9 +13,13 @@ const HomePage = () => {
     <>
 <HomeBrandBanner />
 <HomeFeature />
+
     {/* <ScoreboardFirebase /> */}
+
       <Scoreboard />
-<YouTubeEmbed embedId="gjPsQLnQ9Fw" />
+
+{/* <YouTubeEmbed embedId="gjPsQLnQ9Fw" /> */}
+
 <HomeFeatures2 />
 
     </>

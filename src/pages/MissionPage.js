@@ -4,8 +4,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import "../svg.css";
 
 const MissionPage = () => {
-  document.title = "COMPACT Mission"
-
+  document.title = "COMPACT Mission";
 
   return (
     <>
@@ -18,26 +17,33 @@ const MissionPage = () => {
                   className="h1"
                   style={{ letterSpacing: "-.09rem", lineHeight: "2rem" }}
                 >
-                  COMP<strong>ACT</strong> MISSION
+                  COMP
+                  <strong>
+                    <em>ACT</em>
+                  </strong>{" "}
+                  MISSION
                 </p>
 
                 <p className="lead" style={{ lineHeight: "2rem" }}>
-                  COMP<strong>ACT</strong> is a Christ-centered ministry to
-                  redeem vulnerable children and families through compassionate
-                  action
-                  <br /> to the glory of God.
+                  COMP
+                  <strong>
+                    <em>ACT</em>
+                  </strong>{" "}
+                  is a Christ-centered ministry to redeem vulnerable children
+                  and families through compassionate action to the glory of God.
                 </p>
               </div>
             </Col>
 
             <Col md={6}>
-            <Image fluid
-              alt="Child representative"
-              src="https://compact.family/images/0534.jpg"
-              width="563"
-              height="600"
-              layout="intrinsic"
-            />
+              <Image
+                fluid
+                alt="Child representative"
+                src="https://compact.family/images/0534.jpg"
+                width="563"
+                height="600"
+                layout="intrinsic"
+              />
             </Col>
           </Row>
         </Container>
@@ -45,20 +51,22 @@ const MissionPage = () => {
 
       <Container fluid className="bg-dark text-white p-5 text-center">
         <h>
-          COMP<strong>ACT</strong> operates licensed, professional Christian
-          family services.
+          COMP
+          <span className="act">ACT</span> operates licensed, professional
+          Christian family services.
         </h>
         <p>
-          COMP<strong>ACT</strong> is a nationally accredited child welfare and
-          family services agency through the New York-based Council on
-          Accreditation (COA), a nonprofit accreditor of human services since
+          COMP
+          <span className="act">ACT</span> is a nationally accredited child
+          welfare and family services agency through the New York-based Council
+          on Accreditation (COA), a nonprofit accreditor of human services since
           1977.
         </p>
 
         {/* <h4>
             Go to{" "}
             <a href="announcements">
-              COMP<strong>ACT</strong> Announcements
+              COMP<strong><em>ACT</em></strong> Announcements
             </a>{" "}
             for a downloadable brief history and current programming
             descriptions we offer.
@@ -67,16 +75,20 @@ const MissionPage = () => {
 
       <Container fluid className="bg-blue m-0 p-5 text-white text-center">
         <p className="h2">
-          COMP<strong>ACT</strong> VISION
+          COMP
+          <span className="act">ACT</span> VISION
         </p>
 
         <p className="lead">
-          COMP<strong>ACT</strong> aims to provide services and resources that
-          help churches and others redeem vulnerable children and families.
+          COMP
+          <span className="act">ACT</span> aims to provide services and
+          resources that help churches and others redeem vulnerable children and
+          families.
         </p>
 
         <p className="lead">
-          COMP<strong>ACT</strong> envisions extending its continuum of
+          COMP
+          <span className="act">ACT</span> envisions extending its continuum of
           Christ-centered family services including, community, residential,
           placement and prevention services such as foster homes, group homes,
           treatment services, training services, intervention services,
@@ -85,9 +97,10 @@ const MissionPage = () => {
         </p>
 
         <p className="lead">
-          COMP<strong>ACT</strong> endeavors to equip and resource the Church
-          over the next decade to reach and redeem at least 5% (20,000) of the
-          daily modern orphan need in the United States.
+          COMP
+          <span className="act">ACT</span> endeavors to equip and resource the
+          Church over the next decade to reach and redeem at least 5% (20,000)
+          of the daily modern orphan need in the United States.
         </p>
       </Container>
 
@@ -212,9 +225,12 @@ const MissionPage = () => {
             greatest Christian world mission endeavor in history.{" "}
           </p>
           <p>
-            COMP<strong>ACT</strong> is strategically committed to turn the tide
-            for the glory of God and the betterment of vulnerable children and
-            families.
+            COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            is strategically committed to turn the tide for the glory of God and
+            the betterment of vulnerable children and families.
           </p>
           <Container className="my-5">
             <p>
@@ -245,7 +261,11 @@ const MissionPage = () => {
           </p>
           <p>
             God has given compassion ministry to the Church. Your support of
-            COMP<strong>ACT</strong> ministries is compassionate action.
+            COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            ministries is compassionate action.
           </p>
         </Container>
       </Container>

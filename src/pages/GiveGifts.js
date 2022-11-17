@@ -1,11 +1,11 @@
-import {Container, Image} from 'react-bootstrap'
+import { Container, Image } from "react-bootstrap";
 
 const GiveGifts = () => {
-  document.title = "COMPACT Gifts"
+  document.title = "COMPACT Gifts";
 
-    return(
-        <>
- <Container fluid className="photoblue">
+  return (
+    <>
+      <Container fluid className="photoblue">
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-5 d-flex justify-content-center align-items-center">
@@ -13,7 +13,10 @@ const GiveGifts = () => {
                 <h1 className="display-5 text-center">FINANCIAL GIFTS</h1>
 
                 <p className="lead text-left">
-                  There are many ways to give towards COMP<strong>ACT</strong>{" "}
+                  There are many ways to give towards COMP
+                  <strong>
+                    <em>ACT</em>
+                  </strong>{" "}
                   Family Services. Providing gifts to our specific funds allows
                   us to fulfill the many goals of our ministries.
                 </p>
@@ -21,7 +24,8 @@ const GiveGifts = () => {
             </div>
 
             <div className="col-sm-12 col-md-7 d-flex align-content-end justify-content-center">
-              <Image fluid
+              <Image
+                fluid
                 src="https://compact.family/images/1622.jpg"
                 className="img-fluid"
                 alt="Child representative"
@@ -46,16 +50,22 @@ const GiveGifts = () => {
           <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-blue rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/801051?MinistryName=801051&Page=0"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               className="stretched-link"
             >
-              All COMP<strong>ACT</strong> Family Services
+              All COMP
+              <strong>
+                <em>ACT</em>
+              </strong>{" "}
+              Family Services
             </a>
           </div>
           <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-orange rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/886053?MinistryName=886053&Page=0"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               className="stretched-link"
             >
               Foster Care
@@ -64,7 +74,8 @@ const GiveGifts = () => {
           <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-yellow rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/860059?MinistryName=860059%20&Page=0"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               className="stretched-link"
             >
               FIND
@@ -73,7 +84,8 @@ const GiveGifts = () => {
           <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-purple rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/801059?MinistryName=801059%20&Page=0"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               className="stretched-link"
             >
               SAFECARE
@@ -85,17 +97,23 @@ const GiveGifts = () => {
           <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-blue rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/801051?MinistryName=801051&Page=0"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               className="stretched-link"
             >
-              Arkansas COMP<strong>ACT</strong> Family Services
+              Arkansas COMP
+              <strong>
+                <em>ACT</em>
+              </strong>{" "}
+              Family Services
             </a>
           </div>
           <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-green rounded d-flex justify-content-center align-items-center text-center position-relative">
             {" "}
             <a
               href="https://giving.ag.org/Give/Details/886001?MinistryName=886001&Page=0"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               className="stretched-link"
             >
               Hillcrest Children's Home
@@ -103,8 +121,9 @@ const GiveGifts = () => {
           </div>
           <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-purple rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
-              href="https://giving.ag.org/Give/Details/801057?MinistryName=801057&Page=0"
-              target="_blank" rel="noopener noreferrer"
+              href="https://giving.ag.org/donate/hillcrest-childrens-home?fundid=3683"
+              target="_blank"
+              rel="noopener noreferrer"
               className="stretched-link"
             >
               Transitional Living Center
@@ -114,7 +133,8 @@ const GiveGifts = () => {
             <a
               href="https://giving.ag.org/Give/Details/886054?MinistryName=886054&Page=0"
               className="stretched-link"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               COMPACARE
             </a>{" "}
@@ -125,16 +145,22 @@ const GiveGifts = () => {
           <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-blue rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/801051?MinistryName=801051&Page=0"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               className="stretched-link"
             >
-              Missouri COMP<strong>ACT</strong> Family Services
+              Missouri COMP
+              <strong>
+                <em>ACT</em>
+              </strong>{" "}
+              Family Services
             </a>
           </div>
           <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-pink rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/860051?MinistryName=860051&Page=0"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               className="stretched-link"
             >
               Highlands Adoption and Maternity
@@ -143,7 +169,8 @@ const GiveGifts = () => {
           <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-pink rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/860056?MinistryName=860056&Page=0"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               className="stretched-link"
             >
               Highlands Baby Bootie
@@ -152,7 +179,8 @@ const GiveGifts = () => {
           <div className="col-lg-2 mx-lg-2 col-md-12 my-md-1 my-lg-1 py-4 card clickable bg-pink rounded d-flex justify-content-center align-items-center text-center position-relative">
             <a
               href="https://giving.ag.org/Give/Details/894001-999269?MinistryName=894001&Page=0"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               className="stretched-link"
             >
               Highlands Connect
@@ -184,7 +212,11 @@ const GiveGifts = () => {
             (Debit, WalMart, Bed, Bath and Beyond, Best Buy, Target, etc.) may
             be sent to:
             <br />
-            COMP<strong>ACT</strong> Family Services
+            COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            Family Services
             <br />
             2325 Malvern Ave
             <br />
@@ -200,9 +232,12 @@ const GiveGifts = () => {
           <p>
             Many employers support the causes their employees care about. Check
             with your employer to see if your company has a matching donation
-            program. If not, request COMP<strong>ACT</strong> Family Services to
-            be added to their list of eligible donations. Once approved, this
-            doubles your donation.{" "}
+            program. If not, request COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            Family Services to be added to their list of eligible donations.
+            Once approved, this doubles your donation.{" "}
           </p>
         </Container>
       </Container>
@@ -235,7 +270,11 @@ const GiveGifts = () => {
 
         <Container className="border bg-light text-center p-5 m-3">
           <p className="h4">
-            Can I Hold A Personal Fundraiser For COMP<strong>ACT</strong>?
+            Can I Hold A Personal Fundraiser For COMP
+            <strong>
+              <em>ACT</em>
+            </strong>
+            ?
           </p>
 
           <p>
@@ -252,7 +291,11 @@ const GiveGifts = () => {
           <div className="row">
             <div className="col-md-6 col-sm-12 text-center">
               <p>
-                COMP<strong>ACT</strong> Family Services
+                COMP
+                <strong>
+                  <em>ACT</em>
+                </strong>{" "}
+                Family Services
                 <br />
                 2325 Malvern Ave
                 <br />
@@ -263,7 +306,11 @@ const GiveGifts = () => {
             </div>
             <div className="col-md-6 col-sm-12 text text-center">
               <p>
-                COMP<strong>ACT</strong> Family Services
+                COMP
+                <strong>
+                  <em>ACT</em>
+                </strong>{" "}
+                Family Services
                 <br />
                 c/o AG Contributor Services
                 <br />
@@ -328,8 +375,8 @@ const GiveGifts = () => {
           <p>Email PlannedGiving@COMPACT.Family for additional ideas. </p>
         </Container>
       </Container>
-        </>
-    )
-}
+    </>
+  );
+};
 
 export default GiveGifts;

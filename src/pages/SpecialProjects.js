@@ -7,49 +7,42 @@ import {
   InMemoryCache,
   ApolloProvider,
   useQuery,
-  gql
+  gql,
 } from "@apollo/client";
 
 const SpecialProjects = () => {
-
-
   const client = new ApolloClient({
-    uri: 'https://www.compact.family/wpapi/graphql/',
-    cache: new InMemoryCache()
+    uri: "https://www.compact.family/wpapi/graphql/",
+    cache: new InMemoryCache(),
   });
-  
+
   const GET_PROJECTS = gql`
-  query Projects {
-    page(id: "special-projects", idType: URI) {
-      databaseId
-      title
-      content
- 
+    query Projects {
+      page(id: "special-projects", idType: URI) {
+        databaseId
+        title
+        content
+      }
     }
-       }
-   `;
+  `;
 
   const Projects = () => {
-  document.title = "COMPACT Special Projects"
+    document.title = "COMPACT Special Projects";
 
     const { loading, error, data: projects } = useQuery(GET_PROJECTS);
-  
+
     if (loading) return "Loading...";
     if (error) return `Error! ${error.message}`;
-  
-     return(
-         <>
-            <div
-              className="text-center"
-              dangerouslySetInnerHTML={{ __html: projects.page.content }}
-            ></div>
 
-  
-         </>
-     )
-  }
-
-
+    return (
+      <>
+        <div
+          className="text-center"
+          dangerouslySetInnerHTML={{ __html: projects.page.content }}
+        ></div>
+      </>
+    );
+  };
 
   // pulling from json
   // const {
@@ -75,7 +68,8 @@ const SpecialProjects = () => {
           href="https://giving.ag.org/Give/Details/890063-999289?MinistryName=compact&Page=2"
           target="_new"
         >
-          Click here to donate to COMP<strong>ACT</strong> Special Projects
+          Click here to donate to COMP
+          <span className="act">ACT</span> Special Projects
         </a>
       </Container>
       <Container>
@@ -85,13 +79,11 @@ const SpecialProjects = () => {
           of these projects:
         </p>
         <Container className="col-lg-10 col-md-12 my-4">
+          <ApolloProvider client={client}>
+            <Projects />
+          </ApolloProvider>
 
-
-<ApolloProvider client={client}>
-  <Projects />
-</ApolloProvider>
-
-{/*         
+          {/*         
           {isLoading && <div>Loading...</div>}
 
           {projects &&

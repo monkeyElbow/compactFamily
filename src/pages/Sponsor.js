@@ -1,7 +1,7 @@
 import { Container, Image } from "react-bootstrap";
 
 const Sponsor = () => {
-  document.title = "COMPACT Sponsor"
+  document.title = "COMPACT Sponsor";
 
   return (
     <>
@@ -22,13 +22,15 @@ const Sponsor = () => {
             </div>
 
             <div className="col-sm-12 col-md-7">
-            <Image fluid
-              alt="Child respresentative"
-              src="https://compact.family/images/0551.jpg"
-              width="600"
-              height="613"
-              layout="intrinsic"
-            />            </div>
+              <Image
+                fluid
+                alt="Child respresentative"
+                src="https://compact.family/images/0551.jpg"
+                width="600"
+                height="613"
+                layout="intrinsic"
+              />{" "}
+            </div>
           </div>
         </div>
       </div>
@@ -55,48 +57,48 @@ const Sponsor = () => {
 
             <div className="col-sm-12 col-md-12 col-lg-7">
               <p>
-              <Image
-              fluid
-              className="rounded"
-              alt="Anderson building"
-              src="https://compact.family/images/Anderson600.jpg"
-              width="600"
-              height="400"
-              // layout="intrinsic"
-            />              </p>
+                <Image
+                  fluid
+                  className="rounded"
+                  alt="Anderson building"
+                  src="https://compact.family/images/Anderson600.jpg"
+                  width="600"
+                  height="400"
+                  // layout="intrinsic"
+                />{" "}
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="jumbotron my-0 text-white px-5 bg-blue rounded-0">
-        <div className="container">
-          <p className="h4" style={{ lineHeight: 1.75 }}>
-            Many sponsors give <strong>$30</strong> (a dollar a day),{" "}
-            <strong>$50</strong>, <strong>$100</strong> or some other monthly
-            amount that helps provide daily essentials and redeeming ministry
-            for COMP<strong>ACT</strong> children and youth until a permanent
-            family solution is complete.
-          </p>
-          <p>
-            Your contributions help provide daily essentials and redeeming
-            ministry such as: bedding, clothing, meals, Christian education,
-            activities and hobbies, weekly allowance, 24/7 Christian care and
-            therapy and so much more.
-          </p>
-        </div>
-      </div>
+      <Container fluid className="my-5 text-white p-5 bg-blue rounded-0">
+        <p className="h4" style={{ lineHeight: 1.75 }}>
+          Many sponsors give <strong>$30</strong> (a dollar a day),{" "}
+          <strong>$50</strong>, <strong>$100</strong> or some other monthly
+          amount that helps provide daily essentials and redeeming ministry for
+          COMP
+          <span className="act">ACT</span> children and youth until a permanent
+          family solution is complete.
+        </p>
+        <p>
+          Your contributions help provide daily essentials and redeeming
+          ministry such as: bedding, clothing, meals, Christian education,
+          activities and hobbies, weekly allowance, 24/7 Christian care and
+          therapy and so much more.
+        </p>
+      </Container>
 
       <div className="jumbotron-fluid mt-0">
         <div className="container">
           <div className="row">
             <div className="col-md-4 col-sm-12 py-2">
               <div className="card text-center h-100">
-              <Image fluid
-                alt="Garrison cottage"
-                src="https://compact.family/images/garrison300.jpg"
-
-              />
+                <Image
+                  fluid
+                  alt="Garrison cottage"
+                  src="https://compact.family/images/garrison300.jpg"
+                />
                 <div className="card-body">
                   <p className="card-text">Garrison Cottage</p>
                   <a
@@ -112,11 +114,11 @@ const Sponsor = () => {
 
             <div className="col-md-4 col-sm-12 py-2">
               <div className="card text-center h-100">
-              <Image fluid
-                alt="Gilliam cottage"
-                src="https://compact.family/images/Gilliam300.jpg"
-
-              />
+                <Image
+                  fluid
+                  alt="Gilliam cottage"
+                  src="https://compact.family/images/Gilliam300.jpg"
+                />
 
                 <div className="card-body">
                   <p className="card-text">Gilliam Cottage</p>
@@ -134,11 +136,10 @@ const Sponsor = () => {
 
             <div className="col-md-4 col-sm-12 py-2">
               <div className="card text-center h-100">
-              <Image
-                alt="Hardcastle cottage"
-                src="https://compact.family/images/hardcastle300.jpg"
-
-              />
+                <Image
+                  alt="Hardcastle cottage"
+                  src="https://compact.family/images/hardcastle300.jpg"
+                />
 
                 <div className="card-body">
                   <p className="card-text">Hardcastle Cottage</p>
@@ -155,11 +156,11 @@ const Sponsor = () => {
 
             <div className="col-md-4 col-sm-12 py-2">
               <div className="card text-center h-100">
-              <Image fluid
-                alt="Anthony cottage"
-                src="https://compact.family/images/anthony300.jpg"
-
-              />
+                <Image
+                  fluid
+                  alt="Anthony cottage"
+                  src="https://compact.family/images/anthony300.jpg"
+                />
 
                 <div className="card-body">
                   <p className="card-text">Anthony Cottage</p>
@@ -176,11 +177,11 @@ const Sponsor = () => {
 
             <div className="col-md-4 col-sm-12 py-2">
               <div className="card text-center h-100">
-              <Image fluid
-                alt="Netwzel cottage"
-                src="https://compact.family/images/netzel300.jpg"
-
-              />
+                <Image
+                  fluid
+                  alt="Netwzel cottage"
+                  src="https://compact.family/images/netzel300.jpg"
+                />
 
                 <div className="card-body">
                   <p className="card-text">Netzel Cottage</p>
@@ -197,11 +198,11 @@ const Sponsor = () => {
 
             <div className="col-md-4 col-sm-12 py-2">
               <div className="card text-center h-100">
-              <Image fluid
-                alt="Newby cottage"
-                src="https://compact.family/images/Newby300.jpg"
-   
-              />
+                <Image
+                  fluid
+                  alt="Newby cottage"
+                  src="https://compact.family/images/Newby300.jpg"
+                />
 
                 <div className="card-body">
                   <p className="card-text">Newby Cottage</p>
@@ -218,11 +219,11 @@ const Sponsor = () => {
 
             <div className="col-md-4 col-sm-12 py-2">
               <div className="card text-center h-100">
-              <Image fluid
-                alt="Anderson building"
-                src="https://compact.family/images/Anderson300.jpg"
-
-              />
+                <Image
+                  fluid
+                  alt="Anderson building"
+                  src="https://compact.family/images/Anderson300.jpg"
+                />
 
                 <div className="card-body">
                   <p className="card-text">Anderson Cottage I & II</p>
@@ -239,11 +240,11 @@ const Sponsor = () => {
 
             <div className="col-md-4 col-sm-12 py-2">
               <div className="card text-center h-100">
-              <Image fluid
-                alt="Transitional Living Center Apartments"
-                src="https://compact.family/images/tlc300.jpg"
-
-              />
+                <Image
+                  fluid
+                  alt="Transitional Living Center Apartments"
+                  src="https://compact.family/images/tlc300.jpg"
+                />
 
                 <div className="card-body">
                   <p className="card-text">
@@ -262,12 +263,11 @@ const Sponsor = () => {
 
             <div className="col-md-4 col-sm-12 py-2">
               <div className="card text-center h-100">
-           
-                <Image fluid
-                alt="Wilmouth cottage"
-                src="https://compact.family/images/wilmoth300.jpg"
-
-              />
+                <Image
+                  fluid
+                  alt="Wilmouth cottage"
+                  src="https://compact.family/images/wilmoth300.jpg"
+                />
                 <div className="card-body">
                   <p className="card-text">
                     Highlands Maternity Home in Wilmoth Cottage for pregnant

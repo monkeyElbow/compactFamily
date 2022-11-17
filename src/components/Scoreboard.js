@@ -1,6 +1,6 @@
 import { Row, Col, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import parse from "html-react-parser";
 // import CompactLogo from "../graphics/CompactLogo";
 
 import {
@@ -41,337 +41,187 @@ const Scoreboard = () => {
     if (loading) return "Loading...";
     if (error) return `Error! ${error.message}`;
 
+    const scoreContent = [
+      {
+        dept: "Hillcrest",
+        header: "Hillcrest Children’s Home",
+        lead: "kids served in residential programs in 2022!",
+        body: "Hillcrest rests on a 52-acre campus with 8 cottages and a 24-apartment center for foster youth preparing for adult living.",
+        bg: "bg-green p-5",
+        score: scores.page.scores.hillcrest,
+        link: "/hillcrest",
+      },
+      {
+        dept: "Highlands",
+        header: "Highlands Maternity Home",
+        lead: "mothers and babies served in Highlands Maternity Home and adoptions facilitated in 2022!",
+        body: "Bringing hope and healing to women facing unplanned pregnancies and services to families looking to expand through adoption.",
+        bg: "bg-pink p-5",
+        score: scores.page.scores.highlands,
+        link: "/highlands",
+      },
+      {
+        dept: "fosterCare",
+        header: "Foster Care",
+        lead: "kids served in Foster Care programs in 2022!",
+        body: "COMP<strong><em>ACT</em></strong> is your partner for serving vulnerable children and families in the foster care system.",
+        bg: "bg-orange p-5",
+        score: scores.page.scores.fostercare,
+        link: "/fostercare",
+      },
+      {
+        dept: "safecare",
+        header: "SafeCare",
+        lead: "children and parents served in 2022!",
+        body: "SafeCare serves at risk children and their families to help prevent those children from entering the foster care system and experiencing separation from family.",
+        bg: "bg-purple p-5",
+        score: scores.page.scores.safecare,
+        link: "/safecare",
+      },
+      {
+        dept: "compacare",
+        header: "CompaCare",
+        lead: "churches, families, and children served in 2022!",
+        body: "CompaCare Helps churches minister to vulnerable children and families mobilizes, trains, certifies, and organizes caring Christian people in the church to redeem and empower people in need.",
+        bg: "bg-red p-5",
+        score: scores.page.scores.compacare,
+        link: "/compacare",
+      },
+      {
+        dept: "Compact",
+        header: "COMP<strong><em>ACT</em></strong>",
+        lead: `Clients served in Hillcrest, Highlands, Foster Care, SafeCare and CompaCare in 2022!`,
+        body: `<Link to="/hillcrest">Hillcrest</Link>,
+        <Link to="/highlands">Highlands</Link>,
+        <Link to="/fostercare">Foster Care</Link>,
+        <Link to="/safecare">SafeCare</Link> and
+        <Link to="/compacare">CompaCare</Link>`,
+        bg: "bg-blue p-5",
+        score: scores.page.scores.total,
+        link: "/mission",
+      },
+    ];
+
+    function ScoreCard({ dept, header, body, bg, score, link, lead }) {
+      return (
+        <Col
+          md={6}
+          lg={4}
+          className={`${bg} m-0 p-5 text-white position-relative clickable`}
+        >
+          <Row className="mb-2" style={{ minHeight: "10rem" }}>
+            <Col>
+              <h1
+                style={{
+                  fontWeight: 800,
+                  fontSize: "14rem",
+                  left: -10,
+                  top: -50,
+                  opacity: "15%",
+                  letterSpacing: -15,
+                }}
+                className="
+largeNumber 
+position-absolute 
+text-white"
+              >
+                {score.toLocaleString()}
+                {/* {score} */}
+              </h1>
+            </Col>
+
+            <Col
+              sm={12}
+              md={12}
+              lg={10}
+              className="d-flex flex-column justify-content-center"
+            >
+              <h4>
+                <strong>{score.toLocaleString()}</strong> {parse(lead)}
+              </h4>
+            </Col>
+          </Row>
+          <h1
+            style={{ fontSize: "3rem", lineHeight: ".9em", letterSpacing: -1 }}
+          >
+            {parse(header)}
+          </h1>
+          <p>{parse(body)}</p>
+
+          <Link
+            to={link}
+            className="btn btn-light text-dark mt-3 stretched-link"
+            role="button"
+          >
+            Learn more about {dept}
+          </Link>
+        </Col>
+      );
+    }
+
     return (
       <>
-        <Container fluid>
-          <Row>
-            <Col
-              md={6}
-              lg={4}
-              className="position-relative p-5 d-flex flex-column justify-content-center align-content-around bg-green text-white text-center clickable"
-            >
-              <h2 className="mb-3" style={{ lineHeight: "1em" }}>
-                <strong>Hillcrest Children's Home</strong>
-              </h2>
+        {scores &&
+          scoreContent.map((sc) => (
+            <ScoreCard
+              key={sc.dept}
+              dept={sc.dept}
+              header={sc.header}
+              body={sc.body}
+              lead={sc.lead}
+              bg={sc.bg}
+              score={sc.score}
+              link={sc.link}
+            />
+          ))}
 
-              {scores && (
-                <div>
-                  <h5>
-                      <span style={{fontSize:"2rem"}}>
-                        <strong>
-                        {scores.page.scores.hillcrest} {" "}
-                        </strong>
-                        </span>
-                      kids served in residential programs since January!
-                  </h5>
-                </div>
-              )}
+        <Container fluid className="text-center bg-light py-3">
+          <p>
+            {" "}
+            <small>
+              The COMP
+              <strong>
+                <em>ACT</em>
+              </strong>{" "}
+              Scoreboard is a measurement of its redeeming compassionate action
+              for vulnerable children and families.
+            </small>
+          </p>
+          <p style={{ fontSize: ".65em" }}>
+            <em>
+              Foster child placements made in Private License Placement Agency
+              (PLPA) and Specialized Private Licensed Placement Agency (SPLPA)
+              programs in Arkansas, number of foster parents trained in
+              Arkansas, number of <strong>FIND</strong> kinship connections
+              served in Arkansas and number of foster parents licensed{" "}
+              <strong>(and their foster children)</strong> or trained in
+              Missouri.
+            </em>
+          </p>
 
-              <p className="my-3">
-                Hillcrest Children’s Home rests on a 52-acre campus with 8
-                cottages and a 24-apartment center for foster youth preparing
-                for adult living.
-              </p>
-
-              <Link to="/hillcrest" className="btn btn-dark m-3 stretched-link" role="button">
-                Learn more about Hillcrest
-              </Link>
-            </Col>
-
-            <Col
-              md={6}
-              lg={4}
-              className="position-relative p-5 d-flex flex-column justify-content-center bg-pink text-white text-center align-content-around clickable"
-            >
-              <h2 className="mb-3" style={{ lineHeight: "1em" }}>
-                <strong>Highlands Maternity Home</strong>
-              </h2>
-
-              {scores && (
-                <div>
-                  <h5>
-                   
-                      <span style={{fontSize:"2rem"}}>
-                        <strong>
-                        {scores.page.scores.highlands} {" "}
-                        </strong>
-                        </span>
-                      mothers and babies served in Highlands Maternity Home cottage and adoptions facilitated since January!
-                    
-                  </h5>
-                </div>
-              )}
-
-              <p className="my-3">
-                Bringing hope and healing to women facing unplanned pregnancies
-                and services to families looking to expand through adoption.
-              </p>
-
-              <Link to="/highlands" className="btn btn-dark m-3 stretched-link" role="button">
-                Learn more about Highlands
-              </Link>
-            </Col>
-
-
-            <Col
-              md={6}
-              lg={4}
-              className="position-relative p-5 d-flex flex-column justify-content-center align-content-around bg-orange text-white text-center clickable"
-            >
-              <h2 className="mb-3" style={{ lineHeight: "1em" }}>
-                <strong>Foster Care</strong>
-              </h2>
-
-              {scores && (
-                <div>
-                  <h5>
-                      <span style={{fontSize:"2rem"}}>
-                    <strong>
-                        {scores.page.scores.fostercare} {" "}
-                    </strong>
-                        </span>
-                      kids served in Foster Care programs since January!
-                  </h5>
-                </div>
-              )}
-
-              <p className="my-3">
-                {/* There are more than 400,000 U.S. children in foster care every day  */}
-                {/* COMPACT wants to empower, network, and resource individuals
-                and churches to provide compassion in action to America's foster
-                care children and families.  */}
-                COMP<strong>ACT</strong> is your partner for serving vulnerable children and
-                families in the foster care system.
-              </p>
-
-              <Link to="/fostercare" className="btn btn-dark m-3 stretched-link" role="button">
-                Learn more about Foster Care
-              </Link>
-            </Col>
-
-            <Col
-              md={6}
-              lg={4}
-              className="position-relative p-5 d-flex flex-column justify-content-center bg-purple text-white text-center align-content-around clickable"
-            >
-              <h2 className="mb-3" style={{ lineHeight: "1em" }}>
-                <strong>SafeCare</strong>
-              </h2>
-
-              {scores && (
-                <div>
-                  <h5>
-                      <span style={{fontSize:"2rem"}}>
-                        <strong>
-                        {scores.page.scores.safecare} {" "}
-                        </strong>
-                        </span>
-                      children and parents served since January!
-                  </h5>
-                </div>
-              )}
-
-              <p className="my-3">
-              SafeCare serves at risk children and their families to help prevent those children from entering the foster care system and experiencing separation from family.
-              </p>
-
-              {/* to sustain the biological family and prevent removal of the children from parental care and into foster care  */}
-
-              <Link to="/safecare" className="btn btn-dark m-3 stretched-link" role="button">
-                Learn more about SafeCare
-              </Link>
-            </Col>
-
-
-            <Col
-              md={6}
-              lg={4}
-              className="position-relative p-5 d-flex flex-column justify-content-center bg-red text-white text-center align-content-around clickable"
-            >
-              <h2 className="mb-3" style={{ lineHeight: "1em" }}>
-                <strong>CompaCare</strong>
-              </h2>
-
-              {scores && (
-                <div>
-                  <h5>
-                      <span style={{fontSize:"2rem"}}>
-                        <strong>
-                        {scores.page.scores.compacare} {" "}
-                        </strong>
-                        </span>
-                      churches, families, and children served since January!
-                  </h5>
-                </div>
-              )}
-
-              <p className="my-3">
-              CompaCare Helps churches minister to
-                vulnerable children and families mobilizes, trains, certifies,
-                and organizes caring Christian people in the church to redeem
-                and empower people in need.
-              </p>
-
-              <Link to="/compacare" className="btn btn-dark m-3 stretched-link" role="button">
-                Learn more about CompaCare
-              </Link>
-            </Col>
-
-            <Col
-              md={6}
-              lg={4}
-              className="p-5 d-flex flex-column justify-content-center bg-blue text-white text-center align-content-around"
-            >
-              <h2 className="mb-3" style={{ lineHeight: "1em" }}>
-                <strong>COMPACT TOTAL</strong>
-              </h2>
-
-
-              <h4 style={{lineHeight:"2.5rem"}}>
-                {scores && (
-                  <>
-                  <span style={{fontSize:"2rem"}}>
-                   <strong>
-                          {scores.page.scores.total.toLocaleString()} 
-                   </strong>
-                  </span>
-                   {" "}Clients served
-                    in{" "}
-                </>
-                )}
-                <Link to="/hillcrest">Hillcrest</Link>,{" "}
-                <Link to="/highlands">Highlands</Link>,{" "}
-                <Link to="/fostercare">Foster Care</Link>,{" "}
-                <Link to="/safecare">SafeCare</Link> and{" "}
-                <Link to="/compacare">CompaCare</Link>
-              
-              </h4>
-              
-              <p
-              className="text-center"
-              dangerouslySetInnerHTML={{ __html: scores.page.content }}
-              ></p>
-              
-<small>
-  The COMP<strong>ACT</strong> Scoreboard is a measurement of
-  its redeeming compassionate action for vulnerable children and
-  families.
-</small>
-            </Col>
-            
-            
-            </Row>
-            </Container>
-            
-<Container className="text-center py-3">
-
-
-
-<small>
-<em>
-Foster child placements made in Private License Placement Agency (PLPA) and Specialized Private Licensed Placement Agency (SPLPA) programs in Arkansas, number of foster parents trained in Arkansas, number of <strong>FIND</strong> kinship connections served in Arkansas and number of foster parents licensed <strong>(and their foster children)</strong> or trained in Missouri.
-</em>
-</small>
-<br />
-
-<small>
-  <em>
-  CompaCare churches (defined as at least one delegated leader trained in the CompaCare Compassion Care System through the CompaCare Church Leaders’ Training course), number of foster families served by CompaCare churches, number of foster children served by CompaCare churches, and number of children diverted (prevented) from entering the foster care system by a CompaCare church or CompaCare Representative.
-  </em>
-  </small>
-
-
-</Container>
-
-
-{/* <Container className="text-center mb-5">
-<Row>
-<Col md={6}>
-<div className="p-5">
-<CompactLogo color="#666" />
-</div>
-</Col>
-
-<Col className="d-flex align-items-center">
-<h2 className="font-weight-bold blue">
-{scores && (
-  <span>
-  {" "}
-  {scores.page.scores.total.toLocaleString()} Clients served
-  in{" "}
-  </span>
-  )}
-  <Link to="/hillcrest">Hillcrest</Link>,{" "}
-  <Link to="/highlands">Highlands</Link>,{" "}
-  <Link to="/fostercare">Foster Care</Link>,{" "}
-  <Link to="/safecare">SafeCare</Link> and{" "}
-  <Link to="/compacare">CompaCare</Link>
-  </h2>
-  </Col>
-  </Row>
-  
-  {scores && (
-    <div>
-    <p
-    className="text-center"
-    dangerouslySetInnerHTML={{ __html: scores.page.content }}
-    ></p>
-    
-    
-    
-    </div>
-    )}
-  </Container> */}
-  </>
-  );
-};
+          <p style={{ fontSize: ".65em" }}>
+            <em>
+              CompaCare churches (defined as at least one delegated leader
+              trained in the CompaCare Compassion Care System through the
+              CompaCare Church Leaders’ Training course), number of foster
+              families served by CompaCare churches, number of foster children
+              served by CompaCare churches, and number of children diverted
+              (prevented) from entering the foster care system by a CompaCare
+              church or CompaCare Representative.
+            </em>
+          </p>
+        </Container>
+      </>
+    );
+  };
 
   return (
     <>
       <ApolloProvider client={client}>
-        <Scores />
-      </ApolloProvider>
-
-      {/* {scores && setTally(scores.reduce((acc,{score}) => acc + score, 0))} */}
-
-      {/* {error && <div>{error}</div>}
-      {isLoading && <div>Loading...</div>}
-      <Container fluid className="bg-dark pb-2">
-        <Row className="d-flex justify-content-center">
-          {scores &&
-            scores.map((score) => (
-              <div
-                className={`pt-3 text-white text-center card m-2 col-lg-2 col-md-3 
-                ${score.area === "Hillcrest" && "bg-green"}
-                ${score.area === "Highlands" && "bg-pink"}
-                ${score.area === "Foster Care" && "bg-orange"}
-                ${score.area === "SafeCare" && "bg-blue"}
-                ${score.area === "CompaCare" && "bg-red"}
-                
-                `}
-                // <div className={styleArray}
-                key={score.id}
-              >
-                <h5> {score.area} </h5>
-                <h1 className="display-4">
-                  <strong>{score.score}</strong>
-                </h1>
-                <p className="lead" style={{ lineHeight: 0.95 }}>
-                  {score.body}
-                </p>
-
-              </div>
-            ))}
+        <Row>
+          <Scores />
         </Row>
-        <Container className="text-white bg-blue p-3 rounded text-center">
-          {tally !== null && (
-            <h5>
-              <strong>{tally}</strong> clients served in Hillcrest, Highlands,
-              Foster Care, SafeCare and CompaCare since January.
-            </h5>
-          )}
-        </Container>
-      </Container> */}
+      </ApolloProvider>
     </>
   );
 };

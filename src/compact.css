@@ -1,26 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;0,800;1,400;1,500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;0,800;1,400;1,500&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;800&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap'); */
 
 
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&display=swap");
 
 :root {
   --red: #bb0000;
   /* --red: #C80000; COMPACARE */
-  --blue: #2D81C4;
-  --green: #00B473;
-  --pink:#EC2079;
-  --orange: #F26322;
+  --blue: #2d81c4;
+  --green: #00b473;
+  --pink: #ec2079;
+  --orange: #f26322;
   --purple: #684e9d;
-  --yellow: #FBAE17;
+  --yellow: #fbae17;
   --royal: #1222b1;
-  --body-fonts: 'Inter', 'Poppins',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --body-fonts: 
+   "Inter", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 * {
@@ -28,15 +28,21 @@
 }
 
 body {
-    margin: 0;
-    font-family: var(--body-fonts);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: var(--body-fonts);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+#button-submit {
+position: absolute;
+left: 0;
 }
 
 p {
@@ -46,110 +52,195 @@ p {
   /* line-height: 1.95rem; */
 }
 
-strong{font-weight: 800}
+strong {
+  font-weight: 800;
+}
+
+.act {
+  position: relative;
+  left: -.15rem;
+  font-style: oblique;
+  font-weight: 900;
+}
 
 /* matches photography backgrounds */
-.photoblue{
-    background-color: #E9F1F5;
-      color: var(--blue);
-    }
+.photoblue {
+  background-color: #e9f1f5;
+  color: var(--blue);
+}
 
-    /* links */
+/* links */
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-    
-    a:hover {
-      color: #999;
-      transition: 1s;
-    }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-    .social{
-      display: flex;
-    }
+a:hover {
+  color: #999;
+  transition: 1s;
+}
 
+.social {
+  display: flex;
+}
 
-  /*change global colors to brand */
-.blue{color: var(--blue);}
-.red{color: var(--red);}
-.green{color: var(--green);}
-.pink{color: var(--pink);}
-.orange{color: var(--orange);}
-.red{color: var(--red);}
-.purple{color: var(--purple);}
+.largeNumber {
+  font-family: "Shippori Mincho";
+}
+
+/*change global colors to brand colors */
+.blue {
+  color: var(--blue);
+}
+.red {
+  color: var(--red);
+}
+.green {
+  color: var(--green);
+}
+.pink {
+  color: var(--pink);
+}
+.orange {
+  color: var(--orange);
+}
+.red {
+  color: var(--red);
+}
+.purple {
+  color: var(--purple);
+}
+.yellow {
+  color: var(--yellow);
+}
 
 .pointer {
   cursor: pointer;
 }
 
-
 /*Background brand colors */
 
-/* brand bg links */
-.bg-red a, .bg-blue a, .bg-green a, .bg-pink a, .bg-orange a, .bg-purple a
-{text-decoration: none;}
+/* brand links */
+.bg-red a,
+.bg-blue a,
+.bg-green a,
+.bg-pink a,
+.bg-orange a,
+.bg-purple a {
+  text-decoration: none;
+}
 
 /* clickable brand colors animate on hover */
-.clickable:hover{
+.clickable {
   /* position: relative;  */
   /* top:1px; */
-  transition:.5s;
+  transition: background-color 0.75s ease;
 }
 
-.bg-red{background-color:  var(--red);}
-.bg-red a{color:white;text-decoration: none;}
-.clickable.bg-red:hover{background-color: #970000; fill:#970000;}
+.bg-red {
+  background-color: var(--red);
+}
+.bg-red a {
+  color: white;
+  text-decoration: none;
+}
+.clickable.bg-red:hover {
+  background-color: #970000;
+  fill: #970000;
+}
 
-.bg-green{background-color: var(--green);}
-.bg-green a{color:white;text-decoration: none;}
-.clickable.bg-green:hover{background-color: #008F5B;}
+.bg-green {
+  background-color: var(--green);
+}
+.bg-green a {
+  color: white;
+  text-decoration: none;
+}
+.clickable.bg-green:hover {
+  background-color: #008f5b;
+}
 
-.bg-pink{background-color: var(--pink);}
-.bg-pink a{color:white;text-decoration: none;}
-.clickable.bg-pink:hover{background-color: #C71965;}
+.bg-pink {
+  background-color: var(--pink);
+}
+.bg-pink a {
+  color: white;
+  text-decoration: none;
+}
+.clickable.bg-pink:hover {
+  background-color: #c71965;
+}
 
-.bg-orange{background-color: var(--orange);}
-.bg-orange a{color:white;text-decoration: none;}
-.clickable.bg-orange:hover{background-color: #B33C06;}
+.bg-orange {
+  background-color: var(--orange);
+}
+.bg-orange a {
+  color: white;
+  text-decoration: none;
+}
+.clickable.bg-orange:hover {
+  background-color: #b33c06;
+}
 
-.bg-purple{background-color: var(--purple);}
-.bg-purple a{color:white;text-decoration: none;}
-.clickable.bg-purple:hover{background-color: #433264;  }
+.bg-purple {
+  background-color: var(--purple);
+}
+.bg-purple a {
+  color: white;
+  text-decoration: none;
+}
+.clickable.bg-purple:hover {
+  background-color: #433264;
+}
 
-.bg-blue{background-color: var(--blue);}
-.bg-blue a{color:white;text-decoration: none;}
-.clickable.bg-blue:hover{background-color:#1C4D73;}
+.bg-blue {
+  background-color: var(--blue);
+}
+.bg-blue a {
+  color: white;
+  text-decoration: none;
+}
+.clickable.bg-blue:hover {
+  background-color: #1c4d73;
+}
 
-.bg-yellow{background-color: var(--yellow);}
-.bg-yellow a{color:white;text-decoration: none;}
-.clickable.bg-yellow:hover{background-color:#d8870d;}
+.bg-yellow {
+  background-color: var(--yellow);
+}
+.bg-yellow a {
+  color: white;
+  text-decoration: none;
+}
+.clickable.bg-yellow:hover {
+  background-color: #d8870d;
+}
 
 /* compacare colors */
-.bg-royal{background-color: var(--royal);}
-
-#reverse a{
-  /* text-decoration: none; */
+.bg-royal {
+  background-color: var(--royal);
 }
-#reverse{
+
+/* #reverse a{
+  text-decoration: none;
+} */
+#reverse {
   color: white;
 }
 
-#reverse a:hover{
-color: #999;
-  transition: .5s;
+#reverse a:hover {
+  color: #999;
+  transition: 0.5s;
 }
 
 /* for svg reverse fill */
 .svgwhite {
-  fill:white;
+  fill: white;
 }
 
-
 /* MENU MAIN */
-.menu a{
-  color:#fff;
+.menu a {
+  color: #fff;
   text-decoration: none;
 }
 
@@ -158,7 +249,6 @@ color: #999;
   color: #919191;
   transition: 0.4s;
 }
-
 
 /* NEW tag on home feature */
 .newtagwrap {
@@ -174,20 +264,19 @@ color: #999;
   top: -30px;
   height: 50px;
   width: 50px;
- color: #EC2079; 
- padding: 5px;
- background-color: #fff;
- font-weight: 800;
- border-radius: 50%;
- transform: rotate(-10deg);
+  color: #ec2079;
+  padding: 5px;
+  background-color: #fff;
+  font-weight: 800;
+  border-radius: 50%;
+  transform: rotate(-10deg);
 }
-
 
 .wrapx {
   position: relative;
   z-index: 1;
 }
-.textx{
+.textx {
   background-color: white;
   height: 100vh;
   width: calc(100vw - 50px);
@@ -195,9 +284,8 @@ color: #999;
   /* margin: 0 10px 10px 10px; */
   opacity: 90%;
   /* filter: blur(5px); */
-  position:fixed;
+  position: fixed;
 }
-
 
 /* youtube embed style */
 .video-responsive {
@@ -215,53 +303,122 @@ color: #999;
   position: absolute;
 }
 
-
-
 /* Compacare charts */
 
 /* family center title */
-.chartfamily, .familytitle{fill:#FFFFFF;font-size:46px;letter-spacing:-1;font-weight: bold;}
+.chartfamily,
+.familytitle {
+  fill: #ffffff;
+  font-size: 46px;
+  letter-spacing: -1;
+  font-weight: bold;
+}
 
 /* Plan title font */
-.planphase{fill:white;
-  font-size:32px;
+.planphase {
+  fill: white;
+  font-size: 32px;
 }
 /* phase subtitle */
-.plansub{
-  fill:white;
- font-size:23px;
+.plansub {
+  fill: white;
+  font-size: 23px;
 }
 
 /* compacare practice chart */
-.practicefamily{fill:#FFFFFF;font-size:36px;letter-spacing:-1;font-weight: bold;}
+.practicefamily {
+  fill: #ffffff;
+  font-size: 36px;
+  letter-spacing: -1;
+  font-weight: bold;
+}
 
 /* family center title */
-.circletext{fill:#FFFFFF;font-size:24px;letter-spacing:-1;font-weight: bold;}
+.circletext {
+  fill: #ffffff;
+  font-size: 24px;
+  letter-spacing: -1;
+  font-weight: bold;
+}
 
 /* compact & community services */
-.communitytext{fill:#FFFFFF;font-size:40px;letter-spacing:-1;font-weight: bold;}
+.communitytext {
+  fill: #ffffff;
+  font-size: 40px;
+  letter-spacing: -1;
+  font-weight: bold;
+}
 
 /* compacare rep */
-.compacarerep{fill:#000000;font-size:40px;letter-spacing:-1;font-weight: bold;}
+.compacarerep {
+  fill: #000000;
+  font-size: 40px;
+  letter-spacing: -1;
+  font-weight: bold;
+}
 
-
-.compactHome{
-	background-color: #2D81C4;
-		background: url("https://compact.family/images/compactHome.jpg") no-repeat center center;
-		color: white;
-     -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-        -webkit-background-size: cover;
-
+.compactHome {
+  background-color: #2d81c4;
+  background: url("https://compact.family/images/compactHome.jpg") no-repeat
+    center center;
+  color: white;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-background-size: cover;
 }
 
 /* effort to suppress objects from printing */
 @media print {
-
   .noprint {
     display: none;
     /* border-width:0 !important */
   }
 }
 
+/* .xmas::after {
+  content: "";
+  background-color: #008f5b;
+  opacity: 0;
+  z-index: 1;
+  transition: 1s;
+}
+.xmas::after:hover {
+  content: "";
+  background-color: #008f5b;
+  opacity: 0;
+  z-index: 1;
+} */
+
+.xmas {
+  background: repeating-linear-gradient(
+    90deg,
+    #bd0019,
+    #bd0019 60px,
+    #e3001e 50px,
+    #e3001e 120px
+  );
+  transition: 6s;
+}
+
+/* .xmas:hover {
+  background: repeating-linear-gradient(
+    90deg,
+    #bd0019,
+    #bd0019 60px,
+    darkred 50px,
+    darkred 120px
+  );
+} */
+
+.xmas div {
+  background-color: #bd0019;
+}
+.xmas button {
+  transition: 2s;
+}
+
+.xmas button:hover {
+  background-color: orange;
+  color:darkred;
+}

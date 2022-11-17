@@ -7,16 +7,12 @@ import {
 } from "react-bootstrap";
 
 import { db } from "../util/firebase";
-// import { useAuth } from "../util/AuthContext";
-
-
+import { addDoc, collection } from "@firebase/firestore";
 
 const ContactForm = () => {
-  // const { currentUser } = useAuth();
-
-    const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [body, setBody] = useState("");
+  const [userName, setUserName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+  const [userMessage, setUserMessage] = useState("");
   const [date] = useState(new Date());
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
@@ -27,18 +23,16 @@ const ContactForm = () => {
     setHuman(true);
   }
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     setLoading(true);
-    const elementsArray = [...event.target.elements];
-    const formData = elementsArray.reduce((accumulator, currentValue) => {
-      if (currentValue.id) {
-        accumulator[currentValue.id] = currentValue.value;
-      }
-      return accumulator;
-    }, {});
-
-    db.collection("Contact").doc().set(formData);
+    await addDoc(collection(db, "Contact"), {
+      date: date,
+      form: 'contactus',
+      message: userMessage,
+      name: userName,
+      email: userEmail
+    })
 
     setLoading(false);
     setSent(true);
@@ -62,8 +56,8 @@ const ContactForm = () => {
             <Form.Control
               type="text"
               required
-              defaultValue={name}
-              onChange={(e) => setName(e.target.value)}
+              defaultValue={userName}
+              onChange={(e) => setUserName(e.target.value)}
             />
           </Form.Group>
 
@@ -72,8 +66,8 @@ const ContactForm = () => {
             <Form.Control
               type="email"
               required
-              defaultValue={email}
-              onChange={(e) => setEmail(e.target.value)}
+              defaultValue={userEmail}
+              onChange={(e) => setUserEmail(e.target.value)}
             />
             <Form.Text className="text-muted">
               We will never share your email with anyone else.
@@ -86,50 +80,38 @@ const ContactForm = () => {
               as="textarea"
               rows="5"
               required
-              defaultValue={body}
-              onChange={(e) => setBody(e.target.value)}
+              defaultValue={userMessage}
+              onChange={(e) => setUserMessage(e.target.value)}
             ></Form.Control>
-
           </Form.Group>
 
-          <Form.Group hidden controlId="date">
-            <Form.Control plaintext readonly value={date} />
-          </Form.Group>
-
-          <Form.Group hidden controlId="form">
-<Form.Control 
-value="contactus"
-/>
-          </Form.Group>
-
-{!human &&  <Button className="w-100 btn-secondary" onClick={humanCheck}>
+          {!human && (
+            <Button className="w-100 mt-3 btn-secondary" onClick={humanCheck}>
               I am indeed a person
             </Button>
-            }
+          )}
 
-
-
-{human && (
-<>
-  {!loading && (
-    <Button className="w-100" variant="primary" type="submit">
-    Send
-    </Button>
-    )}
-          {loading && (
-            <Button  className="w-100" disabled variant="primary" type="submit">
-            Sending Message...
-            </Button>
-            )}
+          {human && (
+            <>
+              {!loading && (
+                <Button className="w-100 mt-3" variant="primary" type="submit">
+                  Send
+                </Button>
+              )}
+              {loading && (
+                <Button
+                  className="w-100 mt-3"
+                  disabled
+                  variant="primary"
+                  type="submit"
+                >
+                  Sending Message...
+                </Button>
+              )}
             </>
-            )}
-
-
-
+          )}
         </Form>
       )}
-
-
     </>
   );
 };

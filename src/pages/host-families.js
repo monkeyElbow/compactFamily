@@ -1,14 +1,14 @@
-import {Image} from "react-bootstrap";
+import {Image, Container, Row, Col} from "react-bootstrap";
 
 export default function hostFamilies() {
   document.title = "COMPACT Host Families"
 
   return (
     <>
-      <div className="container">
-        <br />
-        <div className="row">
-          <div className="col-lg-5 col-sm-12">
+      <Container className="py-4">
+            <h1 className="text-center">Host Families</h1>
+        <Row className="mt-5">
+          <Col md={4} className="">
             <Image fluid
               src="https://compact.family/images/host_family.jpg"
               layout="intrinsic"
@@ -16,18 +16,24 @@ export default function hostFamilies() {
               height="609"
               alt="Host family walking"
             />
-          </div>
-          <div className="col-lg-7 col-sm-12">
-            <h3>Host Families</h3>
-            <p>
-              <strong>
+          </Col>
+          <Col className="d-flex p-md-5 py-sm-4 flex-column justify-content-center">
+            <h2 className="fs-4 fw-bold">
+  
                 On occasion, families will choose to take a child or children
                 out on a host visit. These visits can be built around your
                 family’s desires.
-              </strong>
-            </p>
+    
+            </h2>
 
-            <p className="lead">
+           
+          </Col>
+        </Row>
+      </Container>
+
+<Container className="d-flex justify-content-center">
+  <Col lg={6} md={8} sm={12}>
+<p className="lead">
               Hosting can include various activities such as:
             </p>
 
@@ -45,15 +51,16 @@ export default function hostFamilies() {
                 Providing support and guidance to the resident as they grow
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
-      <div className="container text-center">
-        <p>
+  </Col>
+</Container>
+
+      <Container className="my-5">
+      
+        <p className="fw-bold fs-5">
           Host Families are people like you in the community who wrap around our
           residents and provide extra support that they may desperately need.
         </p>
-        <p className="text-center">
+        <p className="text-center lead">
           These are experiences and memories that children cherish forever.
         </p>
         <p className="text-center">
@@ -61,7 +68,7 @@ export default function hostFamilies() {
           application:
         </p>
 
-        <p className="lead text-center">
+        <p className="lead text-center py-5">
           <a
             href="https://compact.family/download/HostFamilyApplication.pdf"
             target="_blank"
@@ -77,7 +84,7 @@ export default function hostFamilies() {
           If you have any questions about hosting, please feel free to contact
           us: info@compact.family or 501-262-1660.
         </p>
-      </div>
+      </Container>
     </>
   );
 }

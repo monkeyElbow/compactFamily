@@ -1,90 +1,101 @@
 import { useState, useRef } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Container, Card, Form, Alert, Button } from "react-bootstrap";
 import { useAuth } from "../../util/AuthContext";
 
-
 export default function UpdatePassword() {
+  const emailRef = useRef();
+  const passwordRef = useRef();
+  const passwordConfirmRef = useRef();
+  const { currentUser, UpdatePassword, UpdateEmail } = useAuth();
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
-    
-const emailRef = useRef()
-const passwordRef = useRef()
-const passwordConfirmRef = useRef()
-const {currentUser, updatePassword, updateEmail } = useAuth()
-const [error, setError] = useState('')
-const [loading, setLoading] = useState(false)
-const history = useHistory()
-
-
-function handleSubmit(e) {
-    e.preventDefault()
+  function handleSubmit(e) {
+    e.preventDefault();
     if (passwordRef.current.value !== passwordConfirmRef.current.value) {
-      return setError("Passwords do not match")
+      return setError("Passwords do not match");
     }
 
-    const promises = []
-    setLoading(true)
-    setError("")
+    const promises = [];
+    setLoading(true);
+    setError("");
 
     if (emailRef.current.value !== currentUser.email) {
-      promises.push(updateEmail(emailRef.current.value))
+      promises.push(UpdateEmail(emailRef.current.value));
     }
     if (passwordRef.current.value) {
-      promises.push(updatePassword(passwordRef.current.value))
+      promises.push(UpdatePassword(passwordRef.current.value));
     }
 
     Promise.all(promises)
       .then(() => {
-        history.push("/dashboard")
+        navigate("/dashboard");
       })
       .catch(() => {
-        setError("Failed to update account. For your account security you need to be recently signed in. Try signing out and back in.")
+        setError(
+          "Failed to update account. For your account security you need to be recently signed in. Try signing out and back in."
+        );
       })
       .finally(() => {
-        setLoading(false)
-      })
+        setLoading(false);
+      });
   }
 
+  return (
+    <>
+      {error && (
+        <Alert variant="danger" className="mb-4 text-center">
+          {error}
+        </Alert>
+      )}
 
-    return(
-        <>
-        {error && <Alert variant="danger" className="mb-4 text-center">{error}</Alert>}
+      <Container
+        className="my-3 d-flex flex-column align-items-center justify-content-center"
+        style={{ minHeight: "84vh" }}
+      >
+        <Card className="w-100" style={{ maxWidth: "400px" }}>
+          <Card.Body>
+            <h2>Update Email or Password</h2>
 
-<Container className="my-3 d-flex flex-column align-items-center justify-content-center"
-    style={{minHeight:"84vh"}}
->
+            <Form onSubmit={handleSubmit}>
+              <Form.Group id="email">
+                <Form.Label>Email</Form.Label>
+                <Form.Control
+                  type="email"
+                  ref={emailRef}
+                  required
+                  defaultValue={currentUser.email}
+                ></Form.Control>
+              </Form.Group>
 
-        <Card className="w-100" style={{maxWidth: "400px"}}>
+              <Form.Group id="password" className="mt-3">
+                <Form.Label>password</Form.Label>
+                <Form.Control
+                  type="password"
+                  ref={passwordRef}
+                  placeholder="Leave blank to keep the same"
+                ></Form.Control>
+              </Form.Group>
 
-            <Card.Body>
-<h2>Update Email or Password</h2>
+              <Form.Group id="password-confirm" className="mt-3">
+                <Form.Label>password confirmation</Form.Label>
+                <Form.Control
+                  type="password"
+                  ref={passwordConfirmRef}
+                  placeholder="Leave blank to keep the same"
+                ></Form.Control>
+              </Form.Group>
 
-<Form onSubmit={handleSubmit}>
-    <Form.Group id="email">
-        <Form.Label>Email</Form.Label>
-        <Form.Control type="email" ref={emailRef} required defaultValue={currentUser.email}></Form.Control>
-    </Form.Group>
-
-    <Form.Group id="password" className="mt-3">
-        <Form.Label>password</Form.Label>
-        <Form.Control type="password" ref={passwordRef} placeholder="Leave blank to keep the same"></Form.Control>
-    </Form.Group>
-
-    <Form.Group id="password-confirm" className="mt-3">
-        <Form.Label>password confirmation</Form.Label>
-        <Form.Control type="password" ref={passwordConfirmRef} placeholder="Leave blank to keep the same"></Form.Control>
-    </Form.Group>
-
-<br />
-<Button disabled={loading} className="w-100" type="submit">Update</Button>
-</Form>
-
-            </Card.Body>
+              <br />
+              <Button disabled={loading} className="w-100" type="submit">
+                Update
+              </Button>
+            </Form>
+          </Card.Body>
         </Card>
-         
-
-
-</Container>
-        </>
-    )
+      </Container>
+    </>
+  );
 }

@@ -1,4 +1,4 @@
-// import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Moment from 'react-moment';
 
@@ -12,9 +12,11 @@ import {
 import JobApplyButton from "../components/JobApplyButton";
 import JobHomeButton from "../components/JobHomeButton";
 
-const JobPage = ({match: { params: { id } } }) => {
-  document.title = "COMPACT Employment"
 
+const JobPage = ({ id }) => {
+  document.title = "COMPACT Employment"
+  
+  const params = useParams()
 
   const client = new ApolloClient({
     uri: 'https://www.compact.family/wpapi/graphql/',
@@ -23,7 +25,7 @@ const JobPage = ({match: { params: { id } } }) => {
   
   const QUERY_JOB = gql`
   query SinglePost {
-    post(id: ${id}, idType: DATABASE_ID) {
+    post(id: ${params.id}, idType: DATABASE_ID) {
       date
       title
       id
@@ -38,7 +40,7 @@ const JobPage = ({match: { params: { id } } }) => {
     const { loading, error, data: job } = useQuery(QUERY_JOB);
     if (loading) return "Loading...";
     if (error) return `Error! ${error.message}`;
-console.log(job)
+// console.log(job)
     return(
       <>
       <Container className="my-5">
@@ -75,3 +77,10 @@ console.log(job)
 };
 
 export default JobPage;
+
+
+
+
+// yard
+
+// const JobPage = ({match: { params: { id } } }) => {

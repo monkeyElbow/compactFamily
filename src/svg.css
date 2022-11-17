@@ -24,14 +24,18 @@
 .svgorange{fill: #F26322;}
 .clickable .svgorange:hover{fill: #B33C06;transition:1s;}
 
-.ctext{fill:white; font-family:'raleway'; font-weight: bold; font-size:17.5px;}
-.ctitle{fill:black; font-family:'raleway'; font-weight: bold; font-size:31px;}
+.ctext{fill:white; font-family:'Inter'; font-weight: bold; font-size:17.5px;}
+.ctitle{fill:black; font-family:'Inter'; font-weight: bold; font-size:31px;}
 .cstroke{fill:none;stroke:#969696;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 .cstrokegreen{fill:none;stroke:#00B473;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 
 /* removes mouse pointer over prevention to permanency chart */
 .ctext{
   pointer-events: none;
+}
+
+.mobileText{
+  font-size: 23px
 }
 
 svg a,

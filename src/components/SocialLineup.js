@@ -3,7 +3,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import {FaHome} from "react-icons/fa"
+import {CgProfile} from "react-icons/cg"
 import { Link } from "react-router-dom";
 
 import "../compact.css";
@@ -48,7 +48,7 @@ export const SocialLineup = () => {
         <FaYoutube />
       </a>
       <Link to="/dashboard">
-     <FaHome />
+     <CgProfile />
       </Link>
 
 

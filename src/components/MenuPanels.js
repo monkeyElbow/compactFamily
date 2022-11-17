@@ -19,7 +19,7 @@ const MenuTwo = () => {
     return(
         <>
 <Link to="/hillcrest">Hillcrest Children's</Link>
-<Link to="/highlands">Highlands Maternity</Link>
+<Link to="/highlands">Highlands Adoption</Link>
 <Link to="/fostercare">Foster Care</Link>
 <Link to="/compacare">CompaCare</Link>
 <Link to="/find">FIND Kinship Navigator</Link>
@@ -34,7 +34,7 @@ const MenuThree = () => {
 <Link to="/announcements">Announcements</Link>
 <Link to="/partners">Partners</Link>
 <Link to="/products">Products</Link>
-{/* <Link to="/newsletter">Newsletter</Link> */}
+<Link to="/newsletter">Newsletter</Link>
 {/* <Link to="/brand">Brand</Link> */}
         </>
     )

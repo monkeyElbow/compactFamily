@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const isaiah58Sermon = () => {
-  document.title = "COMPACT Isaiah 58 Offering"
+  document.title = "COMPACT Isaiah 58 Offering";
 
   return (
     <>
@@ -63,8 +63,11 @@ const isaiah58Sermon = () => {
 
             <p>
               All these words of underdogs as found in Isaiah 58:6-7 typify the
-              children and youth we serve at AG COMP<strong>ACT</strong> Family
-              Services.
+              children and youth we serve at AG COMP
+              <strong>
+                <em>ACT</em>
+              </strong>
+               Family Services.
             </p>
             <p>
               The 58th chapter of Isaiah is not the first time the LORD has

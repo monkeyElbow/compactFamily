@@ -1,5 +1,6 @@
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import JobApplyButton from "../components/JobApplyButton";
+import ResponsiveEmbed from "react-responsive-embed";
 
 import {
   ApolloClient,
@@ -62,9 +63,11 @@ const EmploymentPage = () => {
 
   return (
     <>
-      <Container fluid className="bg-blue text-white text-center py-2">
-        <Container>
-          <p className="h2">Employment and Internship Opportunities</p>
+      <Container fluid className="bg-blue text-white text-center p-5">
+         
+          <p className="h1">Employment and Internship Opportunities</p>
+         <Row>
+          <Col lg={6} md={12}>
           <p className="lead text-left">
             Join our outstanding team of child care professionals in a licensed,
             progressive program built upon biblical values with natural and
@@ -73,9 +76,17 @@ const EmploymentPage = () => {
             and can lead by example, this may be the ministry for you. Must be
             willing to relocate to Hot Springs, Arkansas.
           </p>
+          
+          </Col>
+          <Col>
+          <ResponsiveEmbed
+        src="https://www.youtube.com/embed/601jgd6_5kI"
+        allowFullScreen
+      />
+          </Col>
+         </Row>
 
          
-        </Container>
 
  </Container>
 

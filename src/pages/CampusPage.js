@@ -1,19 +1,22 @@
 import { Container, Image } from "react-bootstrap";
 
 const CampusPage = () => {
-  document.title = "COMPACT Campus"
+  document.title = "COMPACT Campus";
 
-    return(
-        <>
-
-<Container>
+  return (
+    <>
+      <Container>
         <div className="container pb-3 my-5">
           <p className="h2 display-4">Our Hillcrest Campus</p>
           <p>
-            COMP<strong>ACT</strong> Family Services is located in the beautiful
-            foothills of the Ouachita Mountains in Hot Springs, AR. What began
-            in 1944 as a single home (Gladys Hinson House) has now grown into a
-            52-acre property with many amenities for its guests and residents.
+            COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            Family Services is located in the beautiful foothills of the
+            Ouachita Mountains in Hot Springs, AR. What began in 1944 as a
+            single home (Gladys Hinson House) has now grown into a 52-acre
+            property with many amenities for its guests and residents.
           </p>
           <h4>Included on the property are:</h4>
         </div>
@@ -21,7 +24,8 @@ const CampusPage = () => {
         <div className="container">
           <div className="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 text-center d-flex justify-content-center">
             <div className="card p-0 m-1">
-              <Image fluid
+              <Image
+                fluid
                 className="card-img-top"
                 src="https://compact.family/images/HinsonHouse_8410.jpg"
                 alt="Hinson House"
@@ -40,7 +44,7 @@ const CampusPage = () => {
 
             <div className="card p-0 m-1">
               <Image
-              fluid
+                fluid
                 className="card-img-top"
                 width="300"
                 height="200"
@@ -60,7 +64,7 @@ const CampusPage = () => {
 
             <div className="card p-0 m-1">
               <Image
-              fluid
+                fluid
                 className="card-img-top"
                 width="300"
                 height="200"
@@ -79,7 +83,7 @@ const CampusPage = () => {
 
             <div className="card p-0 m-1">
               <Image
-              fluid
+                fluid
                 className="card-img-top"
                 width="300"
                 height="200"
@@ -99,7 +103,7 @@ const CampusPage = () => {
 
             <div className="card p-0 m-1">
               <Image
-              fluid
+                fluid
                 className="card-img-top"
                 width="300"
                 height="200"
@@ -117,7 +121,8 @@ const CampusPage = () => {
             </div>
 
             <div className="card p-0 m-1">
-              <Image fluid
+              <Image
+                fluid
                 className="card-img-top"
                 width="300"
                 height="200"
@@ -136,7 +141,8 @@ const CampusPage = () => {
             </div>
 
             <div className="card p-0 m-1">
-              <Image fluid
+              <Image
+                fluid
                 className="card-img-top"
                 width="300"
                 height="200"
@@ -155,7 +161,8 @@ const CampusPage = () => {
             </div>
 
             <div className="card p-0 m-1">
-              <Image fluid
+              <Image
+                fluid
                 className="card-img-top"
                 width="300"
                 height="200"
@@ -177,8 +184,8 @@ const CampusPage = () => {
           </div>
         </div>
       </Container>
-        </>
-    )
-}
+    </>
+  );
+};
 
 export default CampusPage;

@@ -1,4 +1,8 @@
-import { Button, Container, Row, Col } from "react-bootstrap";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/row";
+import Button from "react-bootstrap/button";
+import Container from "react-bootstrap/container";
+import YoutubeEmbed from "../../components/youTubeEmbed";
 
 export default function christmasPage() {
   return (
@@ -19,179 +23,208 @@ export default function christmasPage() {
         >
           <Container className="p-5 border border-3 border-white">
             <h1>
-                <strong>
-                MERRY CHRISTMAS
-                </strong>
-                </h1>
+              <strong>MERRY CHRISTMAS</strong>
+            </h1>
             <p>
               <small>FROM</small>
             </p>
             <h5>
-              COMP<strong>ACT</strong> Family
+              COMP
+              <strong>
+                <em>ACT</em>
+              </strong>{" "}
+              Family
             </h5>
           </Container>
         </Container>
+        <YoutubeEmbed embedId="9f_hd5L519s" />
       </Container>
 
       <Container className="m-5">
         <h5>
           Dear Friend of COMP
-          <strong>ACT</strong>,
+          <span className="act">ACT</span>,
         </h5>
         <br />
 
         <p className="<strong>">
-          <strong>CHRISTMAS 2021 IS COMING SOON!</strong> Each year we have the
-          opportunity to bring the message of Jesus and Christmas joy to
-          children and youth at{" "}
+          <strong>CHRISTMAS 2022 IS COMING SOON!</strong> And each year we bring
+          the message of Jesus and Christmas joy to the children and youth at{" "}
           <strong>
             Hillcrest Children’s Home and Highlands Maternity Home!
           </strong>{" "}
-          Some of the kids will experience<strong> their very first Christmas.</strong>
+          Some of the kids will experience
+          <strong> their very first Christmas.</strong>
         </p>
 
         <p>
-         <strong>   
-          Christmas giving touches these kids deeply.
-         </strong>
-           Last year, some reciprocated. Houseparents’ Wes &amp; Christy Lemly
-reported that  <em>“There was a new boy to the cottage that didn’t have as many gifts as the others. The other boys
-decided that each would give the new boy one of their unopened gifts.”</em> 
-<strong>
-Let us bless these kids this Christmas!
-</strong>
+          Over the 78 years we’ve been able to make Christmas a wonderful memory
+          in the lives of the kids we serve!{" "}
+          <strong>All because of YOU and your generosity.</strong>
         </p>
-        
       </Container>
 
-<Container>
-<h3>
-    <strong>
-        3 wonderful ways to provide kids a MERRY CHRISTMAS:
-    </strong>
+      <Container>
+        <h3>
+          <strong>
+            Three wonderful ways to provide kids a MERRY CHRISTMAS:
+          </strong>
         </h3>
-</Container>
+      </Container>
 
-<Container>
+      <Container>
+        <Row className="p-5 my-3 bg-light border rounded">
+          <Col md={8} sm={12}>
+            <h4>
+              1. PURCHASE A GIFT/GIFTS FROM THE COMP
+              <strong>
+                <em>ACT</em>
+              </strong>{" "}
+              RESIDENT WISHLIST
+            </h4>
 
-    <Row className="p-5 my-3 bg-light border rounded">
-        <Col md={8} sm={12}>
-<h4>
-1. PURCHASE A GIFT/GIFTS FROM THE COMP<strong>ACT</strong> RESIDENT WISHLIST
-</h4>
+            <p>
+              Our residents have created their Christmas wish list. You can
+              access the Amazon Wishlist by scanning the QR code with your phone
+              camera, or by clicking on the “Amazon Wishlist” button.
+            </p>
+            <p>
+              If you’d like a paper copy of the wish list, you may request one
+              by, sending an email to lpollock@COMPACT.Family or calling our
+              office, Monday through Friday, 8AM-4:30PM CST at 501-262-1660.
+            </p>
+            <p>
+              {" "}
+              You can access the Amazon Wishlist by scanning the QR code with
+              your phone camera, or by clicking on the “Amazon Wishlist” button.
+            </p>
+          </Col>
+          <Col className="p-5 text-center">
+            <div className="p-3">
+              <WishQr />
+            </div>
+            <br />
+            <Button
+              href="https://www.amazon.com/hz/wishlist/ls/7DD98LJUUMW6/ref=hz_ls_biz_ex"
+              target="_blank"
+              className="btn"
+              role="button"
+              rel="noopener noreferrer"
+            >
+              Amazon wish list
+            </Button>
+          </Col>
+        </Row>
+      </Container>
 
-<p>
-Each of
-our residents have created their own Christmas wish list, and we have compiled
-those items into an Amazon Wishlist.</p><p> You can access the Amazon Wishlist by
-scanning the QR code on the right with your phone camera, or by clicking on the “Amazon Wishlist” button.
-</p>
-<p>
-    
-Alternatively, if you would like a paper copy of the wish list, you may request a
-list in one of the following ways:
-</p>
-<p className="ms-5">
+      <Container className="p-5 my-3 bg-light border rounded">
+        <h4 className="text-uppercase">2. Send A Gift Card or Check</h4>
+        <p>
+          Purchase and send one of the following suggested gift cards -- Amazon,
+          Walmart, Visa, American Express, Dillard’s, Best Buy or Dick’s
+          Sporting Goods. You may also send a check made our to COMP
+          <span className="act">ACT</span> . (Please note “Christmas” in the
+          memo of the check.)
+        </p>
 
-a. Send an email to lhyde@COMPACT.Family requesting a paper copy of
-the wish list, or
-</p>
-<p className="ms-5">
+        <p className="ms-5">Mail gift cards or checks to...</p>
+        <p className="ms-5">
+          <br />
+          COMP
+          <span className="act">ACT</span> Family Services
+          <br />
+          2325 Malvern Avenue
+          <br />
+          Hot Springs, AR 71901
+        </p>
+      </Container>
 
-b. Call our Hillcrest office, Monday through Friday from 8AM-4:30PM CST at 501-262-1660, and request
-a paper copy of the wish list
-</p>
-        </Col>
-        <Col className="p-5 text-center">
-<div className="p-3">
-        <WishQr />
-</div>
-        <br />
-<Button href="https://www.amazon.com/hz/wishlist/ls/349G09285V9ZH/ref=hz_ls_biz_ex"
- target="_blank"
- className="btn"
- role="button"
- rel="noopener noreferrer"
- >Amazon wish list</Button>
-        </Col>
-    </Row>
-</Container>
-
-<Container className="p-5 my-3 bg-light border rounded">
-<h4>A Gift Card</h4>
-<p>Purchase and send one of the following suggested gift cards -- Amazon, Walmart, Visa,
-American Express, Dillard’s, Best Buy or Dick’s Sporting Goods.</p>
-
-<p className="ms-5">a. Mail gift cards to the below listed address.</p>
-<p className="ms-5">b. Sending a check to (Please note the word “Christmas” in the memo
-section of your check.):<br />
-COMP<strong>ACT</strong> Family Services<br />
-2325 Malvern Avenue<br />
-Hot Springs, AR 71901</p>
-</Container>
-
-<Container className="p-5 my-3 bg-light border rounded">
-            <h4>3. GIVE A CHRISTMAS OFFERING</h4>
-            <p>Tax-deductible offerings can be given by:</p>
+      <Container className="p-5 my-3 bg-light border rounded">
+        <Row>
+          <Col md={8} sm={12}>
+            <h4>3. GIVE A SECURE ONLINE CHRISTMAS OFFERING</h4>
+            <p>Tax-deductible offerings can be given by clicking here...</p>
 
             <div className="text-center py-3">
-<p>Clicking on this link to AG Giving and search for COMP<strong>ACT</strong> Christmas:</p>
-            <Button href="https://giving.ag.org/donate"
- target="_blank"
- className="btn"
- role="button"
- rel="noopener noreferrer"
- >Give Securely</Button>
+              <Button
+                href="https://giving.ag.org/donate/compact-family-services?fundid=38231"
+                target="_blank"
+                className="btn"
+                role="button"
+                rel="noopener noreferrer"
+              >
+                Give Securely
+              </Button>
+            </div>
+          </Col>
+          <Col>
+            <div className="p-3">
+              <GiveQr />
+            </div>
+            <br />
+          </Col>
+        </Row>
+      </Container>
 
- </div>
- <div className="text-center"><h5>OR</h5></div>
-
-        <p className="ms-5">Sending a check to (Please note the word “Christmas” in the memo
-section of your check.):<br />
-COMP<strong>ACT</strong> Family Services<br />
-2325 Malvern Avenue<br />
-Hot Springs, AR 71901</p>
-
-</Container>
-
-<Container className="p-5">
-
-    <p>On behalf of the children, youth and staff of COMPACT, thank you for your gift this Christmas. If you are able and
-would like to participate, please plan for offerings, gift cards or gifts to arrive by <strong> Friday, December 3, 2021.</strong>
-</p>
-<h5>
-Merry Christmas,
-</h5>
-<div className="col-4 p-3">
-    <JaySig />
-</div>
-    <p className="lead">
-Jay Mooney <br />
-        <strong>
-Executive Director
-        </strong>
-    </p>
-
-    
-</Container>
+      <Container className="p-5">
+        <p>
+          On behalf of the children, youth and staff of COMP
+          <span className="act">ACT</span> Family Services, thank you for your
+          gift this Christmas.{" "}
+          <strong>
+            Please plan for offerings, gift cards or gifts to arrive by Monday,
+            December 5, 2022.
+          </strong>
+        </p>
+        <h5>Merry Christmas,</h5>
+        {/* <div className="col-4 p-3">
+          <AlanSig />
+        </div> */}
+        <p className="fs-1 m-0">
+          Alan Bixler <br />
+        </p>
+        <p>
+          <strong>Executive Director</strong>
+        </p>
+        COMP
+        <span className="act">ACT</span> Family Services
+      </Container>
     </>
   );
 }
 
+// const AlanSig = () => {
+//   return (
+//     <svg viewBox="0 0 500 200">
 
-const JaySig = () => {
-    return (
-        <svg viewBox="0 0 500 200">
-  <path d="M378 54a201 201 0 0 0-19 28c-2 3-2 10-7 10-4-1-3-4-3-7-21 16-22 3-13-15-10-5-4 22-22 22-21-1 13-50 18-33 3 11 12-2 17-4l8 3v2c6-4 7-9 13-3 20-26 14 6 9 19-1 9 14-5 13-10 1-3 13-23 14-11-3 11-12 18-11 30 30-11 19-32 30-31 9 2-10 30-11 37h1c8-4 14-10 22-15 15-9 26 0 22 18-2 4 6 8 0 9-3 0-3 2-4 4-9 22-17 44-33 62-30 25-41-10-23-34 18-38 51-28 56-41 4-36-28-5-41 3-13 5-6-8-3-13l-1-1c-8 4-19 13-22-1-35 32-10-10-9-27Zm75 51c-22-1-43 17-52 37-16 28 3 43 24 17a186 186 0 0 0 28-54ZM350 69c-2-2 0-5-4-2-3 5-15 16-10 21 10 3 11-13 14-19Zm-25-4c-6 2-13 14-13 19l2 3c10 0 10-14 11-22ZM114 93C36 118-1 133 67 46c8-9 16-16 26-20 19-10 54-4 50 23l-4 23 14-6 1 1c-21 8-21 20-30 39-10 26-27 49-42 73-2 4-4 4-8 1-12-15 29-73 40-87Zm26-39c3-33-32-34-51-22-22 14-33 39-48 59-13 25 10 15 24 12a293 293 0 0 0 65-24c8-5 8-20 10-25Zm-10 31-1-1c-26 20-38 51-51 80-6 44 51-73 52-79ZM184 89c-8 4-19 21-24 5-32 28-2-29 10-33 5-4 10 7 2 7 8 6-6 19-3 27 18-3 18-29 26-29 9 4-7 21-5 30 27-16 26-8 21 18l10-4v1c-6 5-14 7-16 16-5 8-12 37-24 32-15-10 8-31 17-37 10-5 10-17 11-27 0-15-25 21-25-6Zm16 38-1-1c-7 6-20 16-16 27 11-3 12-18 17-26Zm-34-55a61 61 0 0 0-14 22c6-3 14-16 14-22ZM271 76c15-16 23-37 38-52 4 4 2 11 1 16l-21 71h-1c-2-11 5-23 7-33 3-15 9-28 10-42-14 16-21 38-40 49-5-9 11-34 8-45l-27 45c0 3-2 4-4 3-7-2 11-27 12-33 3-6 5-13 9-19h2v8l12-13c7 15-5 30-7 44Z"/>
-</svg>
-    )
-}
+//   <path d="M226.8 74.03c-1.53 13.05-3.07 26.09-4.63 39.37-2.29 0-4.09-1.43-4.5-3.7-.69-3.89-1.36-7.92-1.04-11.82.63-7.77 1.93-15.48 2.96-23.21 1.86-14.02 7.33-26.8 13.45-39.36.74-1.53 1.3-3.15 2.23-5.46-4.92 1.77-8.59 3.96-11.45 7.3-.44.51.02 2.06.42 2.97.77 1.81.25 2.78-1.62 2.8-2.47.02-5.25.41-6.74-2.25-1.42-2.53-.35-4.91 1.2-7 4.08-5.51 9.94-8.58 16.05-11.17 10.35-4.37 21.19-6.28 32.4-5.54 3.28.22 6.65 1.01 9.7 2.24 7.22 2.91 9.92 10.15 6.72 17.3-3.02 6.74-8.14 11.81-14.03 15.92-7.15 4.99-14.71 9.39-22.08 14.06-.81.51-1.58 1.11-2.18 2.34 1.06.06 2.11.1 3.17.17 6.84.44 13.72.65 20.52 1.44 2.55.3 5.17 1.59 7.35 3.05 4.21 2.81 5.49 8.04 2.68 12.26-2.27 3.42-5.12 6.68-8.32 9.23-6.89 5.49-14.21 10.44-21.28 15.71-3.64 2.72-7.15 5.61-10.62 8.54-.68.58-.91 1.7-1.34 2.57.88.37 1.74.96 2.66 1.09 7.92 1.13 15.27-1.33 22.57-3.86 18.34-6.35 36.65-12.77 54.99-19.13 2.72-.94 5.45-2 8.27-2.45 3.91-.63 6.37-2.78 8.62-5.87 5.56-7.66 11.35-15.16 17.19-22.6 1.46-1.86 3.33-3.52 5.3-4.84 3.18-2.15 6.53-1.74 9.67.33.56.37 1.34 1.17 1.24 1.6-.16.67-.92 1.63-1.51 1.7-6.37.69-8.89 5.76-12.06 10.21-2.79 3.93-5.87 7.66-8.81 11.49-.6.77-1.16 1.57-2.09 2.84 1.19 0 1.81.12 2.36-.02 10.17-2.58 20.33-5.21 30.5-7.78 2.27-.57 3.51-1.85 4.38-4.11 7.37-19.22 16.28-37.71 27.66-54.87 3.53-5.33 8.31-9.96 13.06-14.32 2.24-2.06 5.65-3.27 8.72-3.92 7.61-1.6 14.12 3.66 14.7 11.42.41 5.52-1.05 10.7-3.24 15.68-7.77 17.64-18.35 33.25-34.4 44.32-5.73 3.95-12.5 6.42-18.87 9.4-1.71.8-3.23 1.53-3.47 3.55-.8 6.71-2.08 13.42-2.18 20.15-.14 8.71 4.75 12.98 13.51 13.08 7.6.08 14.28-3 20.99-5.97 15.05-6.67 28.21-16.43 41.76-25.57 5.84-3.94 11.86-7.64 17.93-11.21 1.69-.99 3.85-1.47 5.83-1.59 3.57-.22 5.6 2.97 4.17 6.26-.44 1-1.13 1.92-1.82 2.79-5.02 6.33-9.93 12.74-15.16 18.89-2.61 3.07-5.78 5.68-8.77 8.43-.62.57-1.53.81-2.95 1.53 2.59-9 7.26-16.04 12.15-22.97-.17-.17-.33-.35-.5-.52-.89.55-1.79 1.07-2.67 1.64-13.19 8.48-26.16 17.35-39.65 25.32-8.6 5.08-17.83 9.29-28.09 10.15-4.87.41-9.64.06-14.1-2.3-5.5-2.9-9.14-7.39-9.48-13.53-.36-6.53.28-13.12.54-19.69.05-1.26.33-2.51.58-4.23-1.37.22-2.34.31-3.28.54-11.62 2.89-23.23 5.85-34.87 8.68-2.07.5-3.42 1.52-4.46 3.36-4.23 7.47-5.02 15.65-5.18 23.97-.03 1.54 0 3.09 0 5.02-3.72-1.2-5.09-3.89-5.89-6.99-1.68-6.47-.52-12.72 1.6-18.88.23-.66.38-1.34.75-2.69-2.91.82-5.31 1.36-7.62 2.16-18.33 6.36-36.64 12.81-54.98 19.16-6.87 2.38-13.84 4.41-21.24 3.82-2.21-.17-4.45-.46-6.58-1.07-5.33-1.53-7.51-6.42-4.65-11.15 1.69-2.8 3.99-5.45 6.58-7.43 7.22-5.53 14.83-10.55 22.09-16.04 4.2-3.18 8.21-6.69 11.93-10.43 3-3.02 2.26-5.31-1.96-6.26-4.14-.93-8.41-1.49-12.65-1.71-5.84-.29-11.71-.08-17.56-.14-3.39-.04-6.92.4-9.66-2.53l-.9.34Zm160.57 5.66c1.28-.31 2.03-.34 2.63-.67 4.23-2.3 8.74-4.25 12.59-7.09 13.41-9.88 22.75-23.09 29.55-38.11 1.81-3.99 3.05-8.4 3.64-12.74.76-5.58-3.4-8.23-8.62-5.93-1.34.59-2.72 1.36-3.73 2.38-3.12 3.16-6.51 6.18-9.03 9.79-10.63 15.22-18.46 31.97-25.84 48.92-.42.95-.68 1.97-1.19 3.45ZM227.9 68.16c1.24-.08 1.46-.03 1.59-.11 9.63-5.92 19.29-11.8 28.86-17.81 6.01-3.77 11.53-8.16 15.48-14.18 3.84-5.85 2.13-9.82-4.73-11.32-.72-.16-1.47-.31-2.2-.29-5.37.15-10.75.16-16.09.59-2.81.23-5.55 1.23-7.99 1.8-.1 1.96.22 3.63-.33 4.92-2.71 6.4-5.85 12.62-8.46 19.05-2.25 5.53-3.99 11.26-6.12 17.36ZM79.19 72.63c9.91-3.76 19.16-7.57 29.64-7.05-2.99 1.9-5.84 4.09-9.01 5.64-7.17 3.5-14.46 6.76-21.78 9.95-2.07.9-3.26 2.19-3.93 4.31-5.44 17.17-10.95 34.32-16.41 51.48-.32 1.01-.45 2.09-.66 3.14l.66.34c1.49-1.97 2.98-3.94 4.46-5.91.25.1.51.2.76.29-.35 1.83-.54 3.7-1.07 5.47-1.43 4.79-2.77 9.63-4.6 14.27-1.48 3.76-4.3 5.39-6.69 4.68-2.47-.74-3.92-2.99-3.21-7.19 1.28-7.58 2.72-15.18 4.88-22.54 3.89-13.27 8.37-26.37 12.58-39.55.23-.73.27-1.53.53-3.08-4.71 2.27-8.69 4.41-12.84 6.13-5.1 2.1-8.76 5.5-11.72 10.16-6.97 10.97-14.23 21.77-21.54 32.52-2.23 3.28-4.91 6.29-7.61 9.22-2.14 2.32-4.97 3.19-8.14 2.58-2.02-.39-3.51-1.48-3.49-3.68.02-2.27 1.68-2.81 3.63-3.47 2.05-.7 4.34-1.9 5.58-3.58 4.9-6.64 9.46-13.55 14.1-20.38 2.19-3.23 4.31-6.51 6.44-9.77.47-.72.84-1.5.79-2.78-1.42.55-2.8 1.25-4.26 1.62-3.93 1-7.88 2-11.87 2.68-1.23.21-2.77-.38-3.93-1.03-2.33-1.31-2.85-4.13-1.38-6.26 1.56-2.28 4.53-2.64 6.78-1.09.76.52 2.17.8 2.98.46 6.94-2.89 13.84-5.84 20.65-9.02 1.3-.61 2.29-2.16 3.13-3.47 13.13-20.37 26.18-40.8 39.32-61.16 4.73-7.33 9.65-14.55 14.52-21.78.88-1.3 1.75-2.83 3.02-3.59 1.34-.8 3.51-1.54 4.65-.97 1.16.58 2.08 2.79 2.08 4.29 0 1.96-.79 4-1.58 5.86-6.58 15.56-13.27 31.08-19.86 46.64-1.7 4.02-3.21 8.12-4.75 12.2-.34.89-.46 1.87-.84 3.43Zm6.03-35.89-.61-.31c-9.67 15.4-19.35 30.8-29.02 46.2 3.86-1.11 7.3-2.84 10.86-4.3 2.07-.85 3.25-2.18 4.01-4.24 2.98-7.99 6.03-15.95 9.15-23.88 1.78-4.53 3.73-8.98 5.61-13.47Z"/>
+//   <path d="M107.59 117.38c.81-.48 1.66-.92 2.43-1.46 11.33-7.94 22.66-15.89 33.98-23.84.53-.37 1.03-.8 1.59-1.12 1.95-1.13 3.9-1.44 5.49.53 1.54 1.91.78 3.68-.69 5.23-1.6 1.68-3.31 3.26-4.91 4.93-.46.48-.74 1.13-1.1 1.7.17.21.35.42.52.63 1.57-1 3.15-2 4.72-3 2.19-1.39 4.28-2.99 6.59-4.13 4.49-2.22 7.65-.24 8.01 4.78.06.88.19 1.75.28 2.62.25.14.5.27.75.41 1.65-1.65 3.26-3.33 4.96-4.92 1.47-1.38 2.92-2.88 4.63-3.88.8-.47 2.47-.25 3.26.33.67.49.86 1.94.83 2.96-.02.86-.45 1.88-1.04 2.52-2.8 3.08-5.41 6.43-8.65 8.97-5.24 4.1-10.05 2.38-12.33-3.87-.12-.33-.35-.63-.7-1.24-2.09 1.34-4.07 2.67-6.11 3.9-2.3 1.4-4.54 2.94-6.99 4.02-5.02 2.21-7.92 1.08-10.84-4.03-.84.52-1.7.99-2.5 1.55-6.33 4.4-12.61 8.87-18.98 13.2-1.67 1.13-3.54 2.1-5.46 2.72-4.11 1.31-6.84-.48-7.68-4.72-.08-.43-.27-.83-.41-1.27-3.6 1.58-6.99 3.29-10.53 4.58-5.55 2.02-11.31 2.3-16.97.55-1.84-.57-3.65-1.84-4.96-3.26-.73-.79-.98-2.91-.42-3.76.52-.8 2.43-1.1 3.66-.96 2.46.28 4.85 1.22 7.32 1.5 4.95.57 9.54-.79 13.95-3.02 10.01-5.06 17.06-12.87 22.96-22.37 14.05-22.63 31.51-42.48 51.46-60.11 1.87-1.65 3.86-3.33 6.09-4.32 1.34-.59 3.75-.47 4.77.4 1.01.86 1.53 3.27 1.1 4.64-.76 2.42-2.24 4.66-3.69 6.8-16.56 24.55-36.15 46.42-58.39 65.94-2.97 2.61-5.09 5.72-6 9.88Zm43.28-59.26c-.29-.28-.58-.55-.86-.83-5.24 6.06-10.48 12.13-15.71 18.19.32.28.64.55.97.83 5.2-6.06 10.41-12.13 15.61-18.19Zm174.88-8.83c-1.11 1.95-2.22 3.89-3.66 6.43 1.55-.07 2.5-.06 3.44-.17 4.7-.54 8.32 1.36 11.09 5.01.48.63.44 1.65.65 2.49-.86.15-1.87.66-2.55.38-3.65-1.49-7.21-.98-10.92-.21-3.85.8-7.75-1.6-8.67-4.88-.95-3.35.86-6.77 4.7-8.42 1.7-.73 3.59-1.03 5.4-1.52.18.3.36.6.54.89Z"/>
 
+//     </svg>
+//   );
+// };
 
-const WishQr =() => {
-   return (
+const WishQr = () => {
+  return (
     <svg viewBox="0 0 288 288">
-    <path fill="#050001" d="M0 0h8v55H0zM0 62h8v16H0zM0 86h8v7H0zM0 101h8v8H0zM0 132h8v16H0zM0 171h8v8H0zM0 195h8v31H0zM0 234h8v54H0zM8 0h8v8H8zM8 47h8v8H8zM8 78h8v15H8zM8 101h8v16H8zM8 132h8v8H8zM8 156h8v31H8zM8 195h8v7H8zM8 234h8v7H8zM8 280h8v8H8zM16 0h7v8h-7zM16 16h7v23h-7zM16 47h7v8h-7zM16 70h7v8h-7zM16 93h7v32h-7zM16 132h7v8h-7zM16 148h7v8h-7zM16 164h7v23h-7zM16 202h7v16h-7zM16 234h7v7h-7zM16 249h7v24h-7zM16 280h7v8h-7zM23 0h8v8h-8zM23 16h8v23h-8zM23 47h8v8h-8zM23 86h8v7h-8zM23 132h8v24h-8zM23 171h8v24h-8zM23 202h8v24h-8zM23 234h8v7h-8zM23 249h8v24h-8zM23 280h8v8h-8zM31 0h8v8h-8zM31 16h8v23h-8zM31 47h8v8h-8zM31 78h8v8h-8zM31 93h8v16h-8zM31 125h8v7h-8zM31 140h8v8h-8zM31 164h8v15h-8zM31 187h8v8h-8zM31 210h8v8h-8zM31 234h8v7h-8zM31 249h8v24h-8zM31 280h8v8h-8zM39 0h8v8h-8zM39 47h8v8h-8zM39 70h8v8h-8zM39 86h8v15h-8zM39 109h8v8h-8zM39 140h8v8h-8zM39 156h8v23h-8zM39 195h8v23h-8zM39 234h8v7h-8zM39 280h8v8h-8zM47 0h8v55h-8zM47 62h8v8h-8zM47 78h8v8h-8zM47 93h8v8h-8zM47 109h8v8h-8zM47 125h8v7h-8zM47 140h8v8h-8zM47 156h8v8h-8zM47 171h8v8h-8zM47 187h8v8h-8zM47 202h8v8h-8zM47 218h8v8h-8zM47 234h8v54h-8zM55 70h7v16h-7zM55 101h7v8h-7zM55 117h7v8h-7zM55 132h7v8h-7zM55 164h7v31h-7zM55 202h7v16h-7zM62 8h8v23h-8zM62 47h8v23h-8zM62 86h8v31h-8zM62 132h8v16h-8zM62 171h8v8h-8zM62 187h8v15h-8zM62 218h8v16h-8zM62 280h8v8h-8zM70 62h8v16h-8zM70 125h8v7h-8zM70 140h8v24h-8zM70 195h8v39h-8zM70 257h8v16h-8zM70 280h8v8h-8zM78 0h8v16h-8zM78 23h8v32h-8zM78 62h8v24h-8zM78 93h8v16h-8zM78 125h8v7h-8zM78 140h8v16h-8zM78 164h8v7h-8zM78 187h8v31h-8zM78 226h8v8h-8zM78 249h8v24h-8zM86 31h7v16h-7zM86 55h7v23h-7zM86 86h7v7h-7zM86 101h7v8h-7zM86 117h7v15h-7zM86 148h7v23h-7zM86 179h7v8h-7zM86 210h7v16h-7zM86 234h7v15h-7zM86 257h7v31h-7zM93 39h8v16h-8zM93 62h8v8h-8zM93 86h8v7h-8zM93 101h8v24h-8zM93 132h8v24h-8zM93 164h8v7h-8zM93 195h8v7h-8zM93 210h8v16h-8zM93 257h8v8h-8zM93 280h8v8h-8zM101 8h8v39h-8zM101 70h8v8h-8zM101 86h8v15h-8zM101 132h8v8h-8zM101 148h8v16h-8zM101 179h8v8h-8zM101 195h8v15h-8zM101 218h8v8h-8zM101 234h8v7h-8zM101 257h8v16h-8zM109 0h8v8h-8zM109 16h8v7h-8zM109 31h8v8h-8zM109 47h8v39h-8zM109 93h8v16h-8zM109 117h8v8h-8zM109 132h8v16h-8zM109 156h8v15h-8zM109 179h8v8h-8zM109 218h8v8h-8zM109 234h8v7h-8zM109 249h8v8h-8zM109 265h8v15h-8zM117 8h8v15h-8zM117 31h8v16h-8zM117 55h8v7h-8zM117 86h8v7h-8zM117 101h8v8h-8zM117 117h8v15h-8zM117 140h8v8h-8zM117 156h8v8h-8zM117 171h8v24h-8zM117 210h8v8h-8zM117 241h8v8h-8zM117 265h8v7h-8zM117 280h8v8h-8zM125 0h7v31h-7zM125 39h7v23h-7zM125 86h7v15h-7zM125 109h7v8h-7zM125 125h7v7h-7zM125 156h7v15h-7zM125 187h7v15h-7zM125 218h7v8h-7zM125 241h7v31h-7zM132 0h8v8h-8zM132 23h8v8h-8zM132 70h8v16h-8zM132 101h8v24h-8zM132 132h8v16h-8zM132 156h8v8h-8zM132 187h8v8h-8zM132 202h8v8h-8zM132 218h8v16h-8zM132 241h8v8h-8zM140 0h8v8h-8zM140 16h8v39h-8zM140 62h8v8h-8zM140 101h8v8h-8zM140 117h8v8h-8zM140 132h8v8h-8zM140 148h8v8h-8zM140 171h8v8h-8zM140 187h8v8h-8zM140 202h8v8h-8zM140 218h8v16h-8zM140 241h8v8h-8zM140 257h8v23h-8zM148 0h8v39h-8zM148 55h8v7h-8zM148 93h8v16h-8zM148 125h8v7h-8zM148 148h8v23h-8zM148 226h8v15h-8zM148 249h8v8h-8zM148 265h8v15h-8zM156 16h8v7h-8zM156 31h8v24h-8zM156 62h8v24h-8zM156 101h8v24h-8zM156 132h8v24h-8zM156 179h8v8h-8zM156 202h8v16h-8zM156 226h8v15h-8zM156 272h8v16h-8zM164 8h7v23h-7zM164 39h7v8h-7zM164 55h7v23h-7zM164 109h7v8h-7zM164 125h7v7h-7zM164 164h7v7h-7zM164 179h7v31h-7zM164 234h7v7h-7zM164 249h7v8h-7zM171 0h8v8h-8zM171 23h8v8h-8zM171 39h8v16h-8zM171 62h8v31h-8zM171 101h8v8h-8zM171 132h8v8h-8zM171 148h8v31h-8zM171 218h8v31h-8zM171 272h8v8h-8zM179 0h8v8h-8zM179 31h8v8h-8zM179 62h8v8h-8zM179 78h8v31h-8zM179 117h8v15h-8zM179 140h8v16h-8zM179 164h8v7h-8zM179 195h8v15h-8zM179 226h8v62h-8zM187 0h8v23h-8zM187 39h8v39h-8zM187 93h8v8h-8zM187 140h8v8h-8zM187 156h8v15h-8zM187 218h8v8h-8zM187 249h8v16h-8zM187 280h8v8h-8zM195 8h7v8h-7zM195 23h7v8h-7zM195 39h7v8h-7zM195 62h7v24h-7zM195 117h7v23h-7zM195 156h7v8h-7zM195 171h7v8h-7zM195 195h7v15h-7zM195 218h7v8h-7zM195 241h7v8h-7zM195 265h7v7h-7zM202 0h8v8h-8zM202 39h8v23h-8zM202 78h8v15h-8zM202 109h8v8h-8zM202 125h8v15h-8zM202 164h8v15h-8zM202 187h8v8h-8zM202 202h8v24h-8zM202 272h8v8h-8zM210 0h8v16h-8zM210 62h8v16h-8zM210 93h8v24h-8zM210 132h8v8h-8zM210 148h8v31h-8zM210 187h8v8h-8zM210 210h8v16h-8zM210 241h8v16h-8zM210 272h8v8h-8zM218 16h8v7h-8zM218 31h8v24h-8zM218 62h8v8h-8zM218 78h8v39h-8zM218 148h8v8h-8zM218 171h8v8h-8zM218 187h8v8h-8zM218 218h8v39h-8zM218 265h8v7h-8zM226 62h8v8h-8zM226 78h8v15h-8zM226 101h8v16h-8zM226 125h8v15h-8zM226 148h8v31h-8zM226 202h8v24h-8zM226 249h8v8h-8zM234 0h7v55h-7zM234 62h7v8h-7zM234 78h7v8h-7zM234 93h7v8h-7zM234 109h7v8h-7zM234 125h7v23h-7zM234 156h7v8h-7zM234 171h7v8h-7zM234 187h7v8h-7zM234 202h7v8h-7zM234 218h7v8h-7zM234 234h7v7h-7zM234 249h7v16h-7zM234 272h7v8h-7zM241 0h8v8h-8zM241 47h8v8h-8zM241 78h8v15h-8zM241 101h8v24h-8zM241 171h8v39h-8zM241 218h8v8h-8zM241 249h8v8h-8zM241 280h8v8h-8zM249 0h8v8h-8zM249 16h8v23h-8zM249 47h8v8h-8zM249 70h8v16h-8zM249 109h8v8h-8zM249 140h8v8h-8zM249 156h8v39h-8zM249 202h8v8h-8zM249 218h8v39h-8zM249 272h8v8h-8zM257 0h8v8h-8zM257 16h8v23h-8zM257 47h8v8h-8zM257 62h8v31h-8zM257 101h8v24h-8zM257 140h8v16h-8zM257 171h8v16h-8zM257 218h8v8h-8zM257 257h8v16h-8zM257 280h8v8h-8zM265 0h7v8h-7zM265 16h7v23h-7zM265 47h7v8h-7zM265 62h7v39h-7zM265 117h7v23h-7zM265 148h7v23h-7zM265 195h7v7h-7zM265 249h7v8h-7zM265 265h7v7h-7zM272 0h8v8h-8zM272 47h8v8h-8zM272 62h8v24h-8zM272 101h8v8h-8zM272 117h8v8h-8zM272 132h8v8h-8zM272 171h8v8h-8zM272 187h8v8h-8zM272 202h8v24h-8zM272 241h8v8h-8zM280 0h8v55h-8zM280 78h8v31h-8zM280 140h8v16h-8zM280 164h8v7h-8zM280 179h8v16h-8zM280 202h8v39h-8zM280 265h8v23h-8z"/>
-  </svg>
-   )
-}
+      <path
+        fill="#231f20"
+        d="M0 0h7.75v54.25H0zm0 62h7.75v7.75H0zm0 31h7.75v7.75H0zm0 23.25h7.75V124H0zm0 15.5h7.75v7.75H0zm0 15.5h7.75v15.5H0zm0 23.25h7.75v7.75H0zm0 31h7.75v7.75H0zM0 217h7.75v7.75H0zm0 15.5h7.75v54.25H0zM7.75 0h7.75v7.75H7.75zm0 46.5h7.75v7.75H7.75zm0 23.25h7.75v15.5H7.75zm0 23.25h7.75v15.5H7.75zm0 38.75h7.75V155H7.75zm0 54.25h7.75v7.75H7.75zm0 23.25h7.75V217H7.75zm0 23.25h7.75v7.75H7.75zm0 46.5h7.75v7.75H7.75zM15.5 0h7.75v7.75H15.5zm0 15.5h7.75v23.25H15.5zm0 31h7.75v7.75H15.5zm0 15.5h7.75v15.5H15.5zm0 38.75h7.75v15.5H15.5zm0 23.25h7.75v7.75H15.5zm0 15.5h7.75v7.75H15.5zm0 15.5h7.75v7.75H15.5zm0 46.5h7.75v7.75H15.5zm0 15.5h7.75v7.75H15.5zm0 15.5h7.75v7.75H15.5zm0 15.5h7.75v23.25H15.5zm0 31h7.75v7.75H15.5zM23.25 0H31v7.75h-7.75zm0 15.5H31v23.25h-7.75zm0 31H31v7.75h-7.75zm0 23.25H31v15.5h-7.75zm0 23.25H31v7.75h-7.75zm0 46.5H31v23.25h-7.75zm0 31H31v7.75h-7.75zm0 38.75H31V217h-7.75zm0 23.25H31v7.75h-7.75zm0 15.5H31v23.25h-7.75zm0 31H31v7.75h-7.75zM31 0h7.75v7.75H31zm0 15.5h7.75v23.25H31zm0 31h7.75v7.75H31zM31 62h7.75v7.75H31zm0 31h7.75v23.25H31zm0 31h7.75v23.25H31zm0 38.75h7.75v15.5H31zM31 186h7.75v7.75H31zm0 15.5h7.75V217H31zm0 31h7.75v7.75H31zm0 15.5h7.75v23.25H31zm0 31h7.75v7.75H31zM38.75 0h7.75v7.75h-7.75zm0 46.5h7.75v7.75h-7.75zm0 54.25h7.75v7.75h-7.75zm0 38.75h7.75v23.25h-7.75zm0 38.75h7.75V186h-7.75zm0 15.5h7.75v7.75h-7.75zm0 15.5h7.75V217h-7.75zm0 23.25h7.75v7.75h-7.75zm0 46.5h7.75v7.75h-7.75zM46.5 0h7.75v54.25H46.5zm0 62h7.75v7.75H46.5zm0 15.5h7.75v7.75H46.5zm0 15.5h7.75v7.75H46.5zm0 15.5h7.75v7.75H46.5zm0 15.5h7.75v7.75H46.5zm0 15.5h7.75v7.75H46.5zm0 15.5h7.75v7.75H46.5zm0 15.5h7.75v7.75H46.5zm0 15.5h7.75v7.75H46.5zm0 15.5h7.75v7.75H46.5zm0 15.5h7.75v7.75H46.5zm0 15.5h7.75v54.25H46.5zm7.75-155H62v23.25h-7.75zm0 31H62v23.25h-7.75zm0 31H62v7.75h-7.75zm0 23.25H62v15.5h-7.75zm0 38.75H62v7.75h-7.75zM62 7.75h7.75v7.75H62zM62 31h7.75v7.75H62zm0 15.5h7.75v7.75H62zm0 23.25h7.75v7.75H62zM62 93h7.75v7.75H62zm0 23.25h7.75V124H62zm0 23.25h7.75V155H62zm0 23.25h7.75v7.75H62zm0 15.5h7.75v23.25H62zM62 217h7.75v15.5H62zm0 31h7.75v7.75H62zm0 15.5h7.75v7.75H62zm0 15.5h7.75v7.75H62zm7.75-263.5h7.75v31h-7.75zm0 46.5h7.75v7.75h-7.75zm0 15.5h7.75v7.75h-7.75zm0 15.5h7.75v15.5h-7.75zm0 31h7.75v15.5h-7.75zm0 23.25h7.75v23.25h-7.75zm0 54.25h7.75v7.75h-7.75zm0 38.75h7.75v15.5h-7.75zm0 23.25h7.75v7.75h-7.75zm0 15.5h7.75v7.75h-7.75zM77.5 7.75h7.75v7.75H77.5zm0 15.5h7.75v15.5H77.5zm0 23.25h7.75v7.75H77.5zm0 23.25h7.75v7.75H77.5zm0 23.25h7.75v7.75H77.5zm0 15.5h7.75V124H77.5zm0 23.25h7.75v31H77.5zm0 54.25h7.75v7.75H77.5zm0 15.5h7.75v7.75H77.5zm0 15.5h7.75v7.75H77.5zm0 23.25h7.75v15.5H77.5zm0 38.75h7.75v7.75H77.5zM85.25 0H93v23.25h-7.75zm0 31H93v7.75h-7.75zm0 31H93v15.5h-7.75zm0 38.75H93v7.75h-7.75zm0 15.5H93v23.25h-7.75zm0 31H93v15.5h-7.75zm0 54.25H93V217h-7.75zm0 31H93V248h-7.75zm0 38.75H93V279h-7.75zM93 7.75h7.75v7.75H93zm0 38.75h7.75v7.75H93zM93 62h7.75v7.75H93zm0 23.25h7.75v23.25H93zm0 31h7.75V124H93zm0 15.5h7.75v7.75H93zM93 155h7.75v7.75H93zm0 15.5h7.75v7.75H93zm0 46.5h7.75v7.75H93zm0 38.75h7.75v7.75H93zm0 15.5h7.75V279H93zM100.75 0h7.75v15.5h-7.75zm0 23.25h7.75V31h-7.75zm0 15.5h7.75v7.75h-7.75zm0 38.75h7.75V93h-7.75zm0 77.5h7.75v7.75h-7.75zm0 23.25h7.75v31h-7.75zm0 46.5h7.75v31h-7.75zm0 38.75h7.75V279h-7.75zM108.5 7.75h7.75v7.75h-7.75zm0 31h7.75v15.5h-7.75zm0 23.25h7.75v23.25h-7.75zm0 31h7.75v7.75h-7.75zm0 15.5h7.75v69.75h-7.75zm0 131.75h7.75v15.5h-7.75zm0 23.25h7.75v23.25h-7.75zM116.25 0H124v7.75h-7.75zm0 23.25H124v15.5h-7.75zm0 31H124V62h-7.75zm0 15.5H124v7.75h-7.75zm0 15.5H124V93h-7.75zm0 15.5H124v15.5h-7.75zm0 23.25H124v23.25h-7.75zm0 31H124v15.5h-7.75zm0 38.75H124v7.75h-7.75zm0 15.5H124V217h-7.75zm0 15.5H124v15.5h-7.75zm0 31H124v15.5h-7.75zm0 23.25H124v7.75h-7.75zM124 15.5h7.75V31H124zm0 31h7.75v7.75H124zm0 46.5h7.75v23.25H124zm0 31h7.75v62H124zm0 116.25h7.75V279H124zm7.75-232.5h7.75v7.75h-7.75zm0 23.25h7.75v7.75h-7.75zm0 46.5h7.75v31h-7.75zm0 38.75h7.75V124h-7.75zm0 31h7.75v15.5h-7.75zm0 23.25h7.75v7.75h-7.75zm0 23.25h7.75v38.75h-7.75zm0 46.5h7.75V248h-7.75zm0 15.5h7.75v7.75h-7.75zm0 15.5h7.75v15.5h-7.75zm7.75-263.5h7.75v15.5h-7.75zm0 23.25h7.75v23.25h-7.75zm0 54.25h7.75V93h-7.75zm0 23.25h7.75v31h-7.75zm0 54.25h7.75v7.75h-7.75zm0 38.75h7.75v23.25h-7.75zm0 31h7.75v38.75h-7.75zm7.75-224.75H155v7.75h-7.75zm0 15.5H155V46.5h-7.75zm0 46.5H155v15.5h-7.75zm0 23.25H155v7.75h-7.75zm0 23.25H155v23.25h-7.75zm0 31H155V155h-7.75zm0 31H155v31h-7.75zm0 38.75H155v7.75h-7.75zm0 23.25H155v23.25h-7.75zm0 31H155V279h-7.75zM155 0h7.75v31H155zm0 38.75h7.75v15.5H155zM155 62h7.75v31H155zm0 38.75h7.75v7.75H155zm0 54.25h7.75v85.25H155zm0 124h7.75v7.75H155zm7.75-279h7.75v7.75h-7.75zm0 38.75h7.75v7.75h-7.75zm0 15.5h7.75V62h-7.75zm0 23.25h7.75v23.25h-7.75zm0 31h7.75v7.75h-7.75zm0 23.25h7.75v38.75h-7.75zm0 46.5h7.75V186h-7.75zm0 31h7.75v15.5h-7.75zm0 23.25h7.75v7.75h-7.75zm0 23.25h7.75v31h-7.75zM170.5 0h7.75v7.75h-7.75zm0 15.5h7.75v7.75h-7.75zm0 15.5h7.75v7.75h-7.75zm0 15.5h7.75v31h-7.75zm0 38.75h7.75V93h-7.75zm0 15.5h7.75v7.75h-7.75zm0 46.5h7.75V155h-7.75zm0 23.25h7.75V217h-7.75zm0 54.25h7.75v7.75h-7.75zm0 38.75h7.75V279h-7.75zm7.75-248H186v7.75h-7.75zm0 15.5H186v15.5h-7.75zm0 23.25H186V77.5h-7.75zm0 31H186V93h-7.75zm0 38.75H186v7.75h-7.75zm0 15.5H186V155h-7.75zm0 38.75H186v46.5h-7.75zm0 69.75H186v7.75h-7.75zm0 23.25H186v15.5h-7.75zm7.75-248h7.75V31H186zm0 23.25h7.75v7.75H186zm0 15.5h7.75v7.75H186zm0 15.5h7.75v7.75H186zm0 15.5h7.75v15.5H186zm0 23.25h7.75v23.25H186zm0 31h7.75v15.5H186zm0 31h7.75V186H186zm0 31h7.75v23.25H186zm0 31h7.75V248H186zm0 15.5h7.75v7.75H186zm0 23.25h7.75v7.75H186zm7.75-279h7.75v7.75h-7.75zm0 31h7.75v15.5h-7.75zm0 23.25h7.75v15.5h-7.75zm0 23.25h7.75v23.25h-7.75zm0 62h7.75v23.25h-7.75zm0 46.5h7.75v7.75h-7.75zm0 15.5h7.75v31h-7.75zm0 46.5h7.75v38.75h-7.75zM201.5 0h7.75v7.75h-7.75zm0 15.5h7.75V62h-7.75zm0 54.25h7.75v7.75h-7.75zm0 15.5h7.75V93h-7.75zm0 31h7.75v15.5h-7.75zm0 38.75h7.75v7.75h-7.75zm0 15.5h7.75v23.25h-7.75zm0 69.75h7.75V248h-7.75zm0 23.25h7.75V279h-7.75zm7.75-240.25H217V46.5h-7.75zm0 31H217V62h-7.75zm0 23.25H217v23.25h-7.75zm0 38.75H217v15.5h-7.75zm0 31H217v15.5h-7.75zm0 31H217V186h-7.75zm0 23.25H217V217h-7.75zm0 23.25H217v15.5h-7.75zm0 31H217V279h-7.75zm7.75-248h7.75V31H217zm0 31h7.75v15.5H217zm0 46.5h7.75v23.25H217zm0 31h7.75V124H217zm0 15.5h7.75v7.75H217zm0 23.25h7.75v15.5H217zm0 31h7.75v15.5H217zm0 31h7.75v46.5H217zm0 54.25h7.75V279H217zm7.75-193.75h7.75v7.75h-7.75zm0 15.5h7.75v7.75h-7.75zm0 15.5h7.75v7.75h-7.75zm0 31h7.75v7.75h-7.75zm0 15.5h7.75v7.75h-7.75zm0 23.25h7.75v15.5h-7.75zm0 23.25h7.75v7.75h-7.75zm0 15.5h7.75v7.75h-7.75zm0 31h7.75v15.5h-7.75zm0 31h7.75v7.75h-7.75zM232.5 0h7.75v54.25h-7.75zm0 77.5h7.75v38.75h-7.75zm0 62h7.75v31h-7.75zm0 54.25h7.75v31h-7.75zm0 38.75h7.75v7.75h-7.75zm0 15.5h7.75v7.75h-7.75zm0 31h7.75v7.75h-7.75zm7.75-279H248v7.75h-7.75zm0 46.5H248v7.75h-7.75zm0 23.25H248v31h-7.75zm0 38.75H248v7.75h-7.75zm0 31H248V155h-7.75zm0 23.25H248v15.5h-7.75zm0 46.5H248v15.5h-7.75zm0 38.75H248v15.5h-7.75zm0 23.25H248V279h-7.75zM248 0h7.75v7.75H248zm0 15.5h7.75v23.25H248zm0 31h7.75v7.75H248zm0 15.5h7.75v31H248zm0 54.25h7.75v31H248zm0 62h7.75v15.5H248zm0 23.25h7.75v7.75H248zm0 15.5h7.75v62H248zm7.75-217h7.75v7.75h-7.75zm0 15.5h7.75v23.25h-7.75zm0 31h7.75v7.75h-7.75zm0 77.5h7.75v7.75h-7.75zm0 15.5h7.75v7.75h-7.75zm0 15.5h7.75v15.5h-7.75zm0 31h7.75v7.75h-7.75zm0 38.75h7.75v31h-7.75zm0 54.25h7.75v7.75h-7.75zM263.5 0h7.75v7.75h-7.75zm0 15.5h7.75v23.25h-7.75zm0 31h7.75v7.75h-7.75zm0 46.5h7.75v7.75h-7.75zm0 15.5h7.75v7.75h-7.75zm0 38.75h7.75V155h-7.75zm0 23.25h7.75v7.75h-7.75zm0 23.25h7.75v15.5h-7.75zm0 23.25h7.75v7.75h-7.75zm0 38.75h7.75v7.75h-7.75zm0 23.25h7.75v7.75h-7.75zm7.75-279H279v7.75h-7.75zm0 46.5H279v7.75h-7.75zm0 15.5H279v7.75h-7.75zm0 15.5H279v23.25h-7.75zm0 31H279V124h-7.75zm0 31H279V155h-7.75zm0 23.25H279v15.5h-7.75zm0 23.25H279v23.25h-7.75zm0 31H279v7.75h-7.75zm0 15.5H279v31h-7.75zm0 38.75H279v15.5h-7.75zM279 0h7.75v54.25H279zm0 69.75h7.75v15.5H279zM279 93h7.75v7.75H279zm0 15.5h7.75v38.75H279zm0 54.25h7.75v7.75H279zm0 23.25h7.75v23.25H279zm0 31h7.75v54.25H279zm0 62h7.75v7.75H279z"
+      />
+    </svg>
+  );
+};
+const GiveQr = () => {
+  return (
+    <svg viewBox="0 0 288 288">
+      <path
+        fill="#231f20"
+        d="M0 0h7.72v54.06H0zm0 61.79h7.72v15.45H0zm0 30.89h7.72v30.89H0zm0 69.51h7.72v7.72H0zm0 23.18h7.72v38.62H0zm0 46.34h7.72v54.06H0zM7.72 0h7.72v7.72H7.72zm0 46.34h7.72v7.72H7.72zm0 23.17h7.72v7.72H7.72zm0 92.68h7.72v7.72H7.72zm0 15.45h7.72v7.72H7.72zm0 15.45h7.72v7.72H7.72zm0 38.62h7.72v7.72H7.72zm0 46.34h7.72v7.72H7.72zM15.45 0h7.72v7.72h-7.72zm0 15.45h7.72v23.17h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v15.45h-7.72zm0 30.89h7.72v23.17h-7.72zm0 30.9h7.72v7.72h-7.72zm0 23.17h7.72v15.45h-7.72zm0 30.89h7.72v7.72h-7.72zm0 23.17h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.44h7.72v23.17h-7.72zm0 30.9h7.72v7.72h-7.72zM23.17 0h7.72v7.72h-7.72zm0 15.45h7.72v23.17h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v15.45h-7.72zm0 23.17h7.72v46.34h-7.72zm0 61.79h7.72v15.45h-7.72zm0 38.62h7.72v23.17h-7.72zm0 46.34h7.72v7.72h-7.72zm0 15.44h7.72v23.17h-7.72zm0 30.9h7.72v7.72h-7.72zM30.89 0h7.72v7.72h-7.72zm0 15.45h7.72v23.17h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.45h7.72v23.17h-7.72zm0 30.89h7.72v15.45h-7.72zm0 30.89h7.72v15.45h-7.72zm0 30.9h7.72v54.06h-7.72zm0 61.79h7.72v7.72h-7.72zm0 15.44h7.72v23.17h-7.72zm0 30.9h7.72v7.72h-7.72zM38.62 0h7.72v7.72h-7.72zm0 46.34h7.72v7.72h-7.72zm0 15.45h7.72v46.34h-7.72zm0 54.06h7.72v15.45h-7.72zm0 54.07h7.72v7.72h-7.72zm0 23.17h7.72v30.89h-7.72zm0 38.62h7.72v7.72h-7.72zm0 46.34h7.72v7.72h-7.72zM46.34 0h7.72v54.06h-7.72zm0 61.79h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.45h7.72v54.06h-7.72zm7.72-162.2h7.72v7.72h-7.72zm0 23.17h7.72v15.45h-7.72zm0 30.9h7.72v7.72h-7.72zm0 30.89h7.72v15.45h-7.72zm0 38.62h7.72v15.45h-7.72zm7.73-177.64h7.72v46.34h-7.72zm0 54.06h7.72v7.72h-7.72zm0 38.62h7.72v15.45h-7.72zm0 23.17h7.72v15.45h-7.72zm0 54.07h7.72v15.45h-7.72zm0 38.61h7.72v7.72h-7.72zm0 15.45h7.72v30.89h-7.72zm0 38.62h7.72v7.72h-7.72zm7.72-247.16h7.72v7.72h-7.72zm0 30.9h7.72v7.72h-7.72zm0 23.17h7.72v7.72h-7.72zm0 15.45h7.72v15.45h-7.72zm0 69.51h7.72v7.72h-7.72zm0 23.17h7.72v23.17h-7.72zm0 30.89h7.72v7.72h-7.72zm0 38.62h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zM77.24 0h7.72v7.72h-7.72zm0 15.45h7.72v23.17h-7.72zm0 30.89h7.72v30.89h-7.72zm0 38.62h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 38.61h7.72v7.72h-7.72zm0 15.45h7.72v23.17h-7.72zm0 30.9h7.72v54.06h-7.72zm0 69.51h7.72v7.72h-7.72zM84.96 0h7.72v38.62h-7.72zm0 54.06h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.45h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zm0 15.45h7.72v15.45h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 23.17h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zm0 38.62h7.72v7.72h-7.72zm0 23.17h7.72v7.72h-7.72zM92.68 0h7.72v7.72h-7.72zm0 30.89h7.72v23.17h-7.72zm0 30.9h7.72v7.72h-7.72zm0 15.45h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zm0 15.44h7.72v38.62h-7.72zm0 46.34h7.72v23.17h-7.72zm0 38.62h7.72v15.45h-7.72zm0 61.79h7.72v23.17h-7.72zM100.41 0h7.72v23.17h-7.72zm0 30.89h7.72v15.45h-7.72zm0 30.9h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 38.61h7.72v15.45h-7.72zm0 30.9h7.72v7.72h-7.72zm0 38.62h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 15.45h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zm0 30.89h7.72v15.45h-7.72zM108.13 0h7.72v7.72h-7.72zm0 30.89h7.72v23.17h-7.72zm0 30.9h7.72v30.89h-7.72zm0 38.62h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 15.45h7.72v38.62h-7.72zm0 77.24h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 23.17h7.72v23.17h-7.72zM115.85 0h7.72v7.72h-7.72zm0 30.89h7.72v15.45h-7.72zm0 30.9h7.72v38.62h-7.72zm0 46.34h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zm0 38.62h7.72v15.45h-7.72zm0 23.17h7.72v30.89h-7.72zm0 38.62h7.72v30.89h-7.72zM123.58 0h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 15.45h7.72v23.17h-7.72zm0 30.9h7.72v7.72h-7.72zm0 23.17h7.72v15.45h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.44h7.72v30.89h-7.72zm0 38.62h7.72v7.72h-7.72zm0 23.17h7.72v15.45h-7.72zm0 30.9h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm7.72-247.15h7.72v23.17h-7.72zm0 30.89h7.72v7.72h-7.72zm0 23.18h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 61.79h7.72v30.89h-7.72zm0 38.62h7.72v7.72h-7.72zm0 23.17h7.72v7.72h-7.72zm0 46.34h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm7.72-270.33h7.72v7.72h-7.72zm0 23.17h7.72v7.72h-7.72zm0 15.45h7.72v15.45h-7.72zm0 23.17h7.72v15.45h-7.72zm0 38.62h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 23.17h7.72v23.17h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 30.89h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zm0 23.17h7.72v7.72h-7.72zm7.73-239.43h7.72v7.72h-7.72zm0 46.35h7.72v30.89h-7.72zm0 46.34h7.72v7.72h-7.72zm0 38.61h7.72v7.72h-7.72zm0 15.45h7.72v15.45h-7.72zm0 23.17h7.72v30.89h-7.72zm0 38.62h7.72v7.72h-7.72zm7.72-231.71h7.72v7.72h-7.72zm0 23.17h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 23.17h7.72v7.72h-7.72zm0 15.45h7.72v46.34h-7.72zm0 54.06h7.72v7.72h-7.72zm0 23.17h7.72v23.17h-7.72zm0 30.9h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.44h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm7.72-247.15h7.72v7.72h-7.72zm0 15.44h7.72v15.45h-7.72zm0 23.17h7.72v38.62h-7.72zm0 69.52h7.72v30.89h-7.72zm0 38.61h7.72v54.06h-7.72zm0 84.96h7.72v7.72h-7.72zm0 23.17h7.72v7.72h-7.72zm7.73-262.6h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 23.17h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zm0 15.45h7.72v30.89h-7.72zm0 38.62h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 23.17h7.72v7.72h-7.72zm0 15.45h7.72v23.17h-7.72zm0 38.62h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 15.45h7.72v23.17h-7.72zm7.72-254.88h7.72v30.89h-7.72zm0 46.34h7.72v15.45h-7.72zm0 46.35h7.72v7.72h-7.72zm0 38.61h7.72v30.89h-7.72zm0 38.62h7.72v15.45h-7.72zm0 30.9h7.72v23.17h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.44h7.72v15.45h-7.72zm7.73-262.6h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 23.17h7.72v7.72h-7.72zm0 23.17h7.72v7.72h-7.72zm0 15.45h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 30.9h7.72v23.17h-7.72zm0 30.89h7.72v15.45h-7.72zm0 38.62h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zm7.72-254.88h7.72v7.72h-7.72zm0 38.62h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.44h7.72v15.45h-7.72zm0 38.62h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zm0 38.62h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm7.72-262.6h7.72V30.9h-7.72zm0 23.17h7.72v15.45h-7.72zm0 30.89h7.72v23.17h-7.72zm0 38.62h7.72v15.45h-7.72zm0 23.17h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zm0 38.62h7.72v69.51h-7.72zm0 84.96h7.72v7.72h-7.72zm7.73-270.33h7.72v15.45h-7.72zm0 30.9h7.72v7.72h-7.72zm0 38.62h7.72v23.17h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 30.9h7.72v7.72h-7.72zm0 30.89h7.72v30.89h-7.72zm0 46.34h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zM216.26 0h7.72v15.45h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 23.17h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.45h7.72v61.79h-7.72zm0 69.51h7.72v15.45h-7.72zm7.72-193.09h7.72v30.89h-7.72zm0 46.34h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.45h7.72v46.34h-7.72zm0 54.06h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 30.89h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zM231.71 0h7.72v54.06h-7.72zm0 61.79h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 23.17h7.72v15.45h-7.72zm0 38.62h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.44h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zM239.43 0h7.72v7.72h-7.72zm0 46.34h7.72v7.72h-7.72zm0 15.45h7.72v30.89h-7.72zm0 38.62h7.72v23.17h-7.72zm0 30.89h7.72v15.45h-7.72zm0 38.62h7.72v15.45h-7.72zm0 23.17h7.72v15.45h-7.72zm0 23.17h7.72v7.72h-7.72zm0 30.89h7.72v7.72h-7.72zM247.15 0h7.72v7.72h-7.72zm0 15.45h7.72v23.17h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v23.17h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.45h7.72v23.17h-7.72zm0 38.62h7.72v54.06h-7.72zm0 61.78h7.72v15.45h-7.72zM254.88 0h7.72v7.72h-7.72zm0 15.45h7.72v23.17h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v15.45h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 54.06h7.72v15.45h-7.72zm0 30.9h7.72v15.45h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 23.17h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zM262.6 0h7.72v7.72h-7.72zm0 15.45h7.72v23.17h-7.72zm0 30.89h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 30.9h7.72v7.72h-7.72zm0 30.89h7.72v7.72h-7.72zm0 30.9h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.44h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72zm0 15.45h7.72v7.72h-7.72z"
+      />
+      <path
+        fill="#231f20"
+        d="M270.32 0h7.72v7.72h-7.72zm0 46.34h7.72v7.72h-7.72zm0 23.17h7.72v15.45h-7.72zm0 23.17h7.72v54.06h-7.72zm0 84.96h7.72v7.72h-7.72zm0 23.17h7.72v7.72h-7.72zm0 15.45h7.72v23.17h-7.72zm0 30.89h7.72v15.45h-7.72zm0 30.9h7.72v7.72h-7.72zM278.05 0h7.72v54.06h-7.72zm0 77.24h7.72v23.17h-7.72zm0 30.89h7.72v15.45h-7.72zm0 30.89h7.72v15.45h-7.72zm0 30.9h7.72v15.45h-7.72zm0 30.89h7.72v15.45h-7.72zm0 30.9h7.72v15.45h-7.72zm0 30.89h7.72v23.17h-7.72z"
+      />
+    </svg>
+  );
+};

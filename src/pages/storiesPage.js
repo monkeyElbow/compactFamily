@@ -1,7 +1,7 @@
 import { Container, Image } from "react-bootstrap";
 
 const storiesPage = () => {
-  document.title = "COMPACT Stories"
+  document.title = "COMPACT Stories";
 
   return (
     <>
@@ -153,18 +153,24 @@ const storiesPage = () => {
         </p>
         <p>
           <strong>
-            How did COMP<strong>ACT</strong> support you in your journey?
+            How did COMP
+            <strong>
+              <em>ACT</em>
+            </strong>{" "}
+            support you in your journey?
           </strong>
-          <strong>Brenda:</strong> “COMP<strong>ACT</strong> Hillcrest gave Gabe
-          the foundation he has. They instilled a great deal of who God is into
-          Gabe and it has made a huge difference. I’m so thankful for COMP
+          <strong>Brenda:</strong> “COMP
+          <span className="act">ACT</span> Hillcrest gave Gabe the foundation he
+          has. They instilled a great deal of who God is into Gabe and it has
+          made a huge difference. I’m so thankful for COMP
           <strong>ACT</strong>. Without them we wouldn’t have our little boy.”
         </p>
         <p>
-          <strong>Joe:</strong> “COMP<strong>ACT</strong> gave us great advice
-          throughout our journey. Gabe is continually telling us what life was
-          like at COMPACT. Whatever COMPACT is doing with these kids, it is
-          making a huge difference in these children.”{" "}
+          <strong>Joe:</strong> “COMP
+          <span className="act">ACT</span> gave us great advice throughout our
+          journey. Gabe is continually telling us what life was like at COMPACT.
+          Whatever COMPACT is doing with these kids, it is making a huge
+          difference in these children.”{" "}
         </p>
         <p>
           <strong>How would you encourage future adoptive parents? </strong>

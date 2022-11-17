@@ -8,6 +8,7 @@ import { useAuth } from "../../util/AuthContext";
 import { db } from "../../util/firebase";
 import CompaCareLogo from "../../graphics/CompaCareLogo";
 import Moment from "react-moment";
+import { getDoc, doc } from "@firebase/firestore";
 
 export default function CompaCareCertificate() {
     document.title = "CompaCare Training Certificate"
@@ -18,26 +19,20 @@ export default function CompaCareCertificate() {
 
   useEffect(() => {
     async function fetchUser() {
-      var userRef = db.collection("Users").doc(currentUser.uid);
-  
+      const userRef = doc(db, "Users", currentUser.uid);
+      const docSnap = await getDoc(userRef)
+      setProfile(docSnap.data())
+    }
       try {
-        var doc = await userRef.get();
-        const data = await doc.data();
-        await setProfile(data)
-        // console.log(profile)
-        return data.profile
-  
+        if(currentUser) {
+          fetchUser()
+        } else { return null}
       } catch (error) {
         console.log(error)
         setError("Mr Stark, I don't feel so good.")
       }
-  
-    }
-    if(currentUser) {
-      fetchUser()
-    } else { return null}
-  
-  }, [currentUser])
+
+  }, []) // eslint-disable-line
 
   // const printStyle = {
 

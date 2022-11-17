@@ -4,14 +4,11 @@ function FosterCareLogo({color}) {
   return (
     <svg
       id="FosterCare"
-      xmlns="http://www.w3.org/2000/svg"
-      x="100%"
-      y="100%"
-      viewBox="0 0 600 473"
-      xmlSpace="preserve"
-      
+      width="100%"
+      height="100%"
+      viewBox="0 0 600 473"      
     >
-     {/* <style>{".prefix__st0{fill:#fff}"}</style> */}
+
      <g fill={color}>
       <path
         // className="prefix__st0"

@@ -6,14 +6,14 @@ import {
   useQuery,
   gql
 } from "@apollo/client";
-import Moment from "react-moment";
 import { node } from "prop-types";
 
+import { useParams } from "react-router-dom";
 
-
-const AnnouncementPage = ({match: { params: { id } } }) => {
+const AnnouncementPage = (id) => {
   document.title = "COMPACT Announcements"
 
+  const params = useParams();
 
   const client = new ApolloClient({
     uri: 'https://www.compact.family/wpapi/graphql/',
@@ -23,7 +23,7 @@ const AnnouncementPage = ({match: { params: { id } } }) => {
   // const id = 22
   const QUERY_ANNOUNCEMENT = gql`
   query SinglePost {
-    post(id: ${id}, idType: DATABASE_ID) {
+    post(id: ${params.id}, idType: DATABASE_ID) {
       date
       title
       id
@@ -43,9 +43,17 @@ const AnnouncementPage = ({match: { params: { id } } }) => {
 
       <Container className="my-5">
 
-<Moment format="MM/DD/YYYY">
-<p>{announcement.post.date}</p>
-</Moment>
+      {announcement.post.date.toLocaleString('en-gb',
+                 {
+                   year:'numeric',
+                   month: 'long',
+                   day:'numeric',
+                  
+                 }
+                 ).split('T')[0]}
+
+
+
 
 <h4>{announcement.post.title}</h4>
      

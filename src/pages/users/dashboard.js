@@ -1,8 +1,12 @@
 import { useState } from "react";
-import { Container, Card, Button, Alert, 
-  // Form, Image 
+import {
+  Container,
+  Card,
+  Button,
+  Alert,
+  // Form, Image
 } from "react-bootstrap";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../util/AuthContext";
 // import { storage } from "../../util/firebase";
 // import {ref, uploadBytes, getDownloadURL} from 'firebase/storage'
@@ -11,13 +15,11 @@ import { useAuth } from "../../util/AuthContext";
 
 // import { db } from "../../util/firebase";
 
-
 export default function Dashboard() {
-  
   const { currentUser, signout } = useAuth();
-  document.title = `COMPACT ${currentUser.email} Dashboard`
+  document.title = `COMPACT ${currentUser.email} Dashboard`;
   const [error, setError] = useState("");
-  const history = useHistory();
+  const navigate = useNavigate();
 
   // LOGOUT FUNCTION
   async function handleLogout() {
@@ -25,43 +27,41 @@ export default function Dashboard() {
 
     try {
       await signout();
-      history.push("/");
+      navigate("/");
     } catch {
       setError("Failed to log out");
     }
   }
 
-// upload profile pic:
+  // upload profile pic:
 
-//   const [image, setImage] = useState('')
-// const upload = (e)=>{
-//   e.preventDefault()
-//   if(image == null)
-//   return;
-//   const storageRef = ref(storage, `/users/${currentUser.uid}`);
-//   uploadBytes(storageRef, image).then((snapshot) =>{
-//     console.log('uploaded file')
-//   });
+  //   const [image, setImage] = useState('')
+  // const upload = (e)=>{
+  //   e.preventDefault()
+  //   if(image == null)
+  //   return;
+  //   const storageRef = ref(storage, `/users/${currentUser.uid}`);
+  //   uploadBytes(storageRef, image).then((snapshot) =>{
+  //     console.log('uploaded file')
+  //   });
 
-// }
+  // }
 
-// load currentUser's profile pic. replace placement on load
+  // load currentUser's profile pic. replace placement on load
 
-// getDownloadURL(
-//   ref(storage, `/users/${currentUser.uid}`)
-//   ).then((url) =>{
-//     const img = document.getElementById('myPic');
-//     img.setAttribute('src', url)
-//   })
-//   .catch((error) => {
-//     console.log(error)
-//   })
-
-
+  // getDownloadURL(
+  //   ref(storage, `/users/${currentUser.uid}`)
+  //   ).then((url) =>{
+  //     const img = document.getElementById('myPic');
+  //     img.setAttribute('src', url)
+  //   })
+  //   .catch((error) => {
+  //     console.log(error)
+  //   })
 
   return (
     <>
-{/* <Container className="p-5 m-5" style={{width:"300px"}}>
+      {/* <Container className="p-5 m-5" style={{width:"300px"}}>
 <ProfileImageUpdater />
 </Container> */}
 
@@ -71,8 +71,7 @@ export default function Dashboard() {
       >
         <Card style={{ maxWidth: "600px" }}>
           <Card.Body className="text-center mb-4">
-            
-    {/* <Link to="/update-profile-pic">
+            {/* <Link to="/update-profile-pic">
 <Image
 fluid
 // roundedCircle
@@ -83,7 +82,7 @@ width="200"
 alt="Profile Pic"
 />
 </Link>         */}
-            
+
             <h3>Dashboard</h3>
             <br />
 
@@ -97,17 +96,18 @@ alt="Profile Pic"
             )}
             <br />
 
-
-{/* <Form.Group controlId="formFile" className="mb-3 p-3 border border-5">
+            {/* <Form.Group controlId="formFile" className="mb-3 p-3 border border-5">
   <Form.Label>Update your profile image</Form.Label>
   <Form.Control className="my-2 border" type="file"  onChange={(e)=>{setImage(e.target.files[0])}} />
       <Button onClick={upload}>Upload</Button>
 </Form.Group> */}
 
-
             {/* <Link className="btn btn-primary w-100 mt-3" to="/admin">Admin</Link> */}
 
-            <Link to="/compacare-training" className="btn btn-primary w-100 mt-3">
+            <Link
+              to="/compacare-training"
+              className="btn btn-primary w-100 mt-3"
+            >
               CompaCare Training
             </Link>
             <Link to="/create-profile" className="btn btn-primary w-100 mt-3">
@@ -116,7 +116,6 @@ alt="Profile Pic"
             <Link to="/update-password" className="btn btn-primary w-100 mt-3">
               Update Email or Password
             </Link>
-
           </Card.Body>
         </Card>
         <div className="w-100 text-center mt-2">
@@ -125,7 +124,6 @@ alt="Profile Pic"
           </Button>
         </div>
       </Container>
-
     </>
   );
 }

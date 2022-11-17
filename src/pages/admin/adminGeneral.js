@@ -1,10 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
 import { Container, Card, Button, Alert } from "react-bootstrap";
-import { 
-  // Link,
-   useHistory } from "react-router-dom";
+
 import { useAuth } from "../../util/AuthContext";
-import { db, auth } from "../../util/firebase";
+import { db } from "../../util/firebase";
 import { FaRegTrashAlt, 
   // FaCopy
  } from "react-icons/fa";
@@ -12,7 +10,6 @@ import { FaRegTrashAlt,
 export default function adminGeneral() {
     const { currentUser } = useAuth();
     const [error, setError] = useState("");
-    const history = useHistory();
 
     const [contactUsMessages, setContactUsMessages] = useState([]);
 

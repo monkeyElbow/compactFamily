@@ -67,7 +67,7 @@ const NotFoundPage = () => {
               </Link>
             </div>
 
-            <div className="col-lg-3 col-md-3 col-11 m-1 clickable bg-orange py-4 rounded d-flex justify-content-center align-items-center text-center card border-0">
+            <div className="col-lg-3 col-md-3 col-11 m-1 clickable bg-yellow py-4 rounded d-flex justify-content-center align-items-center text-center card border-0">
               <Link href="/#" to="/find" className="stretched-link">
                 FIND
               </Link>

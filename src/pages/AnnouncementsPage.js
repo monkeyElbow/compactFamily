@@ -7,7 +7,6 @@ import {
   useQuery,
   gql
 } from "@apollo/client";
-import Moment from 'react-moment';
 
 const AnnouncementsPage = () => {
   document.title = "COMPACT Announcements"
@@ -54,10 +53,21 @@ const AnnouncementList = () => {
             <Link to={`/announcements/${node.databaseId}`}>
              {/* <p>id: {node.id}</p>
              <p>databaseId:{node.databaseId}</p> */}
+
+                 {node.date.toLocaleString('en-gb',
+                 {
+                   year:'numeric',
+                   month: 'long',
+                   day:'numeric',
                   
-           <Moment format="MM/DD/YYYY">
+                 }
+                 ).split('T')[0]}
+
+                 {/* {node.date.toDateString()} */}
+
+           {/* <Moment format="MM/DD/YYYY">
               <p>{node.date}</p>
-           </Moment>
+           </Moment> */}
               <h5>{node.title}</h5>
             <div dangerouslySetInnerHTML={{ __html: node.excerpt }}></div>
               </Link>

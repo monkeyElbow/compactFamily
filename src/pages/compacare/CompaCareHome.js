@@ -5,9 +5,40 @@ import CompaCarePhilosophy from "./components/CompaCarePhilosophy";
 import CompaCarePractice from './components/CompaCarePractice'
 import CompaCarePlan from "./components/CompaCarePlan";
 import CompaCareInterestForm from "./components/CompaCareInterestForm";
+import {useSpring, animated, easings} from 'react-spring';
+
 
 const CompaCareHome = () => {
   document.title = "CompaCare by COMPACT";
+
+  const titleOne = useSpring(
+    {
+      to: { opacity: 1, y:0 }, 
+      from: { opacity: 0, y:-50 },
+      pause:2000,
+      // loop: true,
+      delay: 500,
+      config: {
+        duration:2000, 
+        mass: 500,
+        friction: 500,
+        easing: easings.easeInOutQuad,
+      }
+    })
+  const titleTwo = useSpring(
+    {
+      from: { opacity: 0},
+      to: { opacity: 1}, 
+      pause:2000,
+      // loop: true,
+      delay: 2500,
+      config: {
+        duration:2000, 
+        mass: 500,
+        friction: 500,
+        easing: easings.easeInOutQuad,
+      }
+    });
 
   return (
     <>
@@ -16,14 +47,15 @@ const CompaCareHome = () => {
       <Container fluid className="text-center my-0 py-0 mt-0 photoblue">
         <Row>
           <div className="col-sm-12 col-md-6 col-lg-7 p-5 text-center d-flex justify-content-center align-items-center">
-            {/* <p className="h2">
-                What is <strong>CompaCare</strong>?
-              </p> */}
-            <h4>
+<div>
+
+          <animated.h1 className="fw-bold" style={titleOne}><strong>Compassion Care</strong></animated.h1>
+            <animated.p className="fs-5" style={titleTwo}>
               CompaCare® is a program that helps churches respond to the foster
               care crisis with knowledge, compassion, and skills.
-            </h4>
+            </animated.p>
           </div>
+</div>
 
           <div className="col-sm-12 col-md-6 col-lg-4 d-flex align-content-end justify-content-center">
             <Image
@@ -110,7 +142,7 @@ const CompaCareHome = () => {
       <Container className="col-lg-8 col-mg-12 my-5">
         <CompaCarePractice />
       </Container>
-      <Container className="text-center">
+      <Container className="">
         <p>
           Foster families should never minister alone. CompaCare® creates a
           faith-based wraparound volunteer system to help foster parents be
@@ -122,7 +154,6 @@ const CompaCareHome = () => {
           </strong>
           {" "}
 
-          CompaCare® trains church leaders to implement the
          We train volunteer
           Family Advocates to support foster parents and to ensure that they
           have access to the myriad of volunteer services available in the
@@ -140,7 +171,7 @@ const CompaCareHome = () => {
       </Container>
 
       <Container>
-        <p className="text-center">
+        <p className="">
           CompaCare<sup>&reg;</sup> is a local-church based program that is
           energized by Biblical values of <strong>Compassion</strong> and{" "}
           <strong>Community</strong> impact.
@@ -161,7 +192,7 @@ const CompaCareHome = () => {
       </Container>
 
       <Container>
-        <p className="text-center">
+        <p className="">
           Trained CompaCare<sup>&reg;</sup> Representatives are deployed across
           the nation to help churches implement a detailed, 4-Phase, 17-Step
           plan to mobilize the church for service. These Representatives are
