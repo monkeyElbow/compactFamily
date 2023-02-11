@@ -4,7 +4,7 @@ import HillcrestLogo from "../graphics/HillcrestLogo";
 import BoldBeginning from "../components/BoldBeginning";
 
 const HistoryPage = () => {
-  document.title = "COMPACT History"
+  document.title = "COMPACT History and Future"
 
     return(
 
@@ -18,7 +18,7 @@ const HistoryPage = () => {
             A dream that started in the heart of a young lady, Gladys Hinson, in
             1944 is now a 52-acre campus of Christian homes, wonderful amenities
             and staff filled with the love of Jesus Christ. COMP
-            <strong>ACT</strong> Family Services continues to redeem the life
+            <span className="act">ACT</span> Family Services continues to redeem the life
             and future of vulnerable children through our many ministries,
             including Hillcrest Children’s Home, Highlands Maternity Home,
             CompaCare and Foster Care. Explore our ministries page to learn more

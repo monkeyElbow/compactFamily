@@ -22,29 +22,30 @@ export default function HomeFeature() {
                     <h2 className="fs-2 fw-bold mb-5">
                     Assemblies of God Foster Care Network
                     </h2>
-                    <a href="https://www.agfostercare.network/"
+                    <a href="https://giving.ag.org/donate/compact-family-services?fundid=38231"
                     target="_blank" rel="noopener noreferrer">
                       <button className="btn btn-dark stretched-link">
-                        Learn More
+                        Read More
                       </button>
                     </a>
                   </Card>
                 </Col> */}
 
-                <Col lg={4} md={4}>
+
+<Col lg={4} md={4}>
             <Card
-              className="position-relative bg-red clickable text-center text-white my-3 d-flex justify-content-center align-items-center"
+              className="position-relative bg-blue clickable text-center text-white my-3 d-flex justify-content-center align-items-center"
                  style={{minHeight:"300px"}}
             >
               <div
                 className="p-5"
               >
-                <p className="lh-1 fs-2 fw-bold">Christmas at COMPACT</p>
-                {/* <h5 className="mb-4">
+                <h3 className="text-uppercase lh-1">Employment Opportunities</h3>
+                <h5 className="mb-4">
                   We're on the look out for team members.
-                </h5> */}
-<br />
-                <Link to="/christmas">
+                </h5>
+
+                <Link to="/employment">
                   <button
                     className="btn btn-dark stretched-link"
                   >
@@ -54,29 +55,32 @@ export default function HomeFeature() {
               </div>
             </Card>
           </Col>
+
                 <Col lg={4} md={4}>
             <Card
-              className="position-relative bg-orange clickable text-center text-white my-3 d-flex justify-content-center align-items-center"
+              className="position-relative bg-red clickable text-center text-white my-3 d-flex justify-content-center align-items-center"
                  style={{minHeight:"300px"}}
             >
               <div
                 className="p-5"
               >
-                <p className="lh-1 fs-2 fw-bold">Isaiah 58 Prayer and Fasting</p>
-                {/* <h5 className="mb-4">
-                  We're on the look out for team members.
-                </h5> */}
+                <p className="lh-1 fs-2 fw-bold">
+                  Resources
+                </p>
+
 <br />
-                <Link to="/isaiah58offering">
+                <Link to="/products">
                   <button
                     className="btn btn-dark stretched-link"
                   >
-                    Join Us
+                    Read More
                   </button>
                 </Link>
               </div>
             </Card>
           </Col>
+
+
 
 
 
@@ -99,48 +103,47 @@ export default function HomeFeature() {
                 </Link>
               </div>
             </Card> */}
+
             <Card
-              className="bg-pink clickable text-center p-5 my-3 px-md-3 px-lg-5 d-flex justify-content-center align-items-center text-white"
+              className="bg-green clickable text-center p-5 my-3 px-md-3 px-lg-5 d-flex justify-content-center align-items-center text-white"
               style={{ minHeight: "300px" }}
             >
-              <div className="newtagwrap">
 
-                <p className="fw-bold fs-2 mb-5 lh-1">Highlands Adoption Helping Teen Moms</p>
+                <p className="fw-bold fs-2 mb-5 lh-1">
+                Ministry Partners
+                </p>
                 
-                <Link to="/highlands">
+                <Link to="/partners">
                   <button className="btn btn-dark stretched-link lead">
-                    Learn More
+                    Read More
                   </button>
                 </Link>
-              </div>
+           
             </Card>
+
+
+                  {/* <Card
+                    className="position-relative bg-green clickable text-center text-white p-5 my-3 d-flex justify-content-center align-items-center"
+                    style={{ minHeight: "300px" }}
+                  >
+                              <p className="fw-bold fs-2 mb-5 lh-1">
+                              AG Foster Care Network
+                </p>
+                    <a href="https://agfostercare.network/"
+                    target="_blank" rel="noopener noreferrer">
+                      <button className="btn btn-dark stretched-link">
+                        Learn More
+                      </button>
+                    </a>
+                  </Card> */}
+                
+
+
           </Col>
 
 
-{/* 
-          <Col lg={4} md={4}>
-            <Card
-              className="position-relative bg-blue clickable text-center text-white my-3 d-flex justify-content-center align-items-center"
-                 style={{minHeight:"300px"}}
-            >
-              <div
-                className="p-5"
-              >
-                <h3 className="text-uppercase lh-1">Ministry Opportunities</h3>
-                <h5 className="mb-4">
-                  We're on the look out for team members.
-                </h5>
 
-                <Link to="/employment">
-                  <button
-                    className="btn btn-dark stretched-link"
-                  >
-                    See Career Openings
-                  </button>
-                </Link>
-              </div>
-            </Card>
-          </Col> */}
+         
 
 
 

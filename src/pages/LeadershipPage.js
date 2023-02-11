@@ -20,15 +20,12 @@ const LeadershipPage = () => {
                   {leaders.posts.edges.mooney}
                       </div>} */}
 
-              <h2>Alan Bixler</h2>
+              <h2>Dr. Alan Bixler</h2>
               <h4>EXECUTIVE DIRECTOR</h4>
               <p>
                 Assemblies of God COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
-                ®  Family Services is excited to announce the appointment of Dr.
-                Alan Bixler, DSL, MOL, as its new Executive Director. Alan will
+                <span className="act">ACT</span>
+                ®  Family Services is excited to announce the appointment of Alan Bixler, DSL, MOL, as its new Executive Director. Alan will
                 replace Rev. Jay Mooney, who served from 2012-2022, as the
                 ministry’s Executive Director. 
               </p>
@@ -36,10 +33,7 @@ const LeadershipPage = () => {
                 The search for a new Executive Director was led by Board
                 Chairman and Assistant General Superintendent, Rev. Rick DuBose.
                 Rev. Dubose and the COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
-                ®  Board spent the last few months considering candidates,
+                <span className="act">ACT</span>®  Board spent the last few months considering candidates,
                 interviewing, and praying for the right individual to fill this
                 strategic role. “Alan comes to us with a wealth of experience
                 when it comes to leadership and strategic community endeavors.
@@ -68,20 +62,11 @@ const LeadershipPage = () => {
               <p>
                 Alan added, “It is an honor to accept the position of Executive
                 Director of COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
-                ®  Family Services. I covet your prayers in continuing to
+                <span className="act">ACT</span>®  Family Services. I covet your prayers in continuing to
                 fulfill the nearly 78-year mission to be a Christ- centered
                 ministry that redeems vulnerable children and families.”
               </p>
-              <p>
-                The Bixler’s are in process of saying good-bye to their church
-                family, selling their home and making the move from South Dakota
-                to Arkansas. Please join us in prayer for a smooth transition
-                and the beginnings of a new era of ministry to the most
-                vulnerable.
-              </p>
+
             </div>
           </Col>
         </Row>
@@ -106,17 +91,13 @@ const LeadershipPage = () => {
               <h4>ARKANSAS DIRECTOR & ADMINISTRATOR</h4>
               <p>
                 Brian Page joined COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>
+                <span className="act">ACT</span>
                  in 2017. He has a rich child welfare and leadership background
                 that will serve this growing agency. The role of Administrator
                 serves directly under the leadership of the agency’s Executive
                 Director. Regarding his new assignment as Administrator with
                 Assemblies of God COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>
+                <span className="act">ACT</span>
                  Family Services, Brian says, “In 1993, God gave me a vision of
                 working with vulnerable children and youth. In my social work
                 career, I have had the opportunity to serve as a relief
@@ -128,9 +109,7 @@ const LeadershipPage = () => {
                 in a professional work with a Christ-centered culture to help
                 redeem the fatherless and family need in this world. I am
                 humbled to join COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
+                <span className="act">ACT</span>{" "}
                 in this vision and mission.”
               </p>
             </div>
@@ -143,7 +122,7 @@ const LeadershipPage = () => {
           <Col lg={4} md={12}>
             <Image
               fluid
-              src="https://compact.family/images-staff/JohanMostert_t.jpg"
+              src="https://compact.family/images-staff/johan2022.jpg"
               layout="intrinsic"
               width="400"
               height="509"
@@ -153,27 +132,11 @@ const LeadershipPage = () => {
           </Col>
           <Col>
             <div className="ps-3">
-              <h2>DR. JOHAN MOSTERT</h2>
+              <h2>JOHAN MOSTERT PhD</h2>
               <h4>MISSOURI & NATIONAL COMPACARE DIRECTOR</h4>
               <p>
-                {" "}
-                Dr. Mostert joined the COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
-                staff in 2016 as the agency’s new Director of Family and
-                Community Resources (COMPACARE). Dr. Mostert heads up COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>
-                ’s resource and empowerment strategy to better assist and
-                mobilize local churches and Assemblies of God districts to more
-                adequately redeem and serve vulnerable children and families in
-                their communities. He also assists in the enhancement of the
-                agency’s professional programs. The role of Director of Family
-                and Community Resources serves on the agency’s senior leadership
-                team alongside the Administrator and under the Executive
-                Director.
+              Before Dr. Mostert joined the COMP<span className="act">ACT</span> staff he served the church in South Africa as National Director of Welfare Services.  He managed a staff of 450 persons in four Provinces providing professional geriatric services, child welfare services and facilitating international adoptions. 
+              </p><p> He emigrated to America in 2004 to join the faculty of Assemblies of God Theological Seminary (AGTS) as Professor of Community Psychology training candidates to become Licensed Professional Counselors.  </p><p>In 2016 he was recruited to join COMP<span className="act">ACT</span> as the agency’s new Director of Family and Community Resources (COMPACARE). Dr. Mostert heads up COMP<span className="act">ACT</span>’s resource and empowerment strategy to better assist and mobilize local churches and Assemblies of God districts to more adequately redeem and serve vulnerable children and families in their communities. </p><p>He also assists in the enhancement of the agency’s professional programs and spearheads research into evidence-based service programs. In this role he serves on the agency’s senior leadership team under the Executive Director.  As Professor Emeritus he remains coordinator of the Relief and Development track of the PhD Intercultural Studies program at AGTS and annually teaches selected specialty courses in the DMin and MDiv programs at the Seminary.
               </p>
             </div>
           </Col>
@@ -199,9 +162,7 @@ const LeadershipPage = () => {
               <h4>Director of Development & Donor Relations</h4>
               <p>
                 Assemblies of God COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>
+                <span className="act">ACT</span>
                 ® Family Services is excited to announce the appointment of Rev.
                 Rod Whitlock as its new{" "}
                 <em>Director of Development & Donor Relations</em> to advance
@@ -217,12 +178,12 @@ const LeadershipPage = () => {
 
               <p>
                 Rod will base his ministry work from the agency’s Springfield,
-                MO office. He will maintain a secondary office at COMPACT’s
+                MO office. He will maintain a secondary office at COMP<span className="act">ACT</span>’s
                 Hillcrest campus in Hot Springs, AR. Rod will oversee donor
                 development and marketing for COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
+                <span className="act">
+                  ACT
+                </span>{" "}
                 ministries.
               </p>
             </div>
@@ -249,9 +210,7 @@ const LeadershipPage = () => {
               <h4>ARKANSAS FOSTER CARE DIRECTOR</h4>
               <p>
                 Lance Nelson joined the COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
+                <span className="act">ACT</span>{" "}
                 staff in 2015. He has served in local church ministry since
                 2000, pastoring three churches in Oklahoma. Lance is a graduate
                 of Southwestern Assemblies of God University in Waxahachie,
@@ -271,9 +230,7 @@ const LeadershipPage = () => {
                 families, as well as recruiting, training, and supporting foster
                 families in Arkansas. He also oversees the placement of children
                 in COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
+                <span className="act">ACT</span>{" "}
                 Foster Homes. He oversees COMP
                 <strong>ACT</strong>’s preventative program, SafeCare, designed
                 to help at-risk families keep their children out of foster care.
@@ -308,9 +265,7 @@ const LeadershipPage = () => {
               <h4>MISSOURI PROGRAMS DIRECTOR</h4>
               <p>
                 Ashley re-joined COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
+                <span className="act">ACT</span>{" "}
                 as the Missouri Director in October of 2017, overseeing the
                 agency’s operations and rollouts in Missouri. She previously
                 served as the Highlands Maternity Home Program Coordinator and
@@ -349,9 +304,7 @@ const LeadershipPage = () => {
               <h4>ARKANSAS RESIDENTIAL DIRECTOR</h4>
               <p>
                 LaDana Pate has been with COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
+                <span className="act">ACT</span>{" "}
                 since May 2015. She started out as Program Manager over
                 Contracts and is now our Residential Director. In her position,
                 LaDana oversees our case managers, direct care staff, and

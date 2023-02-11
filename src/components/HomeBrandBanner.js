@@ -84,6 +84,9 @@ const HomeBrandBanner = () => {
                   Donate
                 </button>
               </Link>
+
+              {/* <p className="small mt-3">Online donations must be made by midnight on December 31 to be eligible for a 2022 tax deduction.</p> */}
+
                 </animated.div>
 
           {/* <Row className="p-2 m-0">

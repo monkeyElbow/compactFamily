@@ -113,6 +113,8 @@ import AdminCompacareTraining from "./pages/admin/adminCompacareTraining";
 import ChristmasPage from "./pages/seasonalPages/christmasPage";
 // import ProfileImageUpdater from './pages/users/components/ProfileImage';
 
+import YearEndGiving from "./pages/YearEndGiving";
+
 import { useAuth } from "./util/AuthContext";
 
 export default function App() {
@@ -142,6 +144,7 @@ export default function App() {
               <Route path="contact-us" element={<ContactUs />} />
               <Route path="welcome" element={<WelcomePage />} />
               <Route path="mission" element={<MissionPage />} />
+              <Route path="yearendgiving" element={<YearEndGiving />} />
 
               {/* <Route path="articles" element={<ArticleListPage />} /> */}
 
