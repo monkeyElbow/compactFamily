@@ -101,13 +101,10 @@ const GivePage = () => {
               </p>
               <p className="card-text">
                 Our COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
-                Partners help us care for these vulnerable children and families
-                by providing an open gift to our ministry. These undesignated
-                offerings allow us to use your gift where it is most needed for
-                our ministry.
+                <span className="act">ACT</span> Partners help us care for these
+                vulnerable children and families by providing an open gift to
+                our ministry. These undesignated offerings allow us to use your
+                gift where it is most needed for our ministry.
               </p>
 
               <NavLink to="/give-gifts" className="text-center">
@@ -167,11 +164,8 @@ const GivePage = () => {
                 A planned gift, estate gift or endowment ensures that your
                 legacy is continued and helps secure the future to see the
                 mission of COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
-                continue. You will have peace of mind knowing that your gifts
-                are given as you intended.
+                <span className="act">ACT</span> continue. You will have peace
+                of mind knowing that your gifts are given as you intended.
               </p>
               <NavLink to="/planned-giving" className="text-center">
                 <button className="btn btn-dark mt-auto stretched-link">

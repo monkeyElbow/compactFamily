@@ -33,10 +33,7 @@ const MenuMain = () => {
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/mission">
                 COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
-                Mission
+                <span className="act">ACT</span> Mission
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/leadership">
                 Leadership
@@ -46,10 +43,7 @@ const MenuMain = () => {
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/history-and-future">
                 COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
-                History and Future
+                <span className="act">ACT</span> History and Future
               </NavDropdown.Item>
             </NavDropdown>
 
@@ -84,12 +78,8 @@ const MenuMain = () => {
               <NavDropdown.Item as={Link} to="/serve">
                 Serve
               </NavDropdown.Item>
-              <NavDropdown.Item
-                href="https://agfostercare.network"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                AG Foster Care Network
+              <NavDropdown.Item as={Link} to="/employment">
+                Employment
               </NavDropdown.Item>
             </NavDropdown>
 
@@ -97,10 +87,18 @@ const MenuMain = () => {
               {/* <NavDropdown.Item as={Link} to="articles">
               Resource Articles
             </NavDropdown.Item> */}
-            
+
               {/* <NavDropdown.Item as={Link} to="/announcements">
                 Announcements
               </NavDropdown.Item> */}
+
+              <NavDropdown.Item
+                href="https://agfostercare.network"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                AG Foster Care Network
+              </NavDropdown.Item>
 
               <NavDropdown.Item as={Link} to="/newsletter">
                 Newsletter
@@ -110,9 +108,6 @@ const MenuMain = () => {
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/partners">
                 Partners
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/employment">
-                Employment
               </NavDropdown.Item>
             </NavDropdown>
 

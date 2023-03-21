@@ -61,6 +61,7 @@ import GiveGifts from "./pages/GiveGifts";
 import Sponsor from "./pages/Sponsor";
 import SpecialProjects from "./pages/SpecialProjects";
 import ServePage from "./pages/ServePage";
+import Internships from "./pages/Insternships";
 
 import Partners from "./pages/Partners";
 import Products from "./pages/Products";
@@ -188,6 +189,7 @@ export default function App() {
               <Route path="teams" element={<Teams />} />
               <Route path="host-families" element={<HostFamilies />} />
               <Route path="volunteer" element={<Volunteer />} />
+              <Route path="internships" element={<Internships />} />
 
               <Route path="products" element={<Products />} />
               <Route path="newsletter" element={<NewsletterPage />} />

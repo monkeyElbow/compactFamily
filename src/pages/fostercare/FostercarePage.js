@@ -116,10 +116,8 @@ const FostercarePage = () => {
               <p className="small">One of our teenagers *David</p>
               <p className="fs-3">
                 “Thank you COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
-                for taking me in and giving me a second chance.”
+                <span className="act">ACT</span> for taking me in and giving me
+                a second chance.”
               </p>
             </div>
           </div>
@@ -321,6 +319,15 @@ const FostercarePage = () => {
           professional agency. COMP
           <span className="act">ACT</span> is that agency.
         </p>
+<Row>
+  <Col className="d-flex justify-content-center align-items-center"><h5>Member of <a href="https://www.everychildarkansas.org"
+   target="_blank"
+   rel="noopener noreferrer">everychildarkansas.org</a></h5></Col>
+  <Col>
+        <Image style={{maxWidth:"20vw"}} src={require("../../img/ECA.png")} fluid /></Col>
+</Row>
+
+
       </Container>
 
       <Container fluid className="py-5 bg-orange text-white">

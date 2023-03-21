@@ -27,10 +27,7 @@ const Brand = () => {
             <div>
               <h3>
                 COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
-                Logos
+                <span className="act">ACT</span> Logos
               </h3>
 
               <h4>

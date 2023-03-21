@@ -21,11 +21,8 @@ export default function teams() {
             <div>
               <p className="lead text-center fs-4">
                 Get involved with COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
-                first hand by bringing a mission team from your church or
-                organization to our campus.
+                <span className="act">ACT</span> first hand by bringing a
+                mission team from your church or organization to our campus.
               </p>
             </div>
           </Col>

@@ -57,14 +57,14 @@ export default function volunteer() {
         </p>
       </Container>
 
-      <Container fluid className="text-white text-center my-5 bg-blue p-5 mb-0">
+      {/* <Container fluid className="text-white text-center my-5 bg-blue p-5 mb-0">
         <h3 className="">COMPACT INTERNSHIPS</h3>
         <p>
           If you are interested in completing an internship through COMP
           <span className="act">ACT</span> Family Services, please contact us at
           info@compact.family with any questions you may have.
         </p>
-      </Container>
+      </Container> */}
     </>
   );
 }

@@ -9,7 +9,6 @@ const MenuOne = () => {
 <Link to="/leadership">Leadership</Link>
 <Link to="/campus">The Campus</Link>
 <Link to="/history-and-future">History and Future</Link>
-<Link to="/employment">Employment</Link>
 
 </>
     )
@@ -54,13 +53,15 @@ const MenuFour = () => {
         </>
     )
 }
-
+// Get involved
 const MenuFive = () => {
     return(
         <>
 <Link to="/pray">PRAY</Link>
 <Link to="/give">GIVE</Link>
 <Link to="/serve">SERVE</Link>
+<Link to="/employment">Employment</Link>
+
         </>
     )
 }

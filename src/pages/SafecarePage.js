@@ -104,9 +104,7 @@ const SafecarePage = () => {
             <div>
               <p className="lead">
                 SafeCare is COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>
+                <span className="act">ACT</span>
                 ’S latest offering in the growing continuum of services to
                 enable a broader export of competencies that equips the church
                 and advances its vision to redeem vulnerable children and

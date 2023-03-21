@@ -48,12 +48,9 @@ const ServePage = () => {
 
                 <animated.p style={titleTwo} className="lead text-left">
                   Looking to join the COMP
-                  <strong>
-                    <em>ACT</em>
-                  </strong>{" "}
-                  Family or volunteer? We offer several opportunities to engage
-                  in hands on ministry through mission teams, host family,
-                  volunteering and internship.{" "}
+                  <span className="act">ACT</span> Family or volunteer? We offer
+                  several opportunities to engage in hands on ministry through
+                  mission teams, host family, volunteering and internship.{" "}
                 </animated.p>
               </div>
             </div>
@@ -74,19 +71,17 @@ const ServePage = () => {
         className="text-center py-1 mt-0 d-flex justify-content-center"
       >
         <div className="row">
-          <div className="card col-md-12 col-lg-3 border-white clickable bg-blue text-white">
+          {/* <div className="card col-md-12 col-lg-3 border-white clickable bg-blue text-white">
             <div className="card-body d-flex flex-column">
               <h4>
                 <strong>Employment</strong>
               </h4>
               <p className="card-text">
                 COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
-                Family Services is looking for compassionate adults/couples who
-                have a heart for ministry to children and youth (ages 5-18) who
-                are also interested in full-time employment.
+                <span className="act">ACT</span> Family Services is looking for
+                compassionate adults/couples who have a heart for ministry to
+                children and youth (ages 5-18) who are also interested in
+                full-time employment.
               </p>
               <Link
                 className="btn btn-dark mt-auto stretched-link"
@@ -96,7 +91,7 @@ const ServePage = () => {
                 Go to Employment
               </Link>
             </div>
-          </div>
+          </div> */}
 
           <div className="card col-md-12 col-lg-3 border-white clickable bg-blue text-white">
             <div className="card-body d-flex flex-column">
@@ -105,12 +100,9 @@ const ServePage = () => {
               </h4>
               <p className="card-text">
                 Get involved with COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
-                firsthand by bringing a mission team from your church or
-                organization to our campus, for box and remove this text from
-                page.
+                <span className="act">ACT</span> firsthand by bringing a mission
+                team from your church or organization to our campus, for box and
+                remove this text from page.
               </p>
               <Link
                 className="btn btn-dark mt-auto stretched-link"
@@ -118,6 +110,25 @@ const ServePage = () => {
                 role="button"
               >
                 Go to Mission Teams
+              </Link>
+            </div>
+          </div>
+
+          <div className="card col-md-12 col-lg-3 border-white clickable bg-blue text-white">
+            <div className="card-body d-flex flex-column">
+              <h4>
+                <strong>Internships</strong>
+              </h4>
+              <p className="card-text">
+                Intern with COMP
+                <span className="act">ACT</span>  Family. Minister alongside the staff and Houseparents, caring for the kids on our 52-acre campus.
+              </p>
+              <Link
+                className="btn btn-dark mt-auto stretched-link"
+                to="/internships"
+                role="button"
+              >
+                Go to Internships
               </Link>
             </div>
           </div>
@@ -148,12 +159,9 @@ const ServePage = () => {
               </h4>
               <p>
                 Serve on the COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
-                Family as a volunteer. We are always looking for individuals
-                willing to use their gifts on our campus, as either a volunteer
-                or in an internship capacity.
+                <span className="act">ACT</span> Family as a volunteer. We are
+                always looking for individuals willing to use their gifts on our
+                campus, as either a volunteer or in an internship capacity.
               </p>
               <Link
                 className="btn btn-dark mt-auto stretched-link"

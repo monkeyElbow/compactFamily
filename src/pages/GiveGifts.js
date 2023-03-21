@@ -292,10 +292,7 @@ const GiveGifts = () => {
             <div className="col-md-6 col-sm-12 text-center">
               <p>
                 COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
-                Family Services
+                <span className="act">ACT</span> Family Services
                 <br />
                 2325 Malvern Ave
                 <br />
@@ -307,10 +304,7 @@ const GiveGifts = () => {
             <div className="col-md-6 col-sm-12 text text-center">
               <p>
                 COMP
-                <strong>
-                  <em>ACT</em>
-                </strong>{" "}
-                Family Services
+                <span className="act">ACT</span> Family Services
                 <br />
                 c/o AG Contributor Services
                 <br />

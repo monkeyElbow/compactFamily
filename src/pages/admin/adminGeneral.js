@@ -1,4 +1,6 @@
-import { useState, useEffect, useCallback } from "react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
+import { useState, useEffect } from "react";
 import { Container, Card, Button, Alert } from "react-bootstrap";
 
 import { useAuth } from "../../util/AuthContext";
@@ -58,6 +60,8 @@ export default function adminGeneral() {
             <Button variant="danger" onClick={() => db.collection('Contact').doc(message.key).delete()} >
               <FaRegTrashAlt /> Delete Message
             </Button>
+
+            
           </Card>
         ))}
       </Container>
