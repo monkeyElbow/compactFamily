@@ -106,6 +106,8 @@ export default function Internships() {
        <p>It is suggested that you have a vehicle, although not necessary.</p>
  
     <p>We provide a newly remodeled apartment for up to three interns. This on-campus apartment has a kitchen area, private bath, bedroom, and dining area. Our campus has an indoor gym, outdoor basketball court, pond, pavilion, and large field for sporting events.</p>
+
+    <p>We also have single studio apartments. These on-campus apartments have a kitchen area, private bath, bedroom, and dining area.  We provide most dinners and $150 a week stipend.</p>
  
 
 <Row md={4} sm={2} xs={1} className="m-0">

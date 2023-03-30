@@ -165,6 +165,7 @@ export default function App() {
               <Route path="fostercareinfo" element={<Fosterform />} />
               <Route path="placements" element={<Placements />} />
               <Route path="employment" element={<EmploymentPage />} />
+              <Route path="jobs" element={<EmploymentPage />} />
               <Route path="employment/:id" element={<JobPage />} />
               <Route path="compacare" element={<CompaCareHome />} />
 

@@ -78,8 +78,8 @@ const MenuMain = () => {
               <NavDropdown.Item as={Link} to="/serve">
                 Serve
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/employment">
-                Employment
+              <NavDropdown.Item as={Link} to="/jobs">
+                Jobs
               </NavDropdown.Item>
             </NavDropdown>
 

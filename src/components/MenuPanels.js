@@ -60,7 +60,7 @@ const MenuFive = () => {
 <Link to="/pray">PRAY</Link>
 <Link to="/give">GIVE</Link>
 <Link to="/serve">SERVE</Link>
-<Link to="/employment">Employment</Link>
+<Link to="/Jobs">Jobs</Link>
 
         </>
     )
